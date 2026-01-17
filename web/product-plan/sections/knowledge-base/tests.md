@@ -15,6 +15,7 @@
 - [ ] Results list updates with "Squat" related items.
 - [ ] `onViewContent` is called upon selection.
 - [ ] Detail view renders with video player placeholder.
+- [ ] Search term is preserved in input on return.
 
 ### Flow 2: Bookmark Content
 
@@ -28,6 +29,7 @@
 - [ ] Icon state changes (e.g., filled).
 - [ ] Toast message "Saved to Library" appears.
 - [ ] Validation: Item appears in "Saved" rail on main screen.
+- [ ] Bookmark state persists after refresh (if persisted).
 
 ---
 
@@ -40,6 +42,7 @@
 **Expected Results**:
 - [ ] "No results found" message.
 - [ ] Suggestion to check spelling or browse categories.
+- [ ] Search input remains focused for correction.
 
 ### Empty Library
 
@@ -48,3 +51,23 @@
 **Expected Results**:
 - [ ] "Saved" rail is hidden OR,
 - [ ] "Saved" rail shows "Start saving your favorite videos" placeholder.
+
+---
+
+## Error & Edge Case Tests
+
+### Missing Media
+
+**Scenario**: Content item has no `videoUrl`.
+
+**Expected Results**:
+- [ ] Play button disabled.
+- [ ] Placeholder image displays.
+
+### Bookmark Failure
+
+**Scenario**: Bookmark API returns error.
+
+**Expected Results**:
+- [ ] Bookmark icon reverts.
+- [ ] Error toast shown with retry.

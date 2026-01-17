@@ -39,6 +39,24 @@ Each section includes a `tests.md` file with detailed test-writing instructions.
 3. Implement the feature to make tests pass
 4. Refactor while keeping tests green
 
+## Global Implementation Checklist
+
+1. **Data Contracts**
+   - Align API payloads with `data-model/README.md`.
+   - Document all fields, optionality, and defaults.
+2. **State Management**
+   - Define loading, success, empty, and error states for every view.
+   - Avoid blocking the entire page when a single widget fails.
+3. **Instrumentation**
+   - Add analytics events for key actions (start workout, log meal, bookmark).
+   - Record data freshness timestamps for dashboard widgets.
+4. **Accessibility**
+   - Ensure keyboard navigation in all interactive components.
+   - Provide `aria-label` for icons and controls.
+5. **Performance**
+   - Use parallel data fetching for dashboard and progress views.
+   - Cache static content (Knowledge Base) and recent foods.
+
 ---
 
 # Milestone 1: Foundation

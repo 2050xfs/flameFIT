@@ -15,6 +15,7 @@
 - [ ] Comparison view opens.
 - [ ] Slider is functional.
 - [ ] Dates are correctly labeled on each side.
+- [ ] Photos are cropped to the same aspect ratio.
 
 ### Flow 2: Check Weight Trend
 
@@ -27,6 +28,7 @@
 **Expected Results**:
 - [ ] Chart renders with correct data points.
 - [ ] Y-axis scales appropriately.
+- [ ] Toggle state persists on navigation back.
 
 ---
 
@@ -40,3 +42,23 @@
 - [ ] Chart shows "Not enough data" placeholder.
 - [ ] History list shows "Complete your first workout" CTA.
 - [ ] Photo gallery prompts "Take your starting photo".
+
+---
+
+## Error & Edge Case Tests
+
+### Photo Upload Failure
+
+**Scenario**: Upload fails due to network issue.
+
+**Expected Results**:
+- [ ] Error toast with retry.
+- [ ] Placeholder remains unchanged.
+
+### Sparse Chart Data
+
+**Scenario**: Only 1 data point in range.
+
+**Expected Results**:
+- [ ] Chart renders a single point without error.
+- [ ] Tooltip handles missing neighbors gracefully.

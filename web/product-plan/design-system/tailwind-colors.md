@@ -17,3 +17,19 @@ export default {
   }
 }
 ```
+
+## Usage Guidelines
+
+- **Primary (orange)**: primary CTAs, progress highlights, active states.
+- **Secondary (rose)**: protein macro, alerts that indicate intensity.
+- **Neutral (stone)**: backgrounds, borders, muted labels.
+
+## State Tokens
+
+Recommend defining semantic tokens in addition to base palettes:
+- `success`: green
+- `warning`: amber
+- `danger`: red
+- `info`: blue
+
+Use semantic tokens in components so palette changes do not require refactoring.
