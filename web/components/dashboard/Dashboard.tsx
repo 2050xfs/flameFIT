@@ -172,7 +172,8 @@ export function Dashboard({
 }
 
 function MacroRing({ label, current, target, color, unit }: { label: string, current: number, target: number, color: string, unit: string }) {
-    const percentage = Math.min((current / target) * 100, 100)
+    const hasTarget = target > 0
+    const percentage = hasTarget ? Math.min((current / target) * 100, 100) : 0
 
     return (
         <div className="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-2xl p-5 flex flex-col items-center justify-center hover:border-orange-200 dark:hover:border-orange-900/30 transition-colors">
@@ -198,7 +199,11 @@ function MacroRing({ label, current, target, color, unit }: { label: string, cur
             </div>
             <div className="text-center">
                 <span className="text-lg font-bold text-stone-900 dark:text-white font-heading block">{current}</span>
-                <span className="text-xs text-stone-400">/ {target}{unit}</span>
+                {hasTarget ? (
+                    <span className="text-xs text-stone-400">/ {target}{unit}</span>
+                ) : (
+                    <span className="text-xs font-semibold text-orange-500">Set goal</span>
+                )}
             </div>
         </div>
     )

@@ -19,6 +19,12 @@ export function LoginClient() {
         setIsLoading(true)
         setError(null)
 
+        if (!supabase) {
+            setError('Supabase is not configured. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY to continue.')
+            setIsLoading(false)
+            return
+        }
+
         if (mode === 'signup') {
             const { error } = await supabase.auth.signUp({
                 email,
@@ -41,6 +47,11 @@ export function LoginClient() {
     }
 
     const handleOAuth = async (provider: 'google' | 'github') => {
+        if (!supabase) {
+            setError('Supabase is not configured. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY to continue.')
+            return
+        }
+
         setIsLoading(true)
         await supabase.auth.signInWithOAuth({
             provider,
