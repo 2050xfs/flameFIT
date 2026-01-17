@@ -8,4 +8,9 @@ Your task is to implement the backend, state management, and data integration fo
 2. `product-plan/instructions/one-shot-instructions.md` - To understand the implementation plan and TDD requirements.
 3. `product-plan/data-model/README.md` - To understand the data architecture.
 
+When ready, respond with:
+- A summary of risks and assumptions
+- A proposed order of implementation
+- A checklist of data contracts you will validate
+
 Wait for me to upload these files, then acknowledge receipt and we will proceed with Milestone 1.

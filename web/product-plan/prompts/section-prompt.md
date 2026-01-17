@@ -17,5 +17,7 @@ I need you to implement **Milestone [N]: [Section Name]**.
 2. Write the tests first (TDD).
 3. Implement the necessary backend/data fetching to make the tests pass.
 4. Integrate the provided UI components.
+5. Add loading, empty, and error states described in the README.
+6. Add analytics hooks for key actions.
 
 Please confirm you are ready to start.
