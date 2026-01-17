@@ -12,8 +12,9 @@ if (!supabaseUrl || !supabaseAnonKey) {
 }
 
 export function createClient() {
-    return createClientJS<Database>(
-        process.env.NEXT_PUBLIC_SUPABASE_URL || '',
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || ''
-    )
+    if (!supabaseUrl || !supabaseAnonKey) {
+        return null
+    }
+
+    return createClientJS<Database>(supabaseUrl, supabaseAnonKey)
 }

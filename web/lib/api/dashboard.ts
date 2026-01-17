@@ -46,6 +46,10 @@ const summarizeMeal = (foodNames: string[]) => {
 };
 
 export async function getDashboardData(): Promise<DashboardData> {
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+        return emptyDashboard;
+    }
+
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 

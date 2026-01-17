@@ -14,6 +14,11 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
     const [user, setUser] = useState<{ name: string; avatarUrl?: string; role?: string } | null>(null);
 
     useEffect(() => {
+        if (!supabase) {
+            setUser(null);
+            return;
+        }
+
         const fetchUser = async () => {
             const { data: { user: authUser } } = await supabase.auth.getUser();
             if (authUser) {
@@ -96,6 +101,10 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
     };
 
     const handleLogout = async () => {
+        if (!supabase) {
+            return;
+        }
+
         await supabase.auth.signOut();
         router.push('/login');
         router.refresh();
