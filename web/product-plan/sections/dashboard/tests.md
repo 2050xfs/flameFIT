@@ -30,6 +30,8 @@ The Dashboard aggregates data from multiple sources. Tests should ensure accurat
 - [ ] Readiness score displays correct value
 - [ ] Macro rings reflect proportional progress
 - [ ] Timeline matches scheduled items (if any)
+- [ ] Readiness message matches status mapping
+- [ ] Macro labels show current/target values
 
 ### Flow 2: Quick Add Action
 
@@ -42,6 +44,7 @@ The Dashboard aggregates data from multiple sources. Tests should ensure accurat
 **Expected Results**:
 - [ ] `onQuickAdd` callback is fired
 - [ ] Loading state if transitioning
+- [ ] Quick add defaults include current timestamp
 
 ---
 
@@ -60,3 +63,31 @@ The Dashboard aggregates data from multiple sources. Tests should ensure accurat
 - [ ] Macro rings at 0%
 - [ ] Timeline shows "Nothing scheduled" or similar helpful empty state
 - [ ] "Quick Add" remains prominent
+
+---
+
+## Error & Resilience Tests
+
+### Readiness Fetch Fails
+
+**Scenario**: Readiness API times out but macros succeed.
+
+**Expected Results**:
+- [ ] Readiness card shows error state with retry.
+- [ ] Macros and timeline still render normally.
+
+### Missing Macro Targets
+
+**Scenario**: User has not set macro goals.
+
+**Expected Results**:
+- [ ] Macro rings display 0% or placeholder.
+- [ ] "Set goals" CTA is visible.
+
+---
+
+## Accessibility Tests
+
+- [ ] Readiness score is announced by screen reader with context.
+- [ ] Macro rings are keyboard focusable or have accessible summary text.
+- [ ] Timeline items are reachable via keyboard navigation in order.

@@ -6,13 +6,27 @@ A sleek, sidebar-based layout designed for a premium fitness dashboard. It provi
 ## Navigation Structure
 - **Dashboard** → `/dashboard`
 - **Workout Lab** → `/workouts`
-- **Kitchen** → `/nutrition`
-- **Knowledge Base** → `/knowledge`
+- **Kitchen** → `/kitchen`
+- **Knowledge Base** → `/knowledge-base`
 - **Progress** → `/progress`
 
 ## User Menu
 - Location: Bottom of the sidebar.
 - Contents: Avatar, Name ("Eddie"), Settings, Logout.
+
+## Detailed Behavior
+
+1. **Active State**
+   - Highlight current route with primary color and icon glow.
+   - Keep sidebar item label visible on expanded layout.
+2. **Collapsed State**
+   - When collapsed, show tooltip on hover/focus.
+3. **Mobile Navigation**
+   - Bottom bar for primary routes (Dashboard, Workouts, Kitchen, Progress).
+   - Overflow menu for Knowledge Base + Settings.
+4. **Accessibility**
+   - `aria-current="page"` for active route.
+   - Keyboard focus ring on icons and menu items.
 
 ## Layout Pattern
 - **Pattern**: Vertical Sidebar.
