@@ -9,6 +9,7 @@ export interface User {
         theme: 'light' | 'dark' | 'system';
         units: 'metric' | 'imperial';
     };
+    subscriptionStatus?: 'free' | 'pro' | 'elite';
 }
 
 export interface Exercise {
@@ -71,33 +72,51 @@ export interface MacroTarget {
     target: number;
 }
 
+export interface ReadinessData {
+    score: number;
+    status: 'Low Recovery' | 'High Readiness' | 'Optimal';
+    message: string;
+}
+
+export interface TimelineItem {
+    id: string;
+    time: string;
+    title: string;
+    type: 'workout' | 'meal';
+    status: 'completed' | 'upcoming' | 'missed';
+    details: string;
+}
+
 export interface DashboardProps {
-    readiness: {
-        score: number;
-        status: 'Low Recovery' | 'High Readiness' | 'Optimal';
-        message: string;
-    };
+    readiness: ReadinessData;
     macros: {
         calories: MacroTarget;
         protein: MacroTarget;
         carbs: MacroTarget;
         fats: MacroTarget;
     };
-    timeline: {
-        id: string;
-        time: string;
-        title: string;
-        type: 'workout' | 'meal';
-        status: 'completed' | 'upcoming' | 'missed';
-        details: string;
-    }[];
+    water: {
+        current: number;
+        target: number;
+    };
+    timeline: TimelineItem[];
+    insight?: {
+        type: 'success' | 'warning' | 'info';
+        message: string;
+        actionLabel?: string;
+    } | null;
     onStartWorkout?: (id: string) => void;
     onLogMeal?: () => void;
+    onAddWater?: () => void;
     onViewDetails?: (id: string) => void;
+    onInsightAction?: () => void;
 }
+
 
 // Workout Lab Types
 export interface WorkoutExercise {
+    id: string; // The session-specific log entry or unique grouping id
+    exerciseId: string; // The master exercise definition id
     name: string;
     sets: number;
     reps: string;
@@ -111,7 +130,9 @@ export interface WorkoutDetail {
     muscles: string[];
     exercises: WorkoutExercise[];
     date?: string;
+    status?: 'upcoming' | 'active' | 'completed';
 }
+
 
 export interface WeeklyDay {
     day: string;
@@ -125,13 +146,31 @@ export interface CurrentPlan {
     week: number;
 }
 
+export interface ProProgram {
+    id: string;
+    title: string;
+    creator: string;
+    description: string;
+    difficulty: 'beginner' | 'intermediate' | 'advanced';
+    durationWeeks: number;
+    thumbnailUrl?: string;
+    isOwned?: boolean;
+}
+
 export interface WorkoutLabProps {
-    currentPlan: CurrentPlan;
+    currentPlan: { name: string; week: number };
     weeklySchedule: WeeklyDay[];
     todaysWorkout: WorkoutDetail | null;
     upcomingWorkouts: WorkoutDetail[];
+    proPrograms?: ProProgram[];
+    customWorkouts?: any[];
     onStartWorkout?: (id: string) => void;
     onViewDetails?: (id: string) => void;
+    onSubscribeToProgram?: (id: string) => void;
+    onBrowseLibrary?: () => void;
+    onManagePlan?: () => void;
+    onCreateCustomWorkout?: () => void;
+    onViewProProgram?: (id: string) => void;
 }
 
 // Kitchen Types
@@ -177,6 +216,22 @@ export interface ContentItem {
     thumbnailUrl: string;
     videoUrl?: string;
     isBookmarked?: boolean;
+    isPremium?: boolean;
+    slug?: string;
+}
+
+export interface Article {
+    id: string;
+    slug: string;
+    title: string;
+    description: string;
+    content: string;
+    category: string;
+    thumbnailUrl: string;
+    tags: string[];
+    wordCount: number;
+    isPremium: boolean;
+    date: string;
 }
 
 export interface KnowledgeBaseProps {
@@ -235,4 +290,26 @@ export interface ProgressProps {
     data: ProgressData;
     onMetricChange?: (metric: string) => void;
     onComparePhotos?: () => void;
+    onLogWeight?: () => void;
 }
+export interface SparkConfig {
+    objective: 'hypertrophy' | 'strength' | 'endurance' | 'mobility' | 'fat-loss';
+    muscles: string[]; // e.g., 'chest', 'back', 'legs'
+    duration: number; // in minutes
+    equipment: 'full-gym' | 'dumbbell-only' | 'bodyweight' | 'home-gym';
+    intensity: 'low' | 'moderate' | 'high';
+}
+
+export interface GeneratedWorkout {
+    id: string;
+    title: string;
+    description: string;
+    exercises: WorkoutExercise[];
+    stats: {
+        volume: number;
+        intensity: number; // CNS intensity
+        calories: number;
+        duration: number;
+    };
+}
+

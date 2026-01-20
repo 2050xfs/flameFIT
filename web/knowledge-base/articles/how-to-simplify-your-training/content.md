@@ -1,0 +1,28 @@
+# How to Simplify Your Training
+
+---
+
+*Get back to the basics of strength training.*
+
+---
+
+**Jake Stewart**  
+ February 02, 2023 • 2 min read
+
+Wanting to hear one quick tip to revolutionize your workout routine? Wanting to learn how to lose 10 pounds of body fat in one week? Promises like these are not only misleading but can even be dangerous to your training regimen. Your training sessions don’t have to be anything special, as more minimalist strategies for hypertrophy are consistently reliable and often the most effective. Learn how simplifying your routine can benefit your goals and how to do so in the following paragraphs.
+
+## Training Organization
+
+How you structure your training will be what sets you up to maximize weight loss or muscle building. There is no need to obsess over manipulating rest periods or hyper-fixating on specific sides of muscle groups, if getting the most out of your training is your goal. Instead, prioritizing consistency and effort will ensure you have the most effective training program without the headache. Having a clearly defined training split with clearly defined exercise progressions is what will set you out on top. Day after day putting in the work brings home the gains.
+
+## Compound Power
+
+Beginning this simplification of training starts with exercise selection. Targeting compound exercises allows you to target whole muscle groups rather than minute details and gain muscle and strength in larger movement groups. Exercises that have movement over multiple joints, such as the bench press or deadlift work best to have these types of effects. There are compound movements for each body part: overhead press for shoulders, pull ups for back, or lunges for legs. Doing these exercises also comes at the benefit of functionality. Working movements instead of individual muscles builds strength that translates to all walks of life. Sticking with the fundamentals provides the foundation for everything else.
+
+## Modifications
+
+Simplicity doesn’t mean abandoning all complexity. Incorporating [unilateral training](https://www.bodybuilding.com/content/unilateral-vs-bilateral-training.html), range of motion emphasized work, or other focused endeavors will enhance the concise ways of training you’ve been implementing. Incorporating dumbbell work to target each side of the body which cannot be done as effectively with barbell work is great. Staggering training days in certain splits is also an effective way to maximize growth while minimizing overtraining. This will also help you splice in other forms of training, such as cardio or other wellness goals. With your fundamentals at the helm, your training eccentricities can thrive.
+
+## Keeping it Simple, Stupid
+
+Whatever way you choose to train, focusing on the fundamentals will allow you to maximize your results in less time. Lifters of any discipline can benefit from taking the time to strip down their training regimen and finding out what is truly effective for building muscle and what would best be left behind. Last year may have been about different goals, but this year will be all about the right goals. Emphasize the training that works; get the most out of your gym.

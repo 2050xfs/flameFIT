@@ -1,0 +1,133 @@
+# The Ultimate Guide to An Effective Workout Split
+
+---
+
+Let's get right to the point: In bodybuilding, no one is ever going to hand you a routine that will magically turn you into a physique competitor overnight. It takes years of hard work—and lots of trial and error—to achieve your dream physique. We can make recommendations about the best exercises, successful sets-and-reps schemes, and our favorite training techniques, but at the end of the day you're the judge and jury about whether something works for your body.
+
+This is never more apparent than when organizing your [bodybuilding program](https://www.bodybuilding.com/content/workout-plans-that-give-results.html). Devising your workout and your training "split" (which body parts you do on a given day over the course of a week) revolves around factors that are specific to *you*.
+
+When setting up your split, elements that you need to consider include:
+
+**1. Your Training Experience**
+
+Beginners require less volume and intensity in their training programs—but often greater frequency—than advanced lifters.
+
+**2. Your Goals**
+
+Are you trying to establish a baseline of fitness, maintain your shape, or pursue larger-scale physique changes?
+
+**3. Your Availability**
+
+Can you commit to working out five days per week, or is your schedule so tight you can't afford to make gym time on more than a few days? Whichever it is, realize that each bodybuilding workout builds upon the previous one, so you need to be willing to hit the gym at least three days per week.
+
+**4. Your Rest and Recovery Needs**
+
+Depending on your job, lifestyle, and recovery abilities (including sleep), you may need more or fewer rest days. Rest days shouldn't be trivialized in your pursuit for more muscle. Growth takes place away from the gym, in the presence of good nutrition and adequate rest. In terms of recovery, you don't want to train a muscle group that's still ludicrously sore from a previous workout.
+
+"You need to learn to listen to your body," says New Orleans IFBB bikini pro Barbara Bolotte, 2011 Optimum Classic winner and BPI Sports athlete. "For me, if I have really sore legs, I'll work arms instead."
+
+Recovery can also include mental recharging: If you're feeling burned out from too much time in the gym, including more rest days can really help.
+
+"I designate one day per week for outdoor training," adds Bolotte. "So I do a track workout or a long-distance run. I think this is just as important for your mental [and] physical well-being because it helps change your mindset from a constant gym atmosphere."
+
+**5. Your weaknesses**
+
+If you have a body part that you need to improve, do it first after a rest day when your energy stores are fully restocked. In addition, with longer splits, you may be able to add a second training session for that muscle group to better emphasize it.
+
+### Training Splits
+
+Presented below are five common training splits, starting with the easiest and progressing to the most advanced. Make no mistake: There are many other options, but these are a great place to start. While beginners should start with the first option, other lifters should consider the five factors listed above when choosing which split to follow.
+
+You'll discover that, as you gain experience and become a more advanced lifter, you'll use more exercises, intensity, or volume for each body part. Greater volume and intensity require more days to recover from. Hence, advanced lifters may train a given muscle group only once per week.
+
+Let's take a look at some of the most common training splits, and the specific advantages and disadvantages of each.
+
+#### 1. Whole-body Split
+
+Training every major muscle group in a single workout is usually the domain of beginners, most often characterized by a single exercise per body part for just a few sets. One of the primary reasons the volume is kept intentionally low per muscle group is that the primary adaptations made by beginners come via the nervous system. You teach your body to activate and utilize more muscle fibers, rather than realizing physical gains in fiber size and strength. This requires greater frequency, and since the volume of work is so low, this workout should ideally be repeated three times per week, with 48 hours between workouts.
+
+Be forewarned, though, that you don't want to let a week go by in between workouts like this. If you wait too long, you won't build upon your previous workouts, which can place you back at square one.
+
+Another reason volume and intensity are kept low for the newbie is to minimize next-day muscle soreness. "Muscle soreness can be very discouraging for a beginner," says Bolotte. "When I was personal training, I always started clients that were new to the gym on total-body workout routines. Not only did it help them become familiar with all the equipment, but it also allowed them to exercise every body part in moderation instead of just burning out one particular muscle. If you do all legs in a training session, a beginner may feel severe soreness in that muscle group for up to a week, which may discourage that person from coming back."
+
+* **Day 1:** All muscle groups—1 exercise, 3 sets, 10-12 reps
+* **Day 2:**Rest
+* **Day 3:**  All muscle groups—1 exercise, 3 sets, 10-12 reps
+* **Day 4:** Rest
+* **Day 5:** All muscle groups—1 exercise, 3 sets, 10-12 reps
+* **Days 6-7:** Rest
+
+#### 2. Upper- and Lower-body Split
+
+The volume of work (number of sets and reps) done on each body part is low when following a whole-body split; the next step up is a split in which you cover the entire body over two days, and perform two exercises per muscle group. This is typically done by separating the body into upper-body muscle groups (chest, back, shoulders, arms) and lower-body muscle groups (quads, glutes, hamstrings, calves, abs).
+
+By increasing the volume of work done on each body part, you can hit a particular area from more than one angle while increasing the intensity of your training. In our sample workout, you'd do 6 sets—3 sets of 2 exercises—for each muscle group.
+
+You can train in two different rep ranges; the first is geared more toward strength (choose a weight in which you fail at 6-8 reps), and the second is on the upper end of the hypertrophy scale (a weight you can lift for 10-12 reps).
+
+Because you're doing a bit more volume for each body part, you'll need more rest days before repeating the same workout again.
+
+* **Day 1:** Upper-body muscle groups—2 exercises each, 3 sets, 6-8 and 10-12 reps
+* **Day 2:**Lower-body muscle groups—2 exercises each, 3 sets, 6-8 and 10-12 reps
+* **Day 3:** Rest
+* **Day 4:** Upper-body muscle groups—2 exercises each, 3 sets, 6-8 and 10-12 reps
+* **Day 5:** Lower-body muscle groups—2 exercises each, 3 sets, 6-8 and 10-12 reps
+* **Days 6-7:** Rest
+
+#### 3. Push/Pull/Legs
+
+Further progression as you gain experience allows you to do more volume for each muscle group, enabling you to train the entire body over the course of three days, not two. Although one can pair muscle groups in many ways, one of the most popular (shown below) is to do all the pushing muscles together (chest, shoulders, and triceps), all of the pulling muscles together (back and biceps), and then leg exercises. Abs can actually be done on any of these days.
+
+The primary reason to link pushing muscles is that, with multijoint exercises, several body parts are already being called into play. For example, when bench pressing, the pecs, delts, and triceps work in concert. So, when training pecs, you might as well finish off the shoulders and triceps. The alternative—doing chest on Mondays, shoulders on Tuesdays, and possibly triceps on Wednesdays—doesn't allow enough recovery, since some of the muscles would be called into play on consecutive days.
+
+Adding a third exercise per muscle group is the easiest way to add more volume, ensuring you can again work the muscle from a different angle for more complete development. Here, too, you can use multiple rep targets, most often doing lower reps and compound movements early in the workout for each body part when you're fresh.
+
+You can do this workout twice over the course of the week (six workouts a week, as shown), or do it once (the first workout on Monday, the second on Wednesday, and the third on Friday). When doing it twice, you can also add a rest day every fourth day (three days on, one day off), so that you're technically doing the three-day split twice over the course of eight days, not seven. Of course, that depends on your schedule and need for rest.
+
+* **Day 1:** Chest, shoulders, triceps—3 exercises each; 3 sets; 6-8, 8-10 and 10-12 reps
+* **Day 2:** Back, biceps—3 exercises each; 3 sets; 6-8, 8-10 and 10-12 reps
+* **Day 3:** Legs—4 exercise; 3 sets; 6-8, 8-10 and 10-12 reps
+* **Day 4:** Chest, shoulders, triceps— exercises each; 3 sets; 6-8, 8-10 and 10-12
+* **Day 5:** Back, biceps—3 exercises each; 3 sets; 6-8, 8-10 and 10-12 reps
+* **Day 6:** Legs—4 exercise; 3 sets; 6-8, 8-10 and 10-12
+* **Day 7:** Rest
+
+#### 4. Four-Day Split
+
+Here's a split that shows you're getting serious. With fewer muscle groups trained per day, you're able to increase the volume and intensity of your training—factors that are important to continued progress. The four-day split is most commonly done over the course of a week (meaning you get three days of rest), but it can alternately be done following a four-on/one-off or four-on/two-off progression.
+
+An efficient way to group body parts here is to pair a large muscle group with a smaller one, such as chest and triceps (again, both pushing muscles). Because the triceps are already working during many of your chest exercises, you simply hit them afterward. The same reasoning goes with back and biceps.
+
+Alternatively, you can pair muscle groups that target opposing actions, such as chest with biceps and back with triceps. In this case, just make sure you insert a rest day or leg day between those workouts so you're not training a particular muscle group on consecutive days (i.e., doing back and triceps on Monday and chest and biceps on Tuesday).
+
+When pairing a larger and smaller body part such as chest and triceps, Bolotte says it's imperative that you train the larger muscle group first. "The smaller the muscle, the faster it will fatigue, making it harder to train the larger muscle afterward with a substantially heavy weight." With this in mind, you wouldn't train triceps before chest, because the triceps assist the chest in pressing actions. If your triceps are highly fatigued by the time you get to your chest exercises, your ability to push heavy weights will be severely limited.
+
+Bolotte adds that, with the higher volume and intensity, rest days take on even more importance. "That's something I had to learn the hard way, because sometimes you get so caught up in the routine that rest days feel like you're doing something wrong. A great balance for me is an active-rest day. For example, I'll take my dogs on a long walk, or I'll do something different like Pilates or yoga. That way, I still feel active but my body gets a break from the normal high-intensity training."
+
+* **Day 1:** Back, biceps—4, 3 exercises, 3-4 sets, 6-15 reps
+* **Day 2:** Chest, triceps—4, 3 exercises, 3-4 sets, 6-15 reps
+* **Day 3:** Rest
+* **Day 4:** Legs—5 exercises,  3-4 sets, 6-15 reps
+* **Day 5:** Shoulders—4 exercises, 3-4 sets, 6-15 reps
+* **Days 6-7:** Rest
+
+#### 5. Five-Day Split
+
+This advanced-level split essentially allows each body part its own training day, enabling you to increase volume and intensity to maximum levels without having to worry about leaving anything in the tank for a body part to follow. Each muscle group is trained when it's rested, so there's no prefatigue to limit your volume and intensity.
+
+With this type of split, you can hit a muscle hard and be out of the gym in an hour or so. In addition, rest days are reserved for the weekend, though you can shift rest days anywhere during the 5-day workout split depending on your schedule.
+
+Be especially careful when arranging this kind of split; doing chest on Mondays, shoulders on Tuesdays, and triceps on Wednesdays can result in inadequate recovery. That's why, in the split shown, these key muscles are separated by 48 hours. The same reasoning goes for back and biceps. (In fact, in this example split, the biceps and triceps are paired together.)
+
+You can adjust this kind of split even further by adding rear delts to your back day since they're commonly recruited in rowing motions. Such subtle tinkering with the split is the domain of the advanced bodybuilder who has a better grasp of the finer elements of training.
+
+* **Day 1:** Chest—4-5 exercises, 3-4 sets, 6-15 reps
+* **Day 2:** Back—5 exercises, 3-4 sets, 6-15 reps
+* **Day 3:** Shoulders, upper traps—4-5 exercises, 3-4 sets, 6-15 reps
+* **Day 4:** Legs—5-6 exercises, 3-4 sets, 6-15 reps
+* **Day 5:**Biceps, triceps—3-4 exercises each, 3-4 sets, 6-15 reps
+* **Day 6-7:** Rest
+
+#### Training Tip
+
+The splits here don't include smaller muscle groups like abs and calves, nor do they include cardio. The smaller muscles recovery very quickly and can be done every other day. Your best strategy is to tag them on to the end of your workouts, simply alternating which you do.

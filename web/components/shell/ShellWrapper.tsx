@@ -12,29 +12,35 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
     const router = useRouter();
     const supabase = createClient();
     const [user, setUser] = useState<{ name: string; avatarUrl?: string; role?: string } | null>(null);
+    const [isLoadingProfile, setIsLoadingProfile] = useState(true);
 
     useEffect(() => {
         if (!supabase) {
             setUser(null);
+            setIsLoadingProfile(false);
             return;
         }
 
         const fetchUser = async () => {
+            setIsLoadingProfile(true);
             const { data: { user: authUser } } = await supabase.auth.getUser();
             if (authUser) {
                 // Fetch profile
                 const { data: profile } = await supabase
                     .from('profiles')
-                    .select('full_name, avatar_url, role')
+                    .select('name, role')
                     .eq('id', authUser.id)
                     .single();
 
                 setUser({
-                    name: profile?.full_name || authUser.email?.split('@')[0] || "User",
-                    avatarUrl: profile?.avatar_url || "",
+                    name: profile?.name || authUser.email?.split('@')[0] || "User",
+                    avatarUrl: "",
                     role: profile?.role || 'user'
                 });
+            } else {
+                setUser(null);
             }
+            setIsLoadingProfile(false);
         };
 
         fetchUser();
@@ -44,6 +50,7 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
                 fetchUser();
             } else {
                 setUser(null);
+                setIsLoadingProfile(false);
             }
         });
 
@@ -56,11 +63,12 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
             href: "/dashboard",
             icon: LayoutDashboard,
             subItems: [
-                { label: "Daily Spark", href: "/dashboard/ai" },
-                { label: "Nutrition", href: "/dashboard/nutrition" },
-                { label: "Planner", href: "/dashboard/planner" },
-                { label: "Workouts", href: "/dashboard/workouts" },
-                { label: "Profile", href: "/dashboard/profile" },
+                { label: "Daily Spark", href: "/dashboard" }, // Future feature, for now point back to dashboard
+                { label: "Nutrition", href: "/kitchen" },
+                { label: "Planner", href: "/dashboard" }, // Dashboard is the planner for now
+                { label: "Workouts", href: "/workouts" },
+                { label: "Progress", href: "/progress" },
+
             ]
         },
         {
@@ -85,6 +93,12 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
             label: "Progress",
             href: "/progress",
             icon: TrendingUp,
+            subItems: []
+        },
+        {
+            label: "Profile",
+            href: "/profile",
+            icon: User,
             subItems: []
         },
     ].map((item) => ({
@@ -113,7 +127,7 @@ export function ShellWrapper({ children }: { children: React.ReactNode }) {
     return (
         <AppShell
             navigationItems={navigationItems}
-            user={user || { name: "Guest", avatarUrl: "", role: "user" }}
+            user={isLoadingProfile ? { name: "Loading...", avatarUrl: "", role: "user" } : (user || { name: "Guest", avatarUrl: "", role: "user" })}
             onNavigate={handleNavigate}
             onLogout={handleLogout}
         >

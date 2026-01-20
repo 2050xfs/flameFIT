@@ -117,5 +117,44 @@ export async function logMealAction(mealData: z.infer<typeof LogMealSchema>) {
 
     // 4. Revalidate
     revalidatePath('/kitchen');
+    revalidatePath('/dashboard');
+    revalidatePath('/');
     return { success: true };
 }
+
+export async function updateWaterAction(amount: number) {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) throw new Error("Unauthorized");
+
+    const today = new Date().toISOString().split('T')[0];
+
+    // Upsert water intake
+    const { data: current } = await supabase
+        .from('water_logs')
+        .select('amount')
+        .eq('user_id', user.id)
+        .eq('date', today)
+        .single();
+
+    const newAmount = (current?.amount || 0) + amount;
+
+    const { error } = await supabase
+        .from('water_logs')
+        .upsert({
+            user_id: user.id,
+            date: today,
+            amount: newAmount
+        }, { onConflict: 'user_id,date' });
+
+    if (error) {
+        console.error("Water Update Error:", error);
+        throw new Error("Failed to update water");
+    }
+
+    revalidatePath('/kitchen');
+    revalidatePath('/dashboard');
+    revalidatePath('/');
+    return { success: true, amount: newAmount };
+}
+

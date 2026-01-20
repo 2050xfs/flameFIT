@@ -1,5 +1,5 @@
 import React from 'react'
-import type { TimelineItem } from '@/../product/sections/dashboard/types'
+import type { TimelineItem } from '@/lib/types'
 
 interface ScheduleDetailProps {
     timeline: TimelineItem[]
@@ -41,7 +41,7 @@ export function ScheduleDetail({ timeline, onBack, onItemAction }: ScheduleDetai
                                         {item.time}
                                     </span>
                                     <span className={`text-[10px] font-bold uppercase ${item.status === 'completed' ? 'text-teal-500' :
-                                            item.status === 'upcoming' ? 'text-orange-500' : 'text-stone-400'
+                                        item.status === 'upcoming' ? 'text-orange-500' : 'text-stone-400'
                                         }`}>
                                         {item.status}
                                     </span>

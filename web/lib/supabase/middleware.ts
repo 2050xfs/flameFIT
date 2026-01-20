@@ -42,7 +42,27 @@ export async function updateSession(request: NextRequest) {
     )
 
     // refreshing the auth token
-    await supabase.auth.getUser()
+    const { data: { user } } = await supabase.auth.getUser()
+
+    // Protected routes logic
+    const isLoginPage = request.nextUrl.pathname.startsWith('/login')
+    const isAuthCallback = request.nextUrl.pathname.startsWith('/auth')
+    const isApiRoute = request.nextUrl.pathname.startsWith('/api')
+
+    // If user is not logged in and trying to access protected routes, redirect to login
+    // Except for the login page, auth callback, and API routes (they handle auth themselves)
+    if (!user && !isLoginPage && !isAuthCallback && !isApiRoute) {
+        const url = request.nextUrl.clone()
+        url.pathname = '/login'
+        return NextResponse.redirect(url)
+    }
+
+    // If user is logged in and trying to access login page, redirect to dashboard
+    if (user && isLoginPage) {
+        const url = request.nextUrl.clone()
+        url.pathname = '/dashboard'
+        return NextResponse.redirect(url)
+    }
 
     return response
 }

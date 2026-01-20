@@ -1,0 +1,24 @@
+# Best Workout Split for Bulking vs Cutting
+
+---
+
+*Adjust your strength training program depending on your goal.*
+
+---
+
+**Jake Stewart**  
+ February 01, 2023 • 2 min read
+
+How you organize your training can influence how well your bulk or cut will go. Whether you choose heavy weight training, high intensity training, or cardio will have an impact on how efficiently you achieve your fitness goals. Keep reading to find out how you can best gain muscle without accruing fat or lose body fat without experiencing too much muscle loss.
+
+## Bulking Phase
+
+The main discussion when it comes to building muscle is hypertrophy vs heavy weights. The former is often cited as helping build bigger muscles, and the latter can help you develop stronger muscles. Both techniques are recommended as sufficient ways towards maximizing muscle growth. If you’re trying to build as much muscle mass as possible in the shortest time possible, then hypertrophy is your goal. If you’re trying to build thicker, denser muscles, then heavy weight will be your aim. Either way, employing a training split with heavy emphasis on compound movements will best maximize muscle strain. Upper body, lower body and push, pull, legs, are two of the most popular and effective for doing so. Just ensure that for each muscle group, the workouts you select provide the most muscular stimulation: such as bench press, deadlift, or pull-up. On the dieting side, make sure you aren’t dirty bulking to minimize fat gain, but are still eating in a calorie surplus, getting adequate carbohydrate and protein intake.
+
+## Cutting Phase
+
+The cutting phase is often the more delicate phase to balance. You want to lose fat effectively, but if you cut too quickly, then you’ll catabolize muscle and lose strength gains in the process. In order to most optimally lose fat and conserve muscle mass, the way you train should be your top priority besides your diet. If you trained in the 1-5 rep range, focusing on compound lifts in order to build your muscle, then you want to continue to do the same to maintain your muscle. Sticking with similar compound lifts is also great, because of the metabolic stress they accrue. Greater metabolic stress makes it much easier to maintain a caloric deficit. Cardio is important as well as a tool to increase fat loss, however it should be performed after your lifting sessions. Both high-intensity interval training (HIIT) and steady state cardio work well, just take into account your current activity level and experiment with which one best synergizes with your workout routine. Diet is also a key element to consider. You want to ensure you aren’t in an overly excessive calorie deficit, and that your are eating a [high protein diet](https://www.bodybuilding.com/content/bodybuilding-meal-plan-for-weight-loss.html). Muscle retention is just as important as fat loss for having a successful cut.
+
+## Major Key Going Forward
+
+However you made your bulking gains, be it hypertrophy training, powerlifting, or some other variation of resistance training, keeping your training consistent during your weight loss phase is the most important aspect. It can be easy to become hyper fixated on the finer details of bodybuilding and lose sight of the fundamentals. Make alterations to your core lifting philosophy only after reflection in order to figure out which strategies work best for your unique body. Train smart, train hard, and savor your well earned results.

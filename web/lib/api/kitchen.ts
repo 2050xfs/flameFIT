@@ -1,31 +1,36 @@
 import { createClient } from "@/lib/supabase/server";
 import { KitchenProps, MealEntry } from "@/lib/types";
+import { handleSupabaseError } from "./base";
+import { getDefaultMacroTargets } from "./utils";
 
 export async function getKitchenData(): Promise<Omit<KitchenProps, 'onLogFood' | 'onScanBarcode' | 'onAddWater' | 'onViewMeal'>> {
     const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
+    const { data: { user }, error: authError } = await supabase.auth.getUser();
+
+    // Default macro targets
+    const defaultTargets = getDefaultMacroTargets();
 
     // Default empty state
     const defaultState = {
         macros: {
-            calories: { current: 0, target: 2800 },
-            protein: { current: 0, target: 200 },
-            carbs: { current: 0, target: 300 },
-            fats: { current: 0, target: 90 }
+            calories: { current: 0, target: defaultTargets.calories },
+            protein: { current: 0, target: defaultTargets.protein },
+            carbs: { current: 0, target: defaultTargets.carbs },
+            fats: { current: 0, target: defaultTargets.fats }
         },
         meals: [] as MealEntry[],
         waterIntake: 0,
         waterTarget: 8
     };
 
-    if (!user) {
+    if (authError || !user) {
         return defaultState;
     }
 
     const today = new Date().toISOString().split('T')[0];
 
     // Fetch daily log with items and food details
-    const { data: logs, error } = await supabase
+    const { data: logs, error: logsError } = await supabase
         .from('nutrient_logs')
         .select(`
             *,
@@ -46,19 +51,7 @@ export async function getKitchenData(): Promise<Omit<KitchenProps, 'onLogFood' |
         .eq('user_id', user.id)
         .eq('date', today);
 
-    if (error || !logs || logs.length === 0) {
-        return defaultState;
-    }
-
-    // Flatten logs into a single list of meal entries
-    // Note: Our schema has one 'nutrient_log' per day/meal_type combination or one per day?
-    // Based on previous code, it seems designed as one log per day/meal_type entry, or a master log.
-    // The previous implementation plan implied `nutrient_logs` is daily or per-entry. 
-    // Let's assume the query returns multiple rows if there are multiple logs (e.g. one per meal event)
-    // or one row if it's a daily summary. 
-    // Wait, the schema in `api.ts` inserts with `meal_type` into `nutrient_logs`. 
-    // So there could be multiple `nutrient_logs` rows for a single day (one per meal type?).
-    // Let's aggregate them.
+    handleSupabaseError(logsError);
 
     let totalCalories = 0;
     let totalProtein = 0;
@@ -67,7 +60,7 @@ export async function getKitchenData(): Promise<Omit<KitchenProps, 'onLogFood' |
 
     const meals: MealEntry[] = [];
 
-    logs.forEach((log: any) => {
+    (logs || []).forEach((log: any) => {
         if (log.nutrient_log_items) {
             log.nutrient_log_items.forEach((item: any) => {
                 const food = item.food_items;
@@ -75,10 +68,10 @@ export async function getKitchenData(): Promise<Omit<KitchenProps, 'onLogFood' |
 
                 const quantity = item.quantity || 1;
 
-                const calories = food.calories * quantity;
-                const protein = food.protein * quantity;
-                const carbs = food.carbs * quantity;
-                const fats = food.fats * quantity;
+                const calories = (food.calories || 0) * quantity;
+                const protein = (food.protein || 0) * quantity;
+                const carbs = (food.carbs || 0) * quantity;
+                const fats = (food.fats || 0) * quantity;
 
                 totalCalories += calories;
                 totalProtein += protein;
@@ -100,15 +93,32 @@ export async function getKitchenData(): Promise<Omit<KitchenProps, 'onLogFood' |
         }
     });
 
+    // Fetch daily water intake
+    const { data: waterLog } = await supabase
+        .from('water_logs')
+        .select('amount')
+        .eq('user_id', user.id)
+        .eq('date', today)
+        .maybeSingle();
+
+    // Fetch macro targets from profile
+    const { data: profile } = await supabase
+        .from('profiles')
+        .select('weight')
+        .eq('id', user.id)
+        .maybeSingle();
+
+    const macroTargets = getDefaultMacroTargets(profile?.weight || undefined);
+
     return {
         macros: {
-            calories: { current: Math.round(totalCalories), target: 2800 },
-            protein: { current: Math.round(totalProtein), target: 200 },
-            carbs: { current: Math.round(totalCarbs), target: 300 },
-            fats: { current: Math.round(totalFats), target: 90 }
+            calories: { current: Math.round(totalCalories), target: macroTargets.calories },
+            protein: { current: Math.round(totalProtein), target: macroTargets.protein },
+            carbs: { current: Math.round(totalCarbs), target: macroTargets.carbs },
+            fats: { current: Math.round(totalFats), target: macroTargets.fats }
         },
         meals,
-        waterIntake: 3, // Mocked for now as we don't have water logging explicit in this schema yet
+        waterIntake: waterLog?.amount || 0,
         waterTarget: 8
     };
 }

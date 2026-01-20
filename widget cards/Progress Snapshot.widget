@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "name": "Progress Snapshot",
+  "template": "{\"type\":\"Card\",\"size\":\"md\",\"background\":{{ (accents.background) | tojson }},\"theme\":\"dark\",\"children\":[{\"type\":\"Col\",\"gap\":3,\"children\":[{\"type\":\"Row\",\"gap\":2,\"align\":\"center\",\"children\":[{\"type\":\"Box\",\"size\":28,\"radius\":\"sm\",\"background\":{{ (accents.primary) | tojson }},\"align\":\"center\",\"justify\":\"center\",\"children\":[{\"type\":\"Icon\",\"name\":\"analytics\",\"color\":\"white\",\"size\":\"md\"}]},{\"type\":\"Title\",\"value\":{{ (title) | tojson }},\"size\":\"md\"},{\"type\":\"Spacer\"},{\"type\":\"Badge\",\"label\":\"Weekly\",\"color\":\"info\",\"variant\":\"soft\"}]},{\"type\":\"Chart\",\"height\":140,\"data\":{{ (chartData) | tojson }},\"series\":[{\"type\":\"Text\",\"value\":{\"type\":\"line\",\"dataKey\":\"value\",\"color\":{{ (accents.primary) | tojson }},\"curveType\":\"monotoneX\"}}],\"xAxis\":{\"dataKey\":\"day\"},\"showYAxis\":true},{\"type\":\"Divider\",\"color\":\"subtle\"},{\"type\":\"Col\",\"gap\":1,\"children\":[{\"type\":\"Text\",\"value\":\"Weekly Goal\",\"size\":\"sm\",\"color\":\"secondary\"},{\"type\":\"Row\",\"children\":[{\"type\":\"Title\",\"value\":{{ ((percentComplete ~ \"% complete\")) | tojson }},\"size\":\"2xl\",\"weight\":\"bold\",\"color\":{\"light\":{{ (accents.primary) | tojson }},\"dark\":{{ (accents.primary) | tojson }}}},{\"type\":\"Spacer\"},{\"type\":\"Badge\",\"label\":{{ ((streakDays ~ \" day streak\")) | tojson }},\"color\":\"warning\",\"variant\":\"soft\"}]}]},{\"type\":\"Button\",\"label\":{{ (buttonLabel) | tojson }},\"style\":\"primary\",\"onClickAction\":{\"type\":\"report.view\"}}]}]}",
+  "jsonSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string"
+      },
+      "chartData": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "day": {
+              "type": "string"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "day",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "percentComplete": {
+        "type": "number"
+      },
+      "streakDays": {
+        "type": "number"
+      },
+      "buttonLabel": {
+        "type": "string"
+      },
+      "accents": {
+        "type": "object",
+        "properties": {
+          "background": {
+            "type": "string"
+          },
+          "primary": {
+            "type": "string"
+          },
+          "secondary": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "background",
+          "primary",
+          "secondary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "title",
+      "chartData",
+      "percentComplete",
+      "streakDays",
+      "buttonLabel",
+      "accents"
+    ],
+    "additionalProperties": false
+  },
+  "outputJsonPreview": {
+    "type": "Card",
+    "size": "md",
+    "background": "#0B0B0B",
+    "theme": "dark",
+    "children": [
+      {
+        "type": "Col",
+        "gap": 3,
+        "children": [
+          {
+            "type": "Row",
+            "gap": 2,
+            "align": "center",
+            "children": [
+              {
+                "type": "Box",
+                "size": 28,
+                "radius": "sm",
+                "background": "#FF5A1F",
+                "align": "center",
+                "justify": "center",
+                "children": [
+                  {
+                    "type": "Icon",
+                    "name": "analytics",
+                    "color": "white",
+                    "size": "md"
+                  }
+                ]
+              },
+              {
+                "type": "Title",
+                "value": "Progress Snapshot",
+                "size": "md"
+              },
+              {
+                "type": "Spacer"
+              },
+              {
+                "type": "Badge",
+                "label": "Weekly",
+                "color": "info",
+                "variant": "soft"
+              }
+            ]
+          },
+          {
+            "type": "Chart",
+            "height": 140,
+            "data": [
+              {
+                "day": "Sun",
+                "value": 120
+              },
+              {
+                "day": "Mon",
+                "value": 180
+              },
+              {
+                "day": "Tue",
+                "value": 195
+              },
+              {
+                "day": "Wed",
+                "value": 205
+              },
+              {
+                "day": "Thu",
+                "value": 320
+              },
+              {
+                "day": "Fri",
+                "value": 280
+              },
+              {
+                "day": "Sat",
+                "value": 350
+              }
+            ],
+            "series": [
+              {
+                "type": "line",
+                "dataKey": "value",
+                "color": "#FF5A1F",
+                "curveType": "monotoneX"
+              }
+            ],
+            "xAxis": {
+              "dataKey": "day"
+            },
+            "showYAxis": true
+          },
+          {
+            "type": "Divider",
+            "color": "subtle"
+          },
+          {
+            "type": "Col",
+            "gap": 1,
+            "children": [
+              {
+                "type": "Text",
+                "value": "Weekly Goal",
+                "size": "sm",
+                "color": "secondary"
+              },
+              {
+                "type": "Row",
+                "children": [
+                  {
+                    "type": "Title",
+                    "value": "85% complete",
+                    "size": "2xl",
+                    "weight": "bold",
+                    "color": {
+                      "light": "#FF5A1F",
+                      "dark": "#FF5A1F"
+                    }
+                  },
+                  {
+                    "type": "Spacer"
+                  },
+                  {
+                    "type": "Badge",
+                    "label": "5 day streak",
+                    "color": "warning",
+                    "variant": "soft"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Button",
+            "label": "View Full Report",
+            "style": "primary",
+            "onClickAction": {
+              "type": "report.view"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "encodedWidget": "eyJpZCI6ImVhNTg3MWRhLWNjZDEtNDc0NS1iNDZiLTEzNTY2ODU3OGMxZSIsIm5hbWUiOiJQcm9ncmVzcyBTbmFwc2hvdCIsInZpZXciOiI8Q2FyZCBzaXplPVwibWRcIiBiYWNrZ3JvdW5kPXthY2NlbnRzLmJhY2tncm91bmR9IHRoZW1lPVwiZGFya1wiPlxuICA8Q29sIGdhcD17M30-XG4gICAgPFJvdyBnYXA9ezJ9IGFsaWduPVwiY2VudGVyXCI-XG4gICAgICA8Qm94XG4gICAgICAgIHNpemU9ezI4fVxuICAgICAgICByYWRpdXM9XCJzbVwiXG4gICAgICAgIGJhY2tncm91bmQ9e2FjY2VudHMucHJpbWFyeX1cbiAgICAgICAgYWxpZ249XCJjZW50ZXJcIlxuICAgICAgICBqdXN0aWZ5PVwiY2VudGVyXCJcbiAgICAgID5cbiAgICAgICAgPEljb24gbmFtZT1cImFuYWx5dGljc1wiIGNvbG9yPVwid2hpdGVcIiBzaXplPVwibWRcIiAvPlxuICAgICAgPC9Cb3g-XG4gICAgICA8VGl0bGUgdmFsdWU9e3RpdGxlfSBzaXplPVwibWRcIiAvPlxuICAgICAgPFNwYWNlciAvPlxuICAgICAgPEJhZGdlIGxhYmVsPVwiV2Vla2x5XCIgY29sb3I9XCJpbmZvXCIgdmFyaWFudD1cInNvZnRcIiAvPlxuICAgIDwvUm93PlxuXG4gICAgPENoYXJ0XG4gICAgICBoZWlnaHQ9ezE0MH1cbiAgICAgIGRhdGE9e2NoYXJ0RGF0YX1cbiAgICAgIHNlcmllcz17W1xuICAgICAgICB7XG4gICAgICAgICAgdHlwZTogXCJsaW5lXCIsXG4gICAgICAgICAgZGF0YUtleTogXCJ2YWx1ZVwiLFxuICAgICAgICAgIGNvbG9yOiBhY2NlbnRzLnByaW1hcnksXG4gICAgICAgICAgY3VydmVUeXBlOiBcIm1vbm90b25lWFwiLFxuICAgICAgICB9LFxuICAgICAgXX1cbiAgICAgIHhBeGlzPXt7IGRhdGFLZXk6IFwiZGF5XCIgfX1cbiAgICAgIHNob3dZQXhpc1xuICAgIC8-XG5cbiAgICA8RGl2aWRlciBjb2xvcj1cInN1YnRsZVwiIC8-XG5cbiAgICA8Q29sIGdhcD17MX0-XG4gICAgICA8VGV4dCB2YWx1ZT1cIldlZWtseSBHb2FsXCIgc2l6ZT1cInNtXCIgY29sb3I9XCJzZWNvbmRhcnlcIiAvPlxuICAgICAgPFJvdz5cbiAgICAgICAgPFRpdGxlXG4gICAgICAgICAgdmFsdWU9e2Ake3BlcmNlbnRDb21wbGV0ZX0lIGNvbXBsZXRlYH1cbiAgICAgICAgICBzaXplPVwiMnhsXCJcbiAgICAgICAgICB3ZWlnaHQ9XCJib2xkXCJcbiAgICAgICAgICBjb2xvcj17eyBsaWdodDogYWNjZW50cy5wcmltYXJ5LCBkYXJrOiBhY2NlbnRzLnByaW1hcnkgfX1cbiAgICAgICAgLz5cbiAgICAgICAgPFNwYWNlciAvPlxuICAgICAgICA8QmFkZ2VcbiAgICAgICAgICBsYWJlbD17YCR7c3RyZWFrRGF5c30gZGF5IHN0cmVha2B9XG4gICAgICAgICAgY29sb3I9XCJ3YXJuaW5nXCJcbiAgICAgICAgICB2YXJpYW50PVwic29mdFwiXG4gICAgICAgIC8-XG4gICAgICA8L1Jvdz5cbiAgICA8L0NvbD5cblxuICAgIDxCdXR0b25cbiAgICAgIGxhYmVsPXtidXR0b25MYWJlbH1cbiAgICAgIHN0eWxlPVwicHJpbWFyeVwiXG4gICAgICBvbkNsaWNrQWN0aW9uPXt7IHR5cGU6IFwicmVwb3J0LnZpZXdcIiB9fVxuICAgIC8-XG4gIDwvQ29sPlxuPC9DYXJkPiIsImRlZmF1bHRTdGF0ZSI6eyJ0aXRsZSI6IlByb2dyZXNzIFNuYXBzaG90IiwiY2hhcnREYXRhIjpbeyJkYXkiOiJTdW4iLCJ2YWx1ZSI6MTIwfSx7ImRheSI6Ik1vbiIsInZhbHVlIjoxODB9LHsiZGF5IjoiVHVlIiwidmFsdWUiOjE5NX0seyJkYXkiOiJXZWQiLCJ2YWx1ZSI6MjA1fSx7ImRheSI6IlRodSIsInZhbHVlIjozMjB9LHsiZGF5IjoiRnJpIiwidmFsdWUiOjI4MH0seyJkYXkiOiJTYXQiLCJ2YWx1ZSI6MzUwfV0sInBlcmNlbnRDb21wbGV0ZSI6ODUsInN0cmVha0RheXMiOjUsImJ1dHRvbkxhYmVsIjoiVmlldyBGdWxsIFJlcG9ydCIsImFjY2VudHMiOnsiYmFja2dyb3VuZCI6IiMwQjBCMEIiLCJwcmltYXJ5IjoiI0ZGNUExRiIsInNlY29uZGFyeSI6IiNCMTEyMjYifX0sInN0YXRlcyI6W10sInNjaGVtYSI6ImltcG9ydCB7IHogfSBmcm9tIFwiem9kXCJcblxuY29uc3QgRGF0YVBvaW50ID0gei5zdHJpY3RPYmplY3Qoe1xuICBkYXk6IHouc3RyaW5nKCksXG4gIHZhbHVlOiB6Lm51bWJlcigpLFxufSlcblxuY29uc3QgQWNjZW50cyA9IHouc3RyaWN0T2JqZWN0KHtcbiAgYmFja2dyb3VuZDogei5zdHJpbmcoKSxcbiAgcHJpbWFyeTogei5zdHJpbmcoKSxcbiAgc2Vjb25kYXJ5OiB6LnN0cmluZygpLFxufSlcblxuY29uc3QgV2lkZ2V0U3RhdGUgPSB6LnN0cmljdE9iamVjdCh7XG4gIHRpdGxlOiB6LnN0cmluZygpLFxuICBjaGFydERhdGE6IHouYXJyYXkoRGF0YVBvaW50KSxcbiAgcGVyY2VudENvbXBsZXRlOiB6Lm51bWJlcigpLFxuICBzdHJlYWtEYXlzOiB6Lm51bWJlcigpLFxuICBidXR0b25MYWJlbDogei5zdHJpbmcoKSxcbiAgYWNjZW50czogQWNjZW50cyxcbn0pXG5cbmV4cG9ydCBkZWZhdWx0IFdpZGdldFN0YXRlIiwianNvblNjaGVtYSI6e30sInNjaGVtYU1vZGUiOiJ6b2QiLCJzY2hlbWFWYWxpZGl0eSI6InZhbGlkIiwidmlld1ZhbGlkaXR5IjoidmFsaWQiLCJkZWZhdWx0U3RhdGVWYWxpZGl0eSI6InZhbGlkIn0"
+}

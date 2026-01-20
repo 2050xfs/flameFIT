@@ -14,6 +14,114 @@ export type Database = {
     }
     public: {
         Tables: {
+            body_stats: {
+                Row: {
+                    body_fat_pct: number | null
+                    created_at: string | null
+                    date: string
+                    id: string
+                    notes: string | null
+                    user_id: string
+                    weight: number
+                }
+                Insert: {
+                    body_fat_pct?: number | null
+                    created_at?: string | null
+                    date?: string
+                    id?: string
+                    notes?: string | null
+                    user_id: string
+                    weight: number
+                }
+                Update: {
+                    body_fat_pct?: number | null
+                    created_at?: string | null
+                    date?: string
+                    id?: string
+                    notes?: string | null
+                    user_id?: string
+                    weight?: number
+                }
+                Relationships: [
+                    {
+                        foreignKeyName: "body_stats_user_id_fkey"
+                        columns: ["user_id"]
+                        isOneToOne: false
+                        referencedRelation: "profiles"
+                        referencedColumns: ["id"]
+                    },
+                ]
+            }
+            chat_messages: {
+                Row: {
+                    content: string
+                    created_at: string | null
+                    id: string
+                    role: string | null
+                    session_id: string
+                    widget_data: Json | null
+                }
+                Insert: {
+                    content: string
+                    created_at?: string | null
+                    id?: string
+                    role?: string | null
+                    session_id: string
+                    widget_data?: Json | null
+                }
+                Update: {
+                    content?: string
+                    created_at?: string | null
+                    id?: string
+                    role?: string | null
+                    session_id?: string
+                    widget_data?: Json | null
+                }
+                Relationships: [
+                    {
+                        foreignKeyName: "chat_messages_session_id_fkey"
+                        columns: ["session_id"]
+                        isOneToOne: false
+                        referencedRelation: "chat_sessions"
+                        referencedColumns: ["id"]
+                    },
+                ]
+            }
+            chat_sessions: {
+                Row: {
+                    created_at: string | null
+                    id: string
+                    status: string | null
+                    title: string | null
+                    updated_at: string | null
+                    user_id: string
+                }
+                Insert: {
+                    created_at?: string | null
+                    id?: string
+                    status?: string | null
+                    title?: string | null
+                    updated_at?: string | null
+                    user_id: string
+                }
+                Update: {
+                    created_at?: string | null
+                    id?: string
+                    status?: string | null
+                    title?: string | null
+                    updated_at?: string | null
+                    user_id?: string
+                }
+                Relationships: [
+                    {
+                        foreignKeyName: "chat_sessions_user_id_fkey"
+                        columns: ["user_id"]
+                        isOneToOne: false
+                        referencedRelation: "profiles"
+                        referencedColumns: ["id"]
+                    },
+                ]
+            }
             exercises: {
                 Row: {
                     created_at: string | null
@@ -165,37 +273,40 @@ export type Database = {
             }
             profiles: {
                 Row: {
-                    activity_level: string | null
-                    avatar_url: string | null
-                    full_name: string | null
-                    goal_weight_kg: number | null
-                    height_cm: number | null
+                    created_at: string | null
+                    email: string | null
+                    goals: string[] | null
+                    height: number | null
                     id: string
+                    name: string | null
+                    preferences: Json | null
                     role: string | null
-                    updated_at: string
-                    weight_kg: number | null
+                    updated_at: string | null
+                    weight: number | null
                 }
                 Insert: {
-                    activity_level?: string | null
-                    avatar_url?: string | null
-                    full_name?: string | null
-                    goal_weight_kg?: number | null
-                    height_cm?: number | null
+                    created_at?: string | null
+                    email?: string | null
+                    goals?: string[] | null
+                    height?: number | null
                     id: string
+                    name?: string | null
+                    preferences?: Json | null
                     role?: string | null
-                    updated_at?: string
-                    weight_kg?: number | null
+                    updated_at?: string | null
+                    weight?: number | null
                 }
                 Update: {
-                    activity_level?: string | null
-                    avatar_url?: string | null
-                    full_name?: string | null
-                    goal_weight_kg?: number | null
-                    height_cm?: number | null
+                    created_at?: string | null
+                    email?: string | null
+                    goals?: string[] | null
+                    height?: number | null
                     id?: string
+                    name?: string | null
+                    preferences?: Json | null
                     role?: string | null
-                    updated_at?: string
-                    weight_kg?: number | null
+                    updated_at?: string | null
+                    weight?: number | null
                 }
                 Relationships: []
             }
@@ -305,14 +416,22 @@ export type Tables<
     | keyof (PublicSchema["Tables"] & PublicSchema["Views"])
     | { schema: keyof Database },
     TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
-    ? keyof (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
-        Database[PublicTableNameOrOptions["schema"]]["Views"])
+    ? keyof (Database[PublicTableNameOrOptions["schema"]] extends { Tables: any }
+        ? Database[PublicTableNameOrOptions["schema"]]["Tables"]
+        : never &
+        (Database[PublicTableNameOrOptions["schema"]] extends { Views: any }
+            ? Database[PublicTableNameOrOptions["schema"]]["Views"]
+            : never))
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
-    ? (Database[PublicTableNameOrOptions["schema"]]["Tables"] &
-        Database[PublicTableNameOrOptions["schema"]]["Views"])[TableName] extends {
-            Row: infer R
-        }
+    ? (Database[PublicTableNameOrOptions["schema"]] extends { Tables: any }
+        ? Database[PublicTableNameOrOptions["schema"]]["Tables"]
+        : never &
+        (Database[PublicTableNameOrOptions["schema"]] extends { Views: any }
+            ? Database[PublicTableNameOrOptions["schema"]]["Views"]
+            : never))[TableName] extends {
+                Row: infer R
+            }
     ? R
     : never
     : PublicTableNameOrOptions extends keyof (PublicSchema["Tables"] &
@@ -330,12 +449,16 @@ export type TablesInsert<
     | keyof PublicSchema["Tables"]
     | { schema: keyof Database },
     TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
-    ? keyof Database[PublicTableNameOrOptions["schema"]]["Tables"]
+    ? keyof (Database[PublicTableNameOrOptions["schema"]] extends { Tables: any }
+        ? Database[PublicTableNameOrOptions["schema"]]["Tables"]
+        : never)
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
-    ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
-        Insert: infer I
-    }
+    ? (Database[PublicTableNameOrOptions["schema"]] extends { Tables: any }
+        ? Database[PublicTableNameOrOptions["schema"]]["Tables"]
+        : never)[TableName] extends {
+            Insert: infer I
+        }
     ? I
     : never
     : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
@@ -351,12 +474,16 @@ export type TablesUpdate<
     | keyof PublicSchema["Tables"]
     | { schema: keyof Database },
     TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
-    ? keyof Database[PublicTableNameOrOptions["schema"]]["Tables"]
+    ? keyof (Database[PublicTableNameOrOptions["schema"]] extends { Tables: any }
+        ? Database[PublicTableNameOrOptions["schema"]]["Tables"]
+        : never)
     : never = never,
 > = PublicTableNameOrOptions extends { schema: keyof Database }
-    ? Database[PublicTableNameOrOptions["schema"]]["Tables"][TableName] extends {
-        Update: infer U
-    }
+    ? (Database[PublicTableNameOrOptions["schema"]] extends { Tables: any }
+        ? Database[PublicTableNameOrOptions["schema"]]["Tables"]
+        : never)[TableName] extends {
+            Update: infer U
+        }
     ? U
     : never
     : PublicTableNameOrOptions extends keyof PublicSchema["Tables"]
@@ -372,10 +499,14 @@ export type Enums<
     | keyof PublicSchema["Enums"]
     | { schema: keyof Database },
     EnumName extends PublicEnumNameOrOptions extends { schema: keyof Database }
-    ? keyof Database[PublicEnumNameOrOptions["schema"]]["Enums"]
+    ? keyof (Database[PublicEnumNameOrOptions["schema"]] extends { Enums: any }
+        ? Database[PublicEnumNameOrOptions["schema"]]["Enums"]
+        : never)
     : never = never,
 > = PublicEnumNameOrOptions extends { schema: keyof Database }
-    ? Database[PublicEnumNameOrOptions["schema"]]["Enums"][EnumName]
+    ? (Database[PublicEnumNameOrOptions["schema"]] extends { Enums: any }
+        ? Database[PublicEnumNameOrOptions["schema"]]["Enums"]
+        : never)[EnumName]
     : PublicEnumNameOrOptions extends keyof PublicSchema["Enums"]
     ? PublicSchema["Enums"][PublicEnumNameOrOptions]
     : never
@@ -387,10 +518,18 @@ export type CompositeTypes<
     CompositeTypeName extends PublicCompositeTypeNameOrOptions extends {
         schema: keyof Database
     }
-    ? keyof Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+    ? keyof (Database[PublicCompositeTypeNameOrOptions["schema"]] extends {
+        CompositeTypes: any
+    }
+        ? Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+        : never)
     : never = never,
 > = PublicCompositeTypeNameOrOptions extends { schema: keyof Database }
-    ? Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"][CompositeTypeName]
+    ? (Database[PublicCompositeTypeNameOrOptions["schema"]] extends {
+        CompositeTypes: any
+    }
+        ? Database[PublicCompositeTypeNameOrOptions["schema"]]["CompositeTypes"]
+        : never)[CompositeTypeName]
     : PublicCompositeTypeNameOrOptions extends keyof PublicSchema["CompositeTypes"]
     ? PublicSchema["CompositeTypes"][PublicCompositeTypeNameOrOptions]
     : never

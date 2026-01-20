@@ -1,0 +1,30 @@
+# 3 Ways to Survive the Crowded Gym
+
+---
+
+*How to get in a great workout when the gym is at its busiest.*
+
+---
+
+**Jake Stewart**  
+ January 24, 2023 • 2 min read
+
+Motivation is at an all time high, and you’re ready to give it your all. The only problem arises when you finally get to the gym, check in at the desk, and turn around to see just how many people there are. Every piece of equipment seems to be in use, some even having lines forming around them. People are hoarding their benches in defense of the rapid onslaught. Even the treadmills are at capacity. How are you going to workout now?
+
+## It begins with a plan
+
+When the gym is filled to the brim, it can be easy to feel overwhelmed. Having a plan for which exercises to do can greatly ease this sentiment. That way, if you’re ever unsure of what workout to do next, you can always fall back on the schedule you created when you weren’t in this stressful environment.
+
+However, the busyness of the gym can sometimes throw an extra wrench in your plans. What happens when someone is on the machine you had next on your list? During this hectic time of year, it’s especially important to have an abundance of exercises you can do in your plan. So, when you come up to the free weight area and see that all the benches are in use, you can pivot and take up the [cable flys](https://www.bodybuilding.com/exercises/am-cable-fly) or do some dumbbell pullovers. Preparing one step ahead of the game will help you feel one step ahead of the game.
+
+## Free Weight Supremacy
+
+When every bench and squat rack is taken, it may seem like there is little left you can do. After all, everything is in use, right? This is where free weights can come in handy. Grabbing some dumbbells or a preloaded barbell and finding an open floor area gives you plenty of space to perform numerous different exercises. With just this equipment, you can work nearly every muscle; Shoulder press, overhead tricep extensions, bicep curls, bent over rows, squats, deadlifts, lunges, and countless more. A little side tip would be to perform these exercises near the next big piece of equipment you’ve been eyeing. That way, you can swoop in right when the person using it finishes their last set.
+
+## Rise and Grind
+
+Sometimes the issue is just a matter of timing. Every gym has their peak hours, when capacity is at its fullest. These often occur when everyone is just getting off of work. If you’ve been showing up right in the middle of that 5pm rush, it may help to experiment with working out in the morning. Not only will you likely have a greater opportunity to score the equipment you’re looking for, but you’ll also be able to cross the gym off of your to-do list before the day has even really begun. Take the time to experiment with which gym time works best for you. Every gym is unique, and the best hour to go will be something you have to discover with time.
+
+## Consistency is Key
+
+Being consistent is not only going to pay off when it comes to seeing results, but also help you with beating the crowded gym. For example, January is synonymous with busy gyms, but that fact doesn’t have to keep you from getting in your best workout possible. The most important thing to keep in mind during this time of year is that February is just a few short weeks away. This will be a similar case when summer comes around. A lot of people like to get out and not go to the gym as much. Ride the tidal waves, stay consistent, and enjoy the benefits of working out for years to come.

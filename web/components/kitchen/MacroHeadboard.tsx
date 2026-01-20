@@ -5,6 +5,8 @@ interface MacroHeadboardProps {
     macros: MacroTargets
 }
 
+import { motion } from 'framer-motion'
+
 export function MacroHeadboard({ macros }: MacroHeadboardProps) {
     const macroList = [
         { label: 'Calories', ...macros.calories, color: 'text-stone-500', bgColor: 'bg-stone-500', unit: 'kcal' },
@@ -14,9 +16,20 @@ export function MacroHeadboard({ macros }: MacroHeadboardProps) {
     ]
 
     return (
-        <div className="bg-gradient-to-br from-stone-900 to-stone-800 dark:from-white dark:to-stone-50 rounded-3xl p-6 md:p-8 text-white dark:text-stone-900 relative overflow-hidden">
+        <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="bg-gradient-to-br from-stone-900 to-stone-800 dark:from-white dark:to-stone-50 rounded-3xl p-6 md:p-8 text-white dark:text-stone-900 relative overflow-hidden"
+        >
             {/* Background Decoration */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-500 to-rose-600 rounded-full blur-3xl opacity-20 pointer-events-none" />
+            <motion.div
+                animate={{
+                    scale: [1, 1.1, 1],
+                    opacity: [0.2, 0.3, 0.2]
+                }}
+                transition={{ duration: 8, repeat: Infinity }}
+                className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-orange-500 to-rose-600 rounded-full blur-3xl opacity-20 pointer-events-none"
+            />
 
             <div className="relative z-10">
                 <div className="flex items-center justify-between mb-6">
@@ -27,7 +40,7 @@ export function MacroHeadboard({ macros }: MacroHeadboardProps) {
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    {macroList.map((macro) => {
+                    {macroList.map((macro, idx) => {
                         const percentage = Math.min((macro.current / macro.target) * 100, 100)
                         const isOver = macro.current > macro.target
 
@@ -42,9 +55,11 @@ export function MacroHeadboard({ macros }: MacroHeadboardProps) {
 
                                 {/* Progress Bar */}
                                 <div className="h-2 bg-white/10 dark:bg-stone-900/20 rounded-full overflow-hidden">
-                                    <div
-                                        className={`h-full ${macro.bgColor} transition-all duration-500 rounded-full ${isOver ? 'animate-pulse' : ''}`}
-                                        style={{ width: `${percentage}%` }}
+                                    <motion.div
+                                        initial={{ width: 0 }}
+                                        animate={{ width: `${percentage}%` }}
+                                        transition={{ duration: 1, delay: idx * 0.1 }}
+                                        className={`h-full ${macro.bgColor} rounded-full ${isOver ? 'animate-pulse' : ''}`}
                                     />
                                 </div>
 
@@ -60,6 +75,7 @@ export function MacroHeadboard({ macros }: MacroHeadboardProps) {
                     })}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
+

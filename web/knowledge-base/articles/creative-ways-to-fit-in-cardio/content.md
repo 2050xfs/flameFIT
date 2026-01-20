@@ -1,0 +1,47 @@
+# Creative Ways to Fit In Cardio
+
+---
+
+*Cardio doesn’t have to be boring. Here are some ways to make it better!*
+
+---
+
+**Matthew Lannon**  
+ April 14, 2023 • 3 min read
+
+Cardio heals the heart in a multitude of ways. From the benefits of bodily function to the improved quality of life (1), cardio is an opportunity for growth. The questions arise: where do I start? Or… what do I do next? Cardio can be intimidating because of the overabundance of choices (and sweat), but it does not have to be. Cardio can be achieved by anyone through various intensities and activities.
+
+## Switch It Up
+
+Routines can be good for people who crave structure, but it’s easy to get comfortable with a routine. Breaking the traditions can actually bring growth because it shocks the body. The surprise will increase heart rate, amping up the work of the sympathetic nervous system (2), which is a natural occurrence in cardio. The shock forces the body to focus more on the breath as it adapts to new movements and situations. Not only is the [heart](https://www.bodybuilding.com/content/the-importance-of-vo2-max-testing-regardless-of-your-fitness-goals.html) going to benefit from it, but it adds variety to the body’s skills.
+
+The surprising bursts of shock can be implemented in any kind of exercise, even weightlifters. The use of shock can be used outside of volume structures and supersets. Some people do cardio at the start, end, or at both of their exercises. Now is the chance to jump into a cardio session in the middle of a workout, too. It could be jumping rope, box jumps, or a high-intensity interval training session. Any cardio option will promote muscular growth because of the shock.
+
+For athletes outside of the gym, there’re options to switch up the usual training routine. If training for endurance, consider taking a different route with higher inclines or build up the motivation to sprint for a few seconds. Another alternative is to try shorter daily doses of cardio instead of a handful of longer sessions per week.
+
+If the usual go-to cardio sessions are getting boring, perhaps it’s time to change when or what is being worked. Meanwhile, switching up the environment can be creative as well.
+
+## Step Outside
+
+There’s more to cardio than what’s inside the gym. A change in the environment can change cardiovascular performance. Gyms tend to have regulated temperatures to keep customers comfortable. Instead of exercising indoors, take a step outside! The environmental impact can heat up the body temperature in the summer or freeze the lungs in the winter. Either way, it becomes a new challenge for cardiovascular performance and willpower. Let’s not forget the sun exposure for Vitamin D either.
+
+People who participate in outdoor activities have higher cognitive function and reaction times than those who practice indoors (3). Whether it’s from the comradery of a sports team or the relief of the atmosphere’s fresh air, it’s more beneficial than getting the heart rate up indoors. If the gym is not inspiring enough, the great outdoors can bring in a new light to cardio.
+
+Meanwhile, individual activities such as swimming and walking can further connect us to nature. The change in landscapes may cause us to slow down and take in the world around us.
+
+## Slow It Down
+
+Sometimes, slowing down can bring massive improvements. The body can move so fast that it forgets to connect with the mind and heart. One way to balance heart health is to manage heart rate variability. While high-intensity training stresses the sympathetic nervous system, low-intensity activity stimulates the parasympathetic system. These activities will maintain the body’s sensory functions rooted in the vagus nerve, the main parasympathetic nerve (2).
+
+Parasympathetic activity can be achieved by slow and deep breathing. This has been shown to improve heart health by reducing anxiety in both younger and older groups alike (4). Mindful walks outside, holistic yoga flows, and meditation contribute to the function of the parasympathetic nervous system. The focus of these rely on the pace of the heart, trying to keep it as slow as possible through the breath. If anything, this qualifies as cardio because it involves managing BPM (beats per minute) through activity. If slowing down is an issue, this can be the right step forward.
+
+## Cardio On
+
+Cardio seems like an intimidating word. However, it does not have to be achieved only in the gym and is not only delegated to athletes. Anyone who has an aspiration for a healthier life can achieve it. There are many ways to achieve it at any pace and any environment. Cardio should be joyful and motivating enough to keep practicing it. How will you get creative with cardio?
+
+**Works Cited**
+
+1. <https://www.sciencedirect.com/science/article/pii/S0925443918303041?via%3Dihub>
+2. <https://pubmed.ncbi.nlm.nih.gov/31560809/>
+3. <https://www.nature.com/articles/s41598-022-26093-2>
+4. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8481564/>

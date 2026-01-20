@@ -1,0 +1,476 @@
+2026-01-18 12:54:35,594 - INFO - Starting URL discovery phase...
+2026-01-18 12:54:35,851 - INFO - Fetching page 1: https://shop.bodybuilding.com/blogs/training
+2026-01-18 12:54:37,198 - INFO - Found 0 articles on page 1
+2026-01-18 12:54:38,703 - INFO - Fetching page 2: https://shop.bodybuilding.com/blogs/training?page=2
+2026-01-18 12:54:40,174 - INFO - Found 0 articles on page 2
+2026-01-18 12:54:41,679 - INFO - Fetching page 3: https://shop.bodybuilding.com/blogs/training?page=3
+2026-01-18 12:54:42,805 - INFO - Found 0 articles on page 3
+2026-01-18 12:54:44,312 - INFO - Fetching page 4: https://shop.bodybuilding.com/blogs/training?page=4
+2026-01-18 12:54:45,572 - INFO - Found 0 articles on page 4
+2026-01-18 12:54:47,076 - INFO - Fetching page 5: https://shop.bodybuilding.com/blogs/training?page=5
+2026-01-18 12:54:48,241 - INFO - Found 0 articles on page 5
+2026-01-18 12:54:49,747 - INFO - Fetching page 6: https://shop.bodybuilding.com/blogs/training?page=6
+2026-01-18 12:54:51,171 - INFO - Found 0 articles on page 6
+2026-01-18 12:54:52,687 - INFO - Fetching page 7: https://shop.bodybuilding.com/blogs/training?page=7
+2026-01-18 12:54:54,135 - INFO - Found 0 articles on page 7
+2026-01-18 12:54:55,647 - INFO - Fetching page 8: https://shop.bodybuilding.com/blogs/training?page=8
+2026-01-18 12:54:56,965 - INFO - Found 0 articles on page 8
+2026-01-18 12:54:58,473 - INFO - Fetching page 9: https://shop.bodybuilding.com/blogs/training?page=9
+2026-01-18 12:55:00,579 - INFO - Found 0 articles on page 9
+2026-01-18 12:55:02,089 - INFO - Fetching page 10: https://shop.bodybuilding.com/blogs/training?page=10
+2026-01-18 12:55:03,465 - INFO - Found 0 articles on page 10
+2026-01-18 12:55:04,971 - INFO - Fetching page 11: https://shop.bodybuilding.com/blogs/training?page=11
+2026-01-18 12:55:06,724 - INFO - Found 0 articles on page 11
+2026-01-18 12:55:08,231 - INFO - Fetching page 12: https://shop.bodybuilding.com/blogs/training?page=12
+2026-01-18 12:55:09,792 - INFO - Found 0 articles on page 12
+2026-01-18 12:55:11,300 - INFO - Fetching page 13: https://shop.bodybuilding.com/blogs/training?page=13
+2026-01-18 12:55:12,836 - INFO - Found 0 articles on page 13
+2026-01-18 12:55:14,344 - INFO - Fetching page 14: https://shop.bodybuilding.com/blogs/training?page=14
+2026-01-18 12:55:15,852 - INFO - Found 0 articles on page 14
+2026-01-18 12:55:17,358 - INFO - Fetching page 15: https://shop.bodybuilding.com/blogs/training?page=15
+2026-01-18 12:55:19,178 - INFO - Found 0 articles on page 15
+2026-01-18 12:55:20,687 - INFO - Fetching page 16: https://shop.bodybuilding.com/blogs/training?page=16
+2026-01-18 12:55:22,051 - INFO - Found 0 articles on page 16
+2026-01-18 12:55:22,055 - INFO - Total unique URLs discovered: 0
+2026-01-18 12:55:22,067 - INFO - Starting article scraping phase for 0 URLs...
+2026-01-18 12:55:22,076 - INFO - Scraping complete: 0 successful, 0 failed
+2026-01-18 12:55:22,076 - INFO - Generating manifest...
+2026-01-18 12:55:22,094 - INFO - Manifest generated: 0 articles, 0 categories
+2026-01-18 12:55:22,098 - INFO - Generating README...
+2026-01-18 12:55:22,111 - INFO - README generated
+2026-01-18 12:55:22,111 - INFO - ============================================================
+2026-01-18 12:55:22,112 - INFO - SCRAPING COMPLETE!
+2026-01-18 12:55:22,112 - INFO - Total articles scraped: 0
+2026-01-18 12:55:22,113 - INFO - Total categories: 0
+2026-01-18 12:55:22,113 - INFO - Failed URLs: 0
+2026-01-18 12:55:22,114 - INFO - ============================================================
+2026-01-18 13:11:29,606 - INFO - Starting URL discovery phase...
+2026-01-18 13:11:29,752 - INFO - Fetching page 1: https://shop.bodybuilding.com/blogs/training
+2026-01-18 13:11:31,055 - INFO - Found 12 articles on page 1
+2026-01-18 13:11:32,560 - INFO - Fetching page 2: https://shop.bodybuilding.com/blogs/training?page=2
+2026-01-18 13:11:33,848 - INFO - Found 12 articles on page 2
+2026-01-18 13:11:35,354 - INFO - Fetching page 3: https://shop.bodybuilding.com/blogs/training?page=3
+2026-01-18 13:11:36,444 - INFO - Found 12 articles on page 3
+2026-01-18 13:11:37,967 - INFO - Fetching page 4: https://shop.bodybuilding.com/blogs/training?page=4
+2026-01-18 13:11:39,132 - INFO - Found 12 articles on page 4
+2026-01-18 13:11:40,636 - INFO - Fetching page 5: https://shop.bodybuilding.com/blogs/training?page=5
+2026-01-18 13:11:41,699 - INFO - Found 12 articles on page 5
+2026-01-18 13:11:43,203 - INFO - Fetching page 6: https://shop.bodybuilding.com/blogs/training?page=6
+2026-01-18 13:11:44,245 - INFO - Found 12 articles on page 6
+2026-01-18 13:11:45,751 - INFO - Fetching page 7: https://shop.bodybuilding.com/blogs/training?page=7
+2026-01-18 13:11:46,963 - INFO - Found 12 articles on page 7
+2026-01-18 13:11:48,489 - INFO - Fetching page 8: https://shop.bodybuilding.com/blogs/training?page=8
+2026-01-18 13:11:49,513 - INFO - Found 12 articles on page 8
+2026-01-18 13:11:51,030 - INFO - Fetching page 9: https://shop.bodybuilding.com/blogs/training?page=9
+2026-01-18 13:11:52,451 - INFO - Found 12 articles on page 9
+2026-01-18 13:11:53,958 - INFO - Fetching page 10: https://shop.bodybuilding.com/blogs/training?page=10
+2026-01-18 13:11:55,192 - INFO - Found 12 articles on page 10
+2026-01-18 13:11:56,699 - INFO - Fetching page 11: https://shop.bodybuilding.com/blogs/training?page=11
+2026-01-18 13:11:57,709 - INFO - Found 12 articles on page 11
+2026-01-18 13:11:59,215 - INFO - Fetching page 12: https://shop.bodybuilding.com/blogs/training?page=12
+2026-01-18 13:12:00,108 - INFO - Found 12 articles on page 12
+2026-01-18 13:12:01,611 - INFO - Fetching page 13: https://shop.bodybuilding.com/blogs/training?page=13
+2026-01-18 13:12:02,338 - INFO - Found 12 articles on page 13
+2026-01-18 13:12:03,845 - INFO - Fetching page 14: https://shop.bodybuilding.com/blogs/training?page=14
+2026-01-18 13:12:05,201 - INFO - Found 12 articles on page 14
+2026-01-18 13:12:06,704 - INFO - Fetching page 15: https://shop.bodybuilding.com/blogs/training?page=15
+2026-01-18 13:12:07,753 - INFO - Found 12 articles on page 15
+2026-01-18 13:12:09,295 - INFO - Fetching page 16: https://shop.bodybuilding.com/blogs/training?page=16
+2026-01-18 13:12:10,588 - INFO - Found 10 articles on page 16
+2026-01-18 13:12:10,589 - INFO - Total unique URLs discovered: 190
+2026-01-18 13:12:10,611 - INFO - Starting article scraping phase for 190 URLs...
+2026-01-18 13:12:10,616 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-kris-gethin
+2026-01-18 13:12:12,637 - INFO - Successfully scraped: Kris Gethin
+2026-01-18 13:12:14,142 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/doug-miller
+2026-01-18 13:12:15,862 - INFO - Successfully scraped: Doug Miller
+2026-01-18 13:12:17,371 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-make
+2026-01-18 13:12:18,787 - INFO - Successfully scraped: How to Make the Most of Your Winter Arc
+2026-01-18 13:12:20,423 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-ways-to-keep-training-on-track-during-daylight-savings
+2026-01-18 13:12:22,105 - INFO - Successfully scraped: 3 Ways To Keep Training on Track During Daylight Savings
+2026-01-18 13:12:23,626 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/why-muscle-matters-for-long-term-health
+2026-01-18 13:12:25,120 - INFO - Successfully scraped: Why Muscle Matters for Long-Term Health
+2026-01-18 13:12:26,630 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-brand-that-s-innovating-the-way-we-approach-fitness-footwear
+2026-01-18 13:12:28,054 - INFO - Successfully scraped: The Brand That’s Innovating the Way We Approach Fitness Footwear
+2026-01-18 13:12:29,556 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/4-signs-overtraining-is-stalling-your-progress
+2026-01-18 13:12:30,895 - INFO - Successfully scraped: 4 Signs Overtraining is Stalling Your Progress
+2026-01-18 13:12:32,403 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-moves-to-add-to-your-routine-to-improve-your-squat
+2026-01-18 13:12:34,195 - INFO - Successfully scraped: 3 Moves to Add to Your Routine to Improve Your Squat
+2026-01-18 13:12:35,704 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-reasons-you-re-not-losing-stubborn-fat
+2026-01-18 13:12:36,959 - INFO - Successfully scraped: 3 Reasons You’re Not Losing Stubborn Fat
+2026-01-18 13:12:38,552 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/this-strength-metric-is-correlated-to-longevity-predictions
+2026-01-18 13:12:39,788 - INFO - Successfully scraped: This Strength Metric is Correlated to Longevity Predictions
+2026-01-18 13:12:41,293 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/is-barefoot-training-really-beneficial
+2026-01-18 13:12:42,826 - INFO - Successfully scraped: Is Barefoot Training Really Beneficial?
+2026-01-18 13:12:44,339 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-ultimate-shredding-guide-to-burn-fat-fast
+2026-01-18 13:12:46,346 - INFO - Successfully scraped: The Ultimate Shredding Guide to Burn Fat Fast
+2026-01-18 13:12:47,868 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/hplt-is-the-fitness-experience-that-s-shifting-the-industry
+2026-01-18 13:12:51,779 - INFO - Successfully scraped: HPLT is The Fitness Experience That’s Shifting the Industry
+2026-01-18 13:12:53,283 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-lessons-on-discipline-from-a-navy-seal-commander
+2026-01-18 13:12:54,892 - INFO - Successfully scraped: 3 Lessons on Discipline From a Navy SEAL Commander
+2026-01-18 13:12:56,398 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/5-ways-to-build-a-bigger-bench-press
+2026-01-18 13:12:58,085 - INFO - Successfully scraped: 5 Ways to Build a Bigger Bench Press
+2026-01-18 13:12:59,592 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/understanding-glp-1-and-its-pairing-with-strength-training
+2026-01-18 13:13:01,569 - INFO - Successfully scraped: Understanding GLP-1 and Its Pairing With Strength Training
+2026-01-18 13:13:03,194 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/4-cross-training-modalities-for-runners
+2026-01-18 13:13:04,980 - INFO - Successfully scraped: 4 Cross Training Modalities for Runners
+2026-01-18 13:13:06,482 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-top-3-essential-pre-run-habits-for-cold-mornings
+2026-01-18 13:13:08,793 - INFO - Successfully scraped: The Top 3 Essential Pre-Run Habits For Cold Mornings
+2026-01-18 13:13:10,299 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-make-your-workouts-functional-and-dynamic
+2026-01-18 13:13:11,922 - INFO - Successfully scraped: How to Make Your Workouts Functional and Dynamic
+2026-01-18 13:13:13,426 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-benefits-of-functional-push-pull-exercises-vs-machines
+2026-01-18 13:13:14,739 - INFO - Successfully scraped: The Benefits of Functional Push-Pull Exercises vs. Machines
+2026-01-18 13:13:16,359 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-key-to-faster-progress-raise-the-floor-on-your-goals
+2026-01-18 13:13:17,767 - INFO - Successfully scraped: The Key To Faster Progress: Raise the Floor on Your Goals
+2026-01-18 13:13:19,272 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/build-balance-power-lower-body-functional-training-workout
+2026-01-18 13:13:20,773 - INFO - Successfully scraped: Build Balance & Power: Lower Body Functional Training Workout
+2026-01-18 13:13:22,329 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/upper-body-functional-training-workout-for-strength-mobility
+2026-01-18 13:13:24,049 - INFO - Successfully scraped: Upper Body Functional Training Workout for Strength & Mobility
+2026-01-18 13:13:25,553 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/crush-your-pr-with-the-best-pull-up-program-ever
+2026-01-18 13:13:26,599 - INFO - Successfully scraped: Crush Your PR With the Best Pull-Up Program EVER
+2026-01-18 13:13:28,104 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/hypertrophy-101-how-to-build-the-biggest-you-yet
+2026-01-18 13:13:29,626 - INFO - Successfully scraped: Hypertrophy 101: How to Build the Biggest You Yet
+2026-01-18 13:13:31,139 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/your-best-body-ever-5-tips-to-burn-fat-and-build-muscle
+2026-01-18 13:13:32,851 - INFO - Successfully scraped: Your Best Body Ever: 5 Tips to Burn Fat and Build Muscle
+2026-01-18 13:13:34,461 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/max-out-like-a-pro-how-to-test-your-one-rep-max-effectively
+2026-01-18 13:13:36,108 - INFO - Successfully scraped: Max Out Like a Pro: How to Test Your One-Rep Max Effectively
+2026-01-18 13:13:37,611 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/5-reasons-to-download-the-bodybuilding-com-app
+2026-01-18 13:13:39,080 - INFO - Successfully scraped: 5 Reasons to Download the Bodybuilding.com App
+2026-01-18 13:13:40,584 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-tips-to-improve-bulgarian-split-squats
+2026-01-18 13:13:42,449 - INFO - Successfully scraped: 3 Tips to Improve Bulgarian Split Squats
+2026-01-18 13:13:43,955 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-does-functional-training-actually-mean-if-anything-at-all
+2026-01-18 13:13:45,529 - INFO - Successfully scraped: What Does Functional Training Actually Mean, if Anything at all?
+2026-01-18 13:13:47,041 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/is-stretching-worth-it
+2026-01-18 13:13:48,571 - INFO - Successfully scraped: Is Stretching Worth It?
+2026-01-18 13:13:50,074 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/should-you-change-up-your-workout-routine-often
+2026-01-18 13:13:51,697 - INFO - Successfully scraped: Should You Change Up Your Workout Routine Often?
+2026-01-18 13:13:53,200 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/mindful-movement-the-intersection-of-fitness-and-mental-health
+2026-01-18 13:13:54,765 - INFO - Successfully scraped: Mindful Movement: The Intersection of Fitness and Mental Health
+2026-01-18 13:13:56,271 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-s-the-best-training-split-for-strength-and-building-muscle
+2026-01-18 13:13:57,789 - INFO - Successfully scraped: What’s The Best Training Split For Strength and Building Muscle?
+2026-01-18 13:13:59,292 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-ultimate-fat-burning-hiit-cardio-workout-program
+2026-01-18 13:14:01,671 - INFO - Successfully scraped: The Ultimate Fat-Burning HIIT Cardio Workout Program
+2026-01-18 13:14:03,190 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/fall-back-into-fitness-overcoming-post-summer-workout-slumps
+2026-01-18 13:14:04,575 - INFO - Successfully scraped: Fall Back into Fitness: Overcoming Post-Summer Workout Slumps
+2026-01-18 13:14:06,084 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-is-the-right-amount-of-weekly-volume-to-build-muscle
+2026-01-18 13:14:07,688 - INFO - Successfully scraped: What is the Right Amount of Weekly Volume To Build Muscle?
+2026-01-18 13:14:09,194 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/best-rep-range-to-build-muscle-where-is-the-science-today
+2026-01-18 13:14:10,872 - INFO - Successfully scraped: Best Rep Range to Build Muscle: Where is the Science Today?
+2026-01-18 13:14:12,381 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/swimming-into-your-fitness-routine
+2026-01-18 13:14:14,071 - INFO - Successfully scraped: Swimming into Your Fitness Routine
+2026-01-18 13:14:15,579 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-when-to-use-a-weightlifting-belt
+2026-01-18 13:14:17,302 - INFO - Successfully scraped: How & When To Use a Weightlifting Belt
+2026-01-18 13:14:18,806 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/10-best-ab-exercises-for-building-muscle
+2026-01-18 13:14:23,748 - WARNING - Failed to download image https://www.bodybuilding.com/images/2021/april/bbs_palloff_press_1-700xh.gif: cannot identify image file <_io.BytesIO object at 0x10c98d4f0>
+2026-01-18 13:14:24,249 - WARNING - Failed to download image https://www.bodybuilding.com/images/2021/april/incline_abs_crunch-700xh.gif: cannot identify image file <_io.BytesIO object at 0x108236c20>
+2026-01-18 13:14:25,547 - INFO - Successfully scraped: 10 Best Ab Exercises for Building Muscle
+2026-01-18 13:14:27,057 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/6-back-workouts-to-get-a-bigger-stronger-back
+2026-01-18 13:14:31,971 - INFO - Successfully scraped: 6 Back Workouts to Get a Bigger, Stronger Back
+2026-01-18 13:14:33,532 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/biceps-and-triceps-workout-triple-threat-arm-assault
+2026-01-18 13:14:36,960 - INFO - Successfully scraped: Biceps and Triceps Workout: Triple-Threat Arm Assault
+2026-01-18 13:14:38,467 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/5-best-bodybuilding-programs-for-a-chisled-physique
+2026-01-18 13:14:41,489 - INFO - Successfully scraped: 5 Best Bodybuilding Programs For A Chisled Physique
+2026-01-18 13:14:42,995 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-ab-workout-for-a-six-pack
+2026-01-18 13:14:46,719 - INFO - Successfully scraped: The Best Ab Workout For A Six Pack
+2026-01-18 13:14:48,220 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-proper-form-to-bench-press-more-weight
+2026-01-18 13:14:50,674 - INFO - Successfully scraped: The Proper Form to Bench Press More Weight
+2026-01-18 13:14:52,191 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/leg-workouts-for-men-get-thicker-quads-glutes-and-hams
+2026-01-18 13:14:56,338 - INFO - Successfully scraped: Leg Workouts For Men: Get Thicker Quads, Glutes, and Hams
+2026-01-18 13:14:57,842 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/10-best-triceps-exercises-for-building-muscle
+2026-01-18 13:15:01,905 - WARNING - Failed to download image https://www.bodybuilding.com/images/2021/march/triceps_dip-700xh.gif: cannot identify image file <_io.BytesIO object at 0x108417220>
+2026-01-18 13:15:03,093 - WARNING - Failed to download image https://www.bodybuilding.com/images/2021/march/cable_rope_push_down-700xh.gif: cannot identify image file <_io.BytesIO object at 0x10cd56ea0>
+2026-01-18 13:15:04,344 - INFO - Successfully scraped: 10 Best Triceps Exercises for Building Muscle
+2026-01-18 13:15:05,850 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/10-best-shoulder-exercises-for-building-muscle
+2026-01-18 13:15:10,424 - WARNING - Failed to download image https://www.bodybuilding.com/images/2021/april/seated_bb_shoulder_press-700xh.gif: cannot identify image file <_io.BytesIO object at 0x108676ef0>
+2026-01-18 13:15:11,068 - WARNING - Failed to download image https://www.bodybuilding.com/images/2021/april/arnold_press_1-700xh.gif: cannot identify image file <_io.BytesIO object at 0x108417400>
+2026-01-18 13:15:13,036 - INFO - Successfully scraped: 10 Best Shoulder Exercises for Building Muscle
+2026-01-18 13:15:14,542 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/whats-the-best-workout-for-training-body-parts-twice-per-week
+2026-01-18 13:15:17,061 - INFO - Successfully scraped: What's the Best Workout for Training Body Parts Twice per Week?
+2026-01-18 13:15:18,570 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/arm-workouts-for-men-to-build-bigger-biceps
+2026-01-18 13:15:22,525 - INFO - Successfully scraped: Arm Workouts for Men to Build Bigger Biceps
+2026-01-18 13:15:24,036 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-is-the-best-cutting-workout-plan
+2026-01-18 13:15:26,858 - INFO - Successfully scraped: What Is the Best Cutting Workout Plan?
+2026-01-18 13:15:28,399 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-ultimate-guide-to-an-effective-workout-split
+2026-01-18 13:15:30,696 - INFO - Successfully scraped: The Ultimate Guide to An Effective Workout Split
+2026-01-18 13:15:32,197 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/shoulder-workouts-for-men-get-bigger-delts
+2026-01-18 13:15:35,927 - INFO - Successfully scraped: Shoulder Workouts For Men: Get Bigger Delts
+2026-01-18 13:15:37,536 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-ultimate-full-body-dumbbell-workout
+2026-01-18 13:15:39,596 - INFO - Successfully scraped: The Ultimate Full-Body Dumbbell Workout
+2026-01-18 13:15:41,100 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-workouts-to-build-a-bigger-chest
+2026-01-18 13:15:43,357 - INFO - Successfully scraped: The Best Workouts to Build a Bigger Chest
+2026-01-18 13:15:44,871 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/sculpt-a-6-pack-with-just-3-moves
+2026-01-18 13:15:46,843 - INFO - Successfully scraped: Sculpt A 6-Pack With Just 3 Moves!
+2026-01-18 13:15:48,348 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/unlock-calf-growth-with-these-3-exercises
+2026-01-18 13:15:50,017 - INFO - Successfully scraped: Unlock Calf Growth With These 3 Exercises
+2026-01-18 13:15:51,564 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-essential-moves-for-powerhouse-hamstrings
+2026-01-18 13:15:53,036 - INFO - Successfully scraped: 3 Essential Moves For Powerhouse Hamstrings
+2026-01-18 13:15:54,544 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-ultimate-machine-quad-workout-for-bigger-legs
+2026-01-18 13:15:56,287 - INFO - Successfully scraped: The Ultimate Machine Quad Workout for Bigger Legs
+2026-01-18 13:15:57,802 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-3-move-shoulder-builder
+2026-01-18 13:16:01,358 - INFO - Successfully scraped: The 3-Move Shoulder Builder
+2026-01-18 13:16:02,863 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-moves-to-a-brick-thick-back
+2026-01-18 13:16:05,129 - INFO - Successfully scraped: 3 Moves to a Brick-Thick Back
+2026-01-18 13:16:06,649 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/build-killer-pecs-in-just-3-moves
+2026-01-18 13:16:09,483 - INFO - Successfully scraped: Build Killer Pecs In Just 3 Moves
+2026-01-18 13:16:10,991 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-12-week-muscle-building-kettlebell-master-plan
+2026-01-18 13:16:14,019 - INFO - Successfully scraped: The 12-Week Muscle-Building Kettlebell Master-Plan
+2026-01-18 13:16:15,523 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/our-top-3-day-workout-splits-for-muscle-building
+2026-01-18 13:16:18,347 - INFO - Successfully scraped: Our Top 3-Day Workout Splits For Muscle Building
+2026-01-18 13:16:19,853 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/why-cardio-isn-t-the-first-step-to-losing-weight
+2026-01-18 13:16:21,348 - INFO - Successfully scraped: Why Cardio isn’t the First Step to Losing Weight
+2026-01-18 13:16:22,854 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/progressing-the-deadlift-a-beginner-to-expert-level-guide
+2026-01-18 13:16:24,995 - INFO - Successfully scraped: Progressing the Deadlift: A Beginner to Expert Level Guide
+2026-01-18 13:16:26,511 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-arnold-built-his-legs-and-abs
+2026-01-18 13:16:28,987 - INFO - Successfully scraped: How Arnold Built His Legs And Abs
+2026-01-18 13:16:30,493 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/arnold-schwarzeneggers-mammoth-chest-and-back-workout
+2026-01-18 13:16:32,394 - INFO - Successfully scraped: Arnold Schwarzenegger's Mammoth Chest And Back Workout
+2026-01-18 13:16:33,935 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-workouts-to-get-bigger-shoulders
+2026-01-18 13:16:37,248 - INFO - Successfully scraped: The Best Workouts to Get Bigger Shoulders
+2026-01-18 13:16:38,754 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-ab-workouts-to-build-a-muscular-six-pack
+2026-01-18 13:16:41,649 - INFO - Successfully scraped: The Best Ab Workouts to Build a Muscular Six-Pack
+2026-01-18 13:16:43,150 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-workouts-to-build-a-bigger-back
+2026-01-18 13:16:48,111 - INFO - Successfully scraped: The Best Workouts to Build a Bigger Back
+2026-01-18 13:16:49,625 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/arnolds-classic-shoulder-and-arms-workout
+2026-01-18 13:16:52,551 - INFO - Successfully scraped: Arnold's Classic Shoulder and Arms Workout
+2026-01-18 13:16:54,061 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-workouts-to-build-bigger-arms
+2026-01-18 13:17:00,248 - INFO - Successfully scraped: The Best Workouts to Build Bigger Arms
+2026-01-18 13:17:01,755 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/cardio-before-or-after-lifting-weights
+2026-01-18 13:17:04,653 - INFO - Successfully scraped: Cardio Before or After Lifting Weights?
+2026-01-18 13:17:06,171 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/choosing-the-best-workout-split
+2026-01-18 13:17:09,554 - INFO - Successfully scraped: Choosing the Best Workout Split
+2026-01-18 13:17:11,060 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/tips-for-surviving-your-first-week-of-working-out
+2026-01-18 13:17:14,415 - INFO - Successfully scraped: Tips for Surviving Your First Week of Working Out
+2026-01-18 13:17:15,921 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-exercises-for-new-gym-goers
+2026-01-18 13:17:18,589 - INFO - Successfully scraped: The Best Exercises for New Gym Goers
+2026-01-18 13:17:20,101 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/which-squat-variation-is-right-for-me
+2026-01-18 13:17:21,929 - INFO - Successfully scraped: Which Squat Variation is Right for Me?
+2026-01-18 13:17:23,450 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-ways-to-improve-posture-with-one-set-of-dumbells
+2026-01-18 13:17:26,464 - INFO - Successfully scraped: 3 Ways to Improve Posture with One Set of Dumbells
+2026-01-18 13:17:27,971 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/5-beginner-tips-for-finding-your-fitness-flow
+2026-01-18 13:17:30,437 - INFO - Successfully scraped: 5 Beginner Tips for Finding Your Fitness Flow
+2026-01-18 13:17:31,950 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-reasons-to-start-your-gym-routine-before-the-new-year
+2026-01-18 13:17:36,358 - INFO - Successfully scraped: 3 Reasons to Start Your Gym Routine Before the New Year
+2026-01-18 13:17:37,865 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/get-a-grip-3-ways-to-increase-grip-strength
+2026-01-18 13:17:41,203 - INFO - Successfully scraped: Get a Grip: 3 Ways to Increase Grip Strength
+2026-01-18 13:17:42,708 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/building-a-recovery-toolkit-3-passive-recovery-methods-to-add-to-your-routine
+2026-01-18 13:17:46,102 - INFO - Successfully scraped: Building a Recovery Toolkit: 3 Passive Recovery Methods to Add to Your Routine
+2026-01-18 13:17:47,718 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/building-a-dynamic-warmup-a-4-phase-approach
+2026-01-18 13:17:51,486 - INFO - Successfully scraped: Building a Dynamic Warmup: A 4-Phase Approach
+2026-01-18 13:17:52,995 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-is-the-best-bulking-workout-plan-to-gain-size
+2026-01-18 13:17:59,790 - INFO - Successfully scraped: What Is the Best Bulking Workout Plan to Gain Size?
+2026-01-18 13:18:01,296 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/progressing-past-a-bench-press-plateau
+2026-01-18 13:18:06,728 - INFO - Successfully scraped: Progressing Past a Bench Press Plateau
+2026-01-18 13:18:08,232 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-best-shake-up-your-gym-routine
+2026-01-18 13:18:12,480 - INFO - Successfully scraped: How to Best Shake Up Your Gym Routine
+2026-01-18 13:18:13,990 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/3-ways-to-survive-the-crowded-gym
+2026-01-18 13:18:15,904 - INFO - Successfully scraped: 3 Ways to Survive the Crowded Gym
+2026-01-18 13:18:17,410 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/training-for-power-do-i-need-it-and-how-should-i-add-it-to-my-routine
+2026-01-18 13:18:19,323 - INFO - Successfully scraped: Training for Power: Do I Need it and How Should I Add it to My Routine?
+2026-01-18 13:18:20,825 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/5-swim-workouts-when-youre-looking-for-low-impact
+2026-01-18 13:18:22,423 - INFO - Successfully scraped: 5 Swim Workouts When You're Looking for Low Impact
+2026-01-18 13:18:23,938 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-is-steady-state-cardio-and-how-can-it-help-me-burn-fat
+2026-01-18 13:18:25,936 - INFO - Successfully scraped: What is Steady-State Cardio and How Can it Help Me Burn Fat?
+2026-01-18 13:18:27,447 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/pull-ups-vs-chin-ups-how-these-two-moves-differ
+2026-01-18 13:18:29,353 - INFO - Successfully scraped: Pull Ups vs. Chin Ups: How These Two Moves Differ
+2026-01-18 13:18:30,902 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/squat-width-to-target-your-glutes-versus-your-quads
+2026-01-18 13:18:33,907 - INFO - Successfully scraped: Squat Width to Target Your Glutes Versus Your Quads
+2026-01-18 13:18:35,412 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/barbell-back-squat-form-are-your-tight-shoulders-getting-in-the-way
+2026-01-18 13:18:39,162 - INFO - Successfully scraped: Barbell Back Squat Form: Are Your Tight Shoulders Getting in the Way?
+2026-01-18 13:18:40,707 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/2-types-of-reverse-lunges-to-grow-your-glutes-step-by-step-guide
+2026-01-18 13:18:43,407 - INFO - Successfully scraped: 2 Types of Reverse Lunges to Grow Your Glutes: Step-by-Step Guide
+2026-01-18 13:18:44,974 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/no-weights-no-problem-5-calisthenics-exercises-when-first-starting-out
+2026-01-18 13:18:47,670 - INFO - Successfully scraped: No Weights, No Problem! 5 Calisthenics Exercises When First Starting Out
+2026-01-18 13:18:49,183 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/shape-building-upper-body-workouts-for-women
+2026-01-18 13:18:53,415 - INFO - Successfully scraped: Shape-Building Upper Body Workouts for Women
+2026-01-18 13:18:54,942 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/arm-workouts-for-women-build-shape-size-and-strength
+2026-01-18 13:18:58,706 - INFO - Successfully scraped: Arm Workouts for Women: Build Shape, Size, and Strength!
+2026-01-18 13:19:00,218 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-4-best-chest-machines-for-maximum-growth
+2026-01-18 13:19:03,072 - INFO - Successfully scraped: The 4 Best Chest Machines for Maximum Growth
+2026-01-18 13:19:04,579 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-essential-8-exercises-that-will-get-you-ripped
+2026-01-18 13:19:08,675 - INFO - Successfully scraped: The Essential 8: Exercises That Will Get You Ripped
+2026-01-18 13:19:10,181 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/workouts-for-women-the-female-training-bible
+2026-01-18 13:19:15,286 - INFO - Successfully scraped: Workouts For Women: Weight Training For A Better Body
+2026-01-18 13:19:16,789 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/keep-your-training-on-track-by-setting-better-fitness-goals
+2026-01-18 13:19:18,801 - INFO - Successfully scraped: Keep Your Training on Track by Setting Better Fitness Goals
+2026-01-18 13:19:20,305 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/maximizing-muscle-growth-through-sleep
+2026-01-18 13:19:22,839 - INFO - Successfully scraped: Maximizing Muscle Growth Through Sleep
+2026-01-18 13:19:24,353 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/2023-world-s-strongest-man-event-winner-predictions
+2026-01-18 13:19:27,448 - INFO - Successfully scraped: 2023 World’s Strongest Man Event Winner Predictions
+2026-01-18 13:19:28,958 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/arnold-schwarzeneggers-8-best-training-principles
+2026-01-18 13:19:31,582 - INFO - Successfully scraped: Arnold Schwarzenegger's 8 Best Training Principles
+2026-01-18 13:19:33,110 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-best-calisthenics-workout-plan-and-exercises
+2026-01-18 13:19:38,540 - INFO - Successfully scraped: The Best Calisthenics Workout Plan and Exercises
+2026-01-18 13:19:40,070 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-overhead-press-a-beginners-guide
+2026-01-18 13:19:42,455 - INFO - Successfully scraped: How To Overhead Press: A Beginner's Guide
+2026-01-18 13:19:43,960 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/gaining-muscle-after-40-a-complete-beginners-guide
+2026-01-18 13:19:47,246 - INFO - Successfully scraped: Gaining Muscle After 40: A Complete Beginner's Guide!
+2026-01-18 13:19:48,753 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/german-volume-training-plans-the-10-sets-method
+2026-01-18 13:19:53,338 - INFO - Successfully scraped: German Volume Training Plans: The 10 Sets Method
+2026-01-18 13:19:54,843 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-is-the-best-5-day-workout-split
+2026-01-18 13:19:59,506 - INFO - Successfully scraped: What Is The Best 5-Day Workout Split?
+2026-01-18 13:20:01,036 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-5-essential-landmine-exercises
+2026-01-18 13:20:04,395 - INFO - Successfully scraped: The 5 Essential Landmine Exercises
+2026-01-18 13:20:05,900 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/shoulder-workouts-for-women-add-shape-and-size
+2026-01-18 13:20:08,239 - INFO - Successfully scraped: Shoulder Workouts for Women: Add Shape and Size!
+2026-01-18 13:20:09,756 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/these-workouts-are-how-strong-women-get-built
+2026-01-18 13:20:14,729 - INFO - Successfully scraped: These Workouts Are How Strong Women Get Built!
+2026-01-18 13:20:16,241 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/glute-workouts-for-women-get-a-bigger-butt
+2026-01-18 13:20:20,546 - INFO - Successfully scraped: Glute Workouts for Women: Get A Bigger Butt!
+2026-01-18 13:20:22,052 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/back-workouts-for-women-build-the-shape-you-want
+2026-01-18 13:20:25,746 - INFO - Successfully scraped: Back Workouts for Women: Build the Shape You Want!
+2026-01-18 13:20:27,254 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-ultimate-shoulders-and-triceps-blast
+2026-01-18 13:20:29,557 - INFO - Successfully scraped: The Ultimate Shoulders And Triceps Blast
+2026-01-18 13:20:31,064 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/build-serious-strength-and-size-with-a-5x5-workout-program
+2026-01-18 13:20:32,562 - INFO - Successfully scraped: Build Serious Strength and Size with a 5x5 Workout Program
+2026-01-18 13:20:34,074 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/mastering-overhead-press-form-essential-techniques-and-cues
+2026-01-18 13:20:37,734 - INFO - Successfully scraped: Mastering Overhead Press Form: Essential Techniques and Cues
+2026-01-18 13:20:39,251 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-squat-layne-nortons-squat-tutorial
+2026-01-18 13:20:43,052 - INFO - Successfully scraped: How To Squat: Layne Norton's Squat Tutorial
+2026-01-18 13:20:44,554 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/10-best-and-worst-exercise-machines-for-cardio
+2026-01-18 13:20:50,863 - INFO - Successfully scraped: 10 Best And Worst Exercise Machines For Cardio
+2026-01-18 13:20:52,377 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/reps-and-sets-how-many-reps-per-workout-set-should-you-do
+2026-01-18 13:20:54,966 - INFO - Successfully scraped: Reps and Sets: How Many Reps Per Workout Set Should You Do?
+2026-01-18 13:20:56,470 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-full-body-workout-routine-to-get-jacked-fast
+2026-01-18 13:21:00,898 - INFO - Successfully scraped: The Full-Body Workout Routine To Get Jacked Fast!
+2026-01-18 13:21:02,405 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/get-a-total-body-workout-at-home-with-only-a-barbell
+2026-01-18 13:21:07,521 - INFO - Successfully scraped: Get A Total Body Workout At Home With Only A Barbell
+2026-01-18 13:21:09,078 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/when-should-you-increase-the-amount-of-weight-you-lift
+2026-01-18 13:21:11,649 - INFO - Successfully scraped: When Should You Increase The Amount Of Weight You Lift?
+2026-01-18 13:21:13,154 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-stop-feeling-tired-all-the-time
+2026-01-18 13:21:15,767 - INFO - Successfully scraped: How to Stop Feeling Tired All the Time
+2026-01-18 13:21:17,271 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/three-changes-to-your-routine-to-build-more-muscular-arms
+2026-01-18 13:21:19,748 - INFO - Successfully scraped: Three Changes to Your Routine to Build More Muscular Arms
+2026-01-18 13:21:21,256 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/does-olympic-lifting-deserve-a-place-in-your-routine
+2026-01-18 13:21:23,493 - INFO - Successfully scraped: Does Olympic Lifting Deserve a Place in Your Routine?
+2026-01-18 13:21:25,004 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-be-a-successful-spotter
+2026-01-18 13:21:26,742 - INFO - Successfully scraped: How to be a Successful Spotter
+2026-01-18 13:21:28,247 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/unilateral-vs-bilateral-training
+2026-01-18 13:21:30,168 - INFO - Successfully scraped: Unilateral VS Bilateral Training
+2026-01-18 13:21:31,682 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/kettlebells-for-strength-endurance
+2026-01-18 13:21:33,800 - INFO - Successfully scraped: Kettlebells for Strength & Endurance
+2026-01-18 13:21:35,316 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-importance-of-rest-days-and-how-to-do-them-right
+2026-01-18 13:21:37,729 - INFO - Successfully scraped: The Importance of Rest Days and How to Do Them Right
+2026-01-18 13:21:39,234 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-prepare-for-a-pr-attempt
+2026-01-18 13:21:43,061 - INFO - Successfully scraped: How to Prepare for a PR Attempt
+2026-01-18 13:21:44,625 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/best-workout-split-for-bulking-vs-cutting
+2026-01-18 13:21:48,031 - INFO - Successfully scraped: Best Workout Split for Bulking vs Cutting
+2026-01-18 13:21:49,535 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-simplify-your-training
+2026-01-18 13:21:52,061 - INFO - Successfully scraped: How to Simplify Your Training
+2026-01-18 13:21:53,594 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-wide-should-your-bench-press-grip-be
+2026-01-18 13:21:57,206 - INFO - Successfully scraped: How Wide Should Your Bench-Press Grip Be?
+2026-01-18 13:21:58,713 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/mastering-bench-press-form-essential-techniques-and-cues
+2026-01-18 13:22:01,598 - INFO - Successfully scraped: Mastering Bench Press Form: Essential Techniques and Cues
+2026-01-18 13:22:03,137 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/dynamic-running-warmup
+2026-01-18 13:22:06,516 - INFO - Successfully scraped: Dynamic Running Warmup
+2026-01-18 13:22:08,024 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/improving-your-circadian-clock
+2026-01-18 13:22:11,453 - INFO - Successfully scraped: Improving Your Circadian Clock
+2026-01-18 13:22:12,962 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-prepare-for-a-morning-workout-the-night-before
+2026-01-18 13:22:15,260 - INFO - Successfully scraped: How to Prepare for a Morning Workout the Night Before
+2026-01-18 13:22:16,764 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/exercises-to-improve-balance
+2026-01-18 13:22:18,570 - INFO - Successfully scraped: Exercises to Improve Balance
+2026-01-18 13:22:20,075 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/lifting-for-strength-vs-hypertrophy-vs-endurance
+2026-01-18 13:22:22,141 - INFO - Successfully scraped: Lifting for Strength vs. Hypertrophy vs. Endurance
+2026-01-18 13:22:23,645 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/developing-a-proper-warm-up-routine
+2026-01-18 13:22:26,171 - INFO - Successfully scraped: Developing a Proper Warm-Up Routine
+2026-01-18 13:22:27,674 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/creative-ways-to-fit-in-cardio
+2026-01-18 13:22:30,025 - INFO - Successfully scraped: Creative Ways to Fit In Cardio
+2026-01-18 13:22:31,581 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-deadlift-a-beginners-guide
+2026-01-18 13:22:34,570 - INFO - Successfully scraped: How To Deadlift: A Beginner's Guide
+2026-01-18 13:22:36,077 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/leg-workouts-for-women-build-strong-sculpted-quads
+2026-01-18 13:22:40,753 - INFO - Successfully scraped: Leg Workouts for Women: Build Strong, Sculpted Quads!
+2026-01-18 13:22:42,260 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-5-best-back-machines-for-maximum-growth
+2026-01-18 13:22:45,111 - INFO - Successfully scraped: The 5 Best Back Machines For Maximum Growth
+2026-01-18 13:22:46,619 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-biomechanics-of-muscle-growth
+2026-01-18 13:22:48,726 - INFO - Successfully scraped: The Biomechanics of Muscle Growth
+2026-01-18 13:22:50,234 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/keep-your-weights-close-and-your-enemies-closer
+2026-01-18 13:22:52,085 - INFO - Successfully scraped: Keep Your Weights Close and Your Enemies Closer
+2026-01-18 13:22:53,652 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/training-to-failure-is-it-necessary
+2026-01-18 13:22:56,019 - INFO - Successfully scraped: Training to Failure - Is it Necessary?
+2026-01-18 13:22:57,527 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-train-peak-performance-like-kenyan-marathon-runner-eliud-kipchoge
+2026-01-18 13:23:00,282 - INFO - Successfully scraped: How to Train Peak Performance like Kenyan Marathon Runner Eliud Kipchoge
+2026-01-18 13:23:01,784 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/why-low-grip-strength-can-affect-your-overall-health
+2026-01-18 13:23:04,548 - INFO - Successfully scraped: Why Low Grip Strength Can Affect Your Overall Health
+2026-01-18 13:23:06,099 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/push-ups-for-gains
+2026-01-18 13:23:06,199 - WARNING - Request failed (attempt 1/3): https://shop.bodybuilding.com/blogs/training/push-ups-for-gains - 503 Server Error: Service Unavailable for url: https://shop.bodybuilding.com/blogs/training/push-ups-for-gains
+2026-01-18 13:23:07,336 - WARNING - Request failed (attempt 2/3): https://shop.bodybuilding.com/blogs/training/push-ups-for-gains - 503 Server Error: Service Unavailable for url: https://shop.bodybuilding.com/blogs/training/push-ups-for-gains
+2026-01-18 13:23:11,613 - INFO - Successfully scraped: Push-Ups for Gains
+2026-01-18 13:23:13,115 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/understanding-primal-movements
+2026-01-18 13:23:15,368 - INFO - Successfully scraped: Understanding Primal Movements
+2026-01-18 13:23:16,988 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/shoulder-exercises-to-add-to-your-routine
+2026-01-18 13:23:19,168 - INFO - Successfully scraped: Shoulder Exercises to Add to Your Routine
+2026-01-18 13:23:20,677 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/common-workout-mistakes-and-how-to-avoid-making-them
+2026-01-18 13:23:22,237 - INFO - Successfully scraped: Common Workout Mistakes and How to Avoid Making Them
+2026-01-18 13:23:23,748 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/abs-and-forearms-into-your-routine
+2026-01-18 13:23:26,198 - INFO - Successfully scraped: Abs and Forearms into your Routine
+2026-01-18 13:23:27,705 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/building-the-mind-muscle-connection
+2026-01-18 13:23:29,815 - INFO - Successfully scraped: Building the Mind-Muscle Connection
+2026-01-18 13:23:31,320 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/summer-fitness-by-the-sea-beach-exercises-to-keep-you-in-shape
+2026-01-18 13:23:33,494 - INFO - Successfully scraped: Summer Fitness by the Sea: Beach Exercises to Keep You in Shape
+2026-01-18 13:23:35,004 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/which-squat-load-position-is-right-for-you
+2026-01-18 13:23:37,335 - INFO - Successfully scraped: Which Squat Load Position is Right For You?
+2026-01-18 13:23:38,840 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/three-benefits-of-following-a-workout-program
+2026-01-18 13:23:40,357 - INFO - Successfully scraped: Three Benefits of Following a Workout Program
+2026-01-18 13:23:41,866 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/mastering-bent-over-row-form-essential-techniques-and-cues
+2026-01-18 13:23:44,700 - INFO - Successfully scraped: Mastering Bent Over Row Form: Essential Techniques and Cues
+2026-01-18 13:23:46,205 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-five-most-effective-exercises-for-glute-strength-and-hypertrophy
+2026-01-18 13:23:47,431 - INFO - Successfully scraped: The Five Most Effective Exercises for Glute Strength and Hypertrophy
+2026-01-18 13:23:48,942 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/machines-versus-free-weights-what-s-the-difference
+2026-01-18 13:23:50,366 - INFO - Successfully scraped: Machines versus Free Weights: What’s the Difference?
+2026-01-18 13:23:51,874 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/benefits-of-heart-rate-training-by-goals
+2026-01-18 13:23:53,842 - INFO - Successfully scraped: Benefits of Heart Rate Training By Goals
+2026-01-18 13:23:55,348 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/picking-the-right-running-shoe
+2026-01-18 13:23:57,038 - INFO - Successfully scraped: Picking the Right Running Shoe
+2026-01-18 13:23:58,544 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-increase-testosterone-for-optimal-performance
+2026-01-18 13:24:00,186 - INFO - Successfully scraped: How to Increase Testosterone for Optimal Performance
+2026-01-18 13:24:01,691 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/5-biggest-mistakes-people-make-in-the-gym
+2026-01-18 13:24:04,259 - INFO - Successfully scraped: 5 Biggest Mistakes People Make in the Gym
+2026-01-18 13:24:05,767 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-heat-affects-your-body-during-exercise
+2026-01-18 13:24:07,029 - INFO - Successfully scraped: How Heat Affects Your Body During Exercise
+2026-01-18 13:24:08,535 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/4-ways-to-train-core-without-adding-more-core-exercises
+2026-01-18 13:24:10,551 - INFO - Successfully scraped: 4 Ways to Train Core without Adding More Core Exercises
+2026-01-18 13:24:12,151 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/4-strength-exercises-for-runners
+2026-01-18 13:24:13,752 - INFO - Successfully scraped: 4 Strength Exercises for Runners
+2026-01-18 13:24:15,267 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/what-order-should-you-do-exercises-in
+2026-01-18 13:24:16,883 - INFO - Successfully scraped: What Order Should You Do Exercises in?
+2026-01-18 13:24:18,394 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/summer-motivation-boost-keep-your-goals-on-track-this-season
+2026-01-18 13:24:19,811 - INFO - Successfully scraped: Summer Motivation Boost: Keep Your Goals on Track This Season
+2026-01-18 13:24:21,316 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/make-cardio-fun-this-summer
+2026-01-18 13:24:23,073 - INFO - Successfully scraped: Make Cardio Fun This Summer
+2026-01-18 13:24:24,580 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/4-exercises-to-prepare-you-for-summer-hiking
+2026-01-18 13:24:26,246 - INFO - Successfully scraped: 4 Exercises to Prepare You for Summer Hiking
+2026-01-18 13:24:27,770 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/short-length-partial-reps-for-strength
+2026-01-18 13:24:29,042 - INFO - Successfully scraped: Short Length Partial Reps for Strength
+2026-01-18 13:24:30,549 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/10-best-chest-exercises-for-building-muscle
+2026-01-18 13:24:35,867 - INFO - Successfully scraped: 10 Best Chest Exercises for Building Muscle
+2026-01-18 13:24:37,370 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/10-best-back-exercises-for-building-muscle
+2026-01-18 13:24:42,586 - INFO - Successfully scraped: 10 Best Back Exercises For Building Muscle
+2026-01-18 13:24:44,112 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/six-science-backed-ways-to-optimize-your-circulation
+2026-01-18 13:24:46,210 - INFO - Successfully scraped: Six Science Backed Ways to Optimize Your Circulation
+2026-01-18 13:24:47,774 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-structure-a-workout-on-the-fly
+2026-01-18 13:24:49,622 - INFO - Successfully scraped: How to Structure a Workout on the Fly
+2026-01-18 13:24:51,128 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-yaya-vargas
+2026-01-18 13:24:53,296 - INFO - Successfully scraped: Yadira Vargas
+2026-01-18 13:24:54,825 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-craig-bongelli
+2026-01-18 13:24:56,972 - INFO - Successfully scraped: Craig Bongelli
+2026-01-18 13:24:58,487 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-harry-vargas
+2026-01-18 13:25:01,139 - INFO - Successfully scraped: Harry Vargas
+2026-01-18 13:25:02,656 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-gabe-snow
+2026-01-18 13:25:04,818 - INFO - Successfully scraped: Gabe Snow
+2026-01-18 13:25:06,332 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-ken-yu
+2026-01-18 13:25:08,314 - INFO - Successfully scraped: Ken Yu
+2026-01-18 13:25:09,828 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/meet-bodybuilding-com-master-coach-kristen-lettenberger
+2026-01-18 13:25:11,116 - INFO - Successfully scraped: Kristen Lettenberger
+2026-01-18 13:25:12,627 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-benefits-of-nose-breathing-top-4-reasons-you-shouldnt-be-a-mouth-breather
+2026-01-18 13:25:14,040 - INFO - Successfully scraped: The Benefits of Nose Breathing: Top 4 Reasons You Shouldn't Be a Mouth-Breather
+2026-01-18 13:25:15,643 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/the-importance-of-vo2-max-testing-regardless-of-your-fitness-goals
+2026-01-18 13:25:17,378 - INFO - Successfully scraped: The Importance of VO2 Max Testing, Regardless of Your Fitness Goals
+2026-01-18 13:25:18,886 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/get-your-annual-physical-top-5-things-to-ask-your-health-care-professional
+2026-01-18 13:25:20,293 - INFO - Successfully scraped: Get Your Annual Physical: Top 5 Things to Ask Your Health Care Professional
+2026-01-18 13:25:21,802 - INFO - Scraping: https://shop.bodybuilding.com/blogs/training/how-to-hack-your-immune-system-with-science
+2026-01-18 13:25:23,789 - INFO - Successfully scraped: How to Hack Your Immune System with Science
+2026-01-18 13:25:25,303 - INFO - Scraping complete: 190 successful, 0 failed
+2026-01-18 13:25:25,303 - INFO - Generating manifest...
+2026-01-18 13:25:58,019 - INFO - Loaded progress: 190 articles already scraped
+2026-01-18 13:25:58,019 - INFO - Generating manifest...
+2026-01-18 13:25:58,184 - INFO - Manifest generated: 190 articles, 0 categories
+2026-01-18 13:25:58,185 - INFO - Generating README...
+2026-01-18 13:25:58,187 - INFO - README generated

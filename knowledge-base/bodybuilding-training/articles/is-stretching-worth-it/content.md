@@ -1,0 +1,57 @@
+# Is Stretching Worth It?
+
+---
+
+*Dedicated time to stretching to improve flexibility has long been recommended. Does stretching still have a place today?*
+
+---
+
+**Brandon Hyatt, MS, CSCS**  
+ Dec. 04, 2024
+
+Traditional fitness parameters consider flexibility training a vital component of exercise, along with muscular strength, endurance, and cardiorespiratory fitness (ACE, ACSM). This implies that flexibility training should significantly focus on improving overall fitness, particularly through stretching (both statically and dynamically).
+
+With so many crucial components of fitness to work on, dedicating time to stretching can make efforts to improve fitness even more time-consuming. This article will explore whether you need time to stretch outside your strength and hypertrophy training.
+
+### What Do Studies Say Today?
+
+Studies in the last few years show that many forms of resistance training provide the same benefits of flexibility and range of motion as stretching alone (3, 6, 7). Resistance training, for example, could also be described as “dynamic loaded stretching” (10), which implies that it inherently includes stretching.
+
+This makes sense from a practical level when considering resistance training exercises done in a full range of motion, such as a Romanian deadlift or cable chest fly. Each rep of a resistance training exercise takes the joint(s) through a full range of motion, eccentrically and concentrically contracting. We also know that stretching the muscles is one of the mechanisms of hypertrophy, called stretch-mediated hypertrophy (10).
+
+While resistance training can provide equally effective improvements in flexibility as stretching, stretching does not significantly improve muscle strength and hypertrophy (9). A study that sought to answer this question found that seven hours a week of calf stretching yielded the same strength and hypertrophy results as 45 minutes of resistance training a week (9).
+
+### Why Resistance Training Yields the Same Results as Flexibility
+
+Passive and active tension occur while resistance training with a full ROM. The connective tissue is stretched beyond resting length and experiences increased torque (7). Resistance training also increases fascicle length in eccentric and concentric groups (4).
+
+The mechanisms mediating stretching effects on flexibility include structural (e.g., increased fascicle length), mechanical (e.g., decreased muscle stiffness), and sensorial/neural changes (e.g., improved stretch tolerance) (1).
+
+Acute and chronic stretching are of limited efficacy. A similar range of motion enhancements can be achieved via other training interventions sufficient to enhance body temperature acutely, while chronically applying mechanical tension to extended muscle lengths seems one important factor achievable through concurrent alternatives (e.g., resistance training) (Werneke 24).
+
+### What About Stretching During the Warm-Up or Cool-Down?
+
+Stretching in the warm-up is supposed to provide acute improvements in ROM, proprioception, and psychological preparedness, but none of these benefits are exclusive to stretching. Static stretching can be done during the warm-up, but it will lead to a longer warm-up. Static stretching during the warm-up can reduce strength, power, and speed but can be avoided if followed up with dynamic stretching (3).
+
+Stretching during the cool-down is supposed to aid recovery. Studies comparing cool-down stretching to rest or low-intensity cycling showed that all three techniques equally aided recovery (2).
+
+What about injury prevention? The cause of injury is multifactorial and very hard to pinpoint to a single factor such as stretching. At this point, the link between flexibility and injury risk is not directly correlated and, at best, unclear (5, 8). A clearer link is between overall recovery and injury risk, which increases as the body’s recovery worsens.
+
+### So, Is It Worth It?
+
+According to the current body of literature, stretching may not be worth your time if you’re already lifting weights and looking to become more flexible. As long as you’re training in the fullest ROM that you can, studies show that your muscles are being sufficiently stretched each rep, improving flexibility over time.
+
+Suppose you lift weights but still feel tight. In that case, you can try to select variations of exercises or modify exercises to place more of a stretch on the muscle, emphasizing the eccentric lengthening phase of the lift.
+
+##### Sources
+
+1. Afonso J, Andrade R, Rocha-Rodrigues S, Nakamura FY, Sarmento H, Freitas SR, Silva AF, Laporta L, Abarghoueinejad M, Akyildiz Z, Chen R, Pizarro A, Ramirez-Campillo R, Clemente FM. What We Do Not Know About Stretching in Healthy Athletes: A Scoping Review with Evidence Gap Map from 300 Trials. Sports Med. 2024 Jun;54(6):1517-1551. doi: 10.1007/s40279-024-02002-7. Epub 2024 Mar 8. PMID: 38457105; PMCID: PMC11239752.
+2. Afonso J, Clemente FM, Nakamura FY, Morouço P, Sarmento H, Inman RA, Ramirez-Campillo R. The Effectiveness of Post-exercise Stretching in Short-Term and Delayed Recovery of Strength, Range of Motion and Delayed Onset Muscle Soreness: A Systematic Review and Meta-Analysis of Randomized Controlled Trials. Front Physiol. 2021 May 5;12:677581. doi: 10.3389/fphys.2021.677581. PMID: 34025459; PMCID: PMC8133317.
+3. Afonso J, Olivares-Jabalera J, Andrade R. Time to Move From Mandatory Stretching? We Need to Differentiate "Can I?" From "Do I Have To?". Front Physiol. 2021 Jul 22;12:714166. doi: 10.3389/fphys.2021.714166. PMID: 34366900; PMCID: PMC8340604.
+4. Afonso J, Ramirez-Campillo R, Moscão J, Rocha T, Zacca R, Martins A, Milheiro AA, Ferreira J, Sarmento H, Clemente FM. Strength Training versus Stretching for Improving Range of Motion: A Systematic Review and Meta-Analysis. Healthcare (Basel). 2021 Apr 7;9(4):427. doi: 10.3390/healthcare9040427. PMID: 33917036; PMCID: PMC8067745.
+5. Behm DG, Alizadeh S, Daneshjoo A, Konrad A. Potential Effects of Dynamic Stretching on Injury Incidence of Athletes: A Narrative Review of Risk Factors. Sports Med. 2023 Jul;53(7):1359-1373. doi: 10.1007/s40279-023-01847-8. Epub 2023 May 10. PMID: 37162736; PMCID: PMC10289929.
+6. Nuzzo JL. The Case for Retiring Flexibility as a Major Component of Physical Fitness. Sports Med. 2020 May;50(5):853-870. doi: 10.1007/s40279-019-01248-w. PMID: 31845202.
+7. Rosenfeldt, M., Stien, N., Behm, D.G. et al. Comparison of resistance training vs static stretching on flexibility and maximal strength in healthy physically active adults, a randomized controlled trial. BMC Sports Sci Med Rehabil 16, 142 (2024). https://doi.org/10.1186/s13102-024-00934-1
+8. Small K, Mc Naughton L, Matthews M. A systematic review into the efficacy of static stretching as part of a warm-up for the prevention of exercise-related injury. Res Sports Med. 2008;16(3):213-31. doi: 10.1080/15438620802310784. PMID: 18785063.
+9. Warneke K, Behm DG, Alizadeh S, Hillebrecht M, Konrad A, Wirth K. Discussing Conflicting Explanatory Approaches in Flexibility Training Under Consideration of Physiology: A Narrative Review. Sports Med. 2024 Jul;54(7):1785-1799. doi: 10.1007/s40279-024-02043-y. Epub 2024 May 31. PMID: 38819597; PMCID: PMC11258068.
+10. Warneke K, Lohmann LH, Lima CD, Hollander K, Konrad A, Zech A, Nakamura M, Wirth K, Keiner M, Behm DG. Physiology of Stretch-Mediated Hypertrophy and Strength Increases: A Narrative Review. Sports Med. 2023 Nov;53(11):2055-2075. doi: 10.1007/s40279-023-01898-x. Epub 2023 Aug 9. PMID: 37556026; PMCID: PMC10587333.

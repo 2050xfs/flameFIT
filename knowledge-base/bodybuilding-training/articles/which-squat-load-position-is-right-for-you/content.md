@@ -1,0 +1,85 @@
+# Which Squat Load Position is Right For You?
+
+---
+
+*Looking at the 6 most common squat loading positions.*
+
+---
+
+**Brandon Hyatt, MS, CSCS**  
+ July 15, 2024 • 5 min read
+
+ou may have heard that back squats work more glutes, and front squats work more quads. Loading positions can be dissected more profoundly than expected, with differences in muscle activation, joint angles, and joint force. Let’s discuss these differences according to what the research has found to help you select the best squat loading position for your goals and history.
+
+### **Front Squat vs. Back Squat**
+
+One study analyzed the muscle activation and trunk angle differences in twelve trained college-aged men during maximal lifting between the front and back squats (6). [Front squats](https://www.bodybuilding.com/exercises/front-barbell-squat) were tested using a barbell on the anterior deltoids, and back squats were placed in the high bar position. Here are some of the most exciting findings from this study with the following discussion:
+
+* **Back squat could allow up to 32% more weight lifted relative to body weight compared to front squat**
+
+Lifters should consider the vast difference in loading potential between back and front squats when choosing between the two. Back-loaded squats should be prioritized if the lifter aims to lift as much weight as possible. Suppose the lifter needs to squat but reduces the overall load for recovery. In that case, front-loaded positions should be prioritized, which will still result in similar high amounts of muscle activation.
+
+* **Despite the front squat resulting in less overall weight lifted, the vastus medialis (a quadricep muscle) had higher muscle activation during the ascending phase**
+
+This shows that front squats can still achieve similar amounts of quad activation as back squats, even more for the vastus medialis, despite less loading potential. This makes front squats a viable option for working the quads harder without the extra loading.
+
+* **The semitendinosus (a hamstring muscle) muscle had higher activation during the back squat than the front squat during the ascending phase**
+
+This result is because hamstring activity increases as the torso leans forward. Lifters looking to prioritize more hamstring activity during the squat should prioritize back-loaded variations because they cause greater trunk lean.
+
+* **The back squat resulted in much lower hip angles and a forward-leaning torso compared to the front squat**
+
+As the load is further backward in a back squat compared to the front squat, the torso must lean forward to keep the center of mass (body) in alignment with the center of gravity (barbell). Lifters should choose a squat variation that their body can tolerate. For example, if a lifter has a history of injury from leaning forward, they may want to choose a front squat so their posture can be more upright.
+
+### **Low Bar Back Squat vs. High Bar Back Squat**
+
+One study tested the differences in muscle activation and joint angles at up to 70% 1RM between the low and high-bar back squats in twelve male experienced powerlifters (3). The high bar is when the barbell is placed higher up on the trapezius, and the low bar is positioned a couple of inches below the high bar. Though this difference amounts to a couple of inches, the differences are apparent. Here are some of the highlights from this study with the following discussion:
+
+* **All muscles experienced greater activation during the eccentric phase with the low bar compared to the high bar**
+
+The low bar has greater activation because the bar position on the back of the shoulders has a reduced moment arm, which means less force is placed on the muscles to overcome the load. This allows a higher load to be lifted through greater posterior chain activation (4). Lifters looking to lift the most weight in a squat should prioritize the low bar.
+
+* **During the concentric phase, the hamstrings, glutes, and low back extensors saw greater activation with the low-bar compared to the high-bar**
+
+As the study mentions, this result indicates no difference in quadricep muscle activation between the two loading positions. This means that lifters don’t need to choose one variation over another regarding the quadriceps. However, the low bar is superior to posterior chain engagement (1, 4).
+
+* **The low-bar back squat saw greater anterior pelvic tilt, forward lean, and stance width compared to the high-bar**
+
+Similar to the front versus back squat discussion, the placement of the load changes the body's position to keep the load balanced over the body. If the low-bar position is chosen, the lifter should be able to tolerate the joint positions imposed on the body. For example, if the ankles don’t have enough range of motion to keep the feet and knees stable in a high-bar squat, a low-bar position should be chosen, requiring less range of motion in the ankles (1).
+
+### **Safety Bar Squat vs. Traditional Barbell Squat**
+
+One study investigated the muscle activation and bar velocity differences between the safety bar and traditional barbell squats in 32 trained college-aged men (5). The safety bar is a style of bar that slightly shifts the load forward with handles attached to the bar, allowing the bar to be held with the hands in front of the chest. Here are the top findings with the following discussion:
+
+* **The traditional bar had an 11% higher 1RM than the safety bar**
+
+This result aligns with other research that found that more backward-loaded positions facilitate higher loads lifted (1, 3, 6). Lifters concerned with lifting the heaviest weights should prioritize back squats.
+
+* **Bar velocity remained the same in both types of bars up to 85% 1RM, when the traditional bar velocity slowed down at higher 1RM**
+
+Bar velocity decreases as load increases. Since the traditional bar can be loaded higher due to its load position, it makes sense why velocity slows down as the % 1RM increases. This shows that neither type of bar has an advantage over the other regarding velocity.
+
+* **No differences in muscle activation were found between bar types**
+
+This result was surprising, given some evidence that more back-loaded squat variations elicit greater muscle activation in the posterior chain. Another study found that the safety bar squat used less muscle activation than the barbell back squat (2). With this knowledge, lifters can choose a safety bar without worrying about less muscle activation.
+
+It should be noted that the safety bar uses a more upright torso (2). Other potential joint position differences in the safety bar compared to the barbell could be less anterior pelvic tilt and more ribcage extension (5).
+
+### **In The End**
+
+There is no single correct squat loading position or variation as long as the training decision logically leads to the intended outcome. This means you are doing the right thing as long as you logically make a training decision that causes the desired result. For example, if you want to lift the most load possible and choose a low-bar back squat, your training decision (low-bar) logically leads to the intended outcome (lift the most weight possible.)
+
+More research is needed to conclude; however, it seems that for now, the following points can be supported by the research:
+
+* **The absolute load lifted increases the more backward the load is positioned on the body**
+* **Load position affects joint positions in the body, such as the torso leaning more forward and the ankle bending less forward as the load shifts backward**
+* **Muscle activation seems to be the highest in the posterior chain as the load position is placed further back on the body**
+
+### **References**
+
+1. Glassbrook DJ, Helms ER, Brown SR, Storey AG. A Review of the Biomechanical Differences Between the High-Bar and Low-Bar Back-Squat. J Strength Cond Res. 2017 Sep;31(9):2618-2634.
+2. Hecker KA, Carlson LA, Lawrence MA. Effects of the Safety Squat Bar on Trunk and Lower-Body Mechanics During a Back Squat. J Strength Cond Res. 2019 Jul;33 Suppl 1:S45-S51.
+3. Murawa M, Fryzowicz A, Kabacinski J, Jurga J, Gorwa J, Galli M, Zago M. Muscle activation varies between high-bar and low-bar back squat. PeerJ. 2020 Jun 8;8:e9256.
+4. Park JH, Lee SJ, Shin HJ, Cho HY. Influence of Loads and Loading Position on the Muscle Activity of the Trunk and Lower Extremity during Squat Exercise. Int J Environ Res Public Health. 2022 Oct 18;19(20):13480.
+5. Vantrease WC, Townsend JR, Sapp PA, Henry RN, Johnson KD. Maximal Strength, Muscle Activation, and Bar Velocity Comparisons Between Squatting With a Traditional or Safety Squat Bar. J Strength Cond Res. 2021 Feb 1;35(Suppl 1):S1-S5.
+6. Yavuz HU, Erdağ D, Amca AM, Aritan S. Kinematic and EMG activities during front and back squat variations in maximum loads. J Sports Sci. 2015;33(10):1058-66.

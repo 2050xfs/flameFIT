@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 import { ShellWrapper } from "@/components/shell/ShellWrapper";
+import { QueryProvider } from "@/lib/providers/QueryProvider";
 
 // ... existing imports
 
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
-        <ShellWrapper>
-          {children}
-        </ShellWrapper>
+        <QueryProvider>
+          <ShellWrapper>
+            {children}
+          </ShellWrapper>
+        </QueryProvider>
       </body>
     </html>
   );

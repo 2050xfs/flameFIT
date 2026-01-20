@@ -8,15 +8,24 @@ interface WorkoutCardProps {
     onView?: () => void
 }
 
+import { motion } from 'framer-motion'
+
 export function WorkoutCard({ workout, isActive, onStart, onView }: WorkoutCardProps) {
     return (
-        <div className={`relative overflow-hidden rounded-3xl p-6 md:p-8 transition-all ${isActive
-            ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900 shadow-xl'
-            : 'bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800'
-            }`}>
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className={`relative overflow-hidden rounded-3xl p-6 md:p-8 transition-all ${isActive
+                ? 'bg-stone-900 dark:bg-white text-white dark:text-stone-900 shadow-xl'
+                : 'bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800'
+                }`}>
             {/* Background Decoration */}
             {isActive && (
-                <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-gradient-to-br from-orange-500 to-rose-600 rounded-full blur-3xl opacity-20 dark:opacity-30 pointer-events-none" />
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-gradient-to-br from-orange-500 to-rose-600 rounded-full blur-3xl opacity-20 dark:opacity-30 pointer-events-none"
+                />
             )}
 
             <div className="relative z-10 flex flex-col md:flex-row gap-8 justify-between">
@@ -57,13 +66,21 @@ export function WorkoutCard({ workout, isActive, onStart, onView }: WorkoutCardP
                 </div>
 
                 <div className="flex flex-col justify-end gap-3 min-w-[200px]">
-                    <button
+                    <motion.button
+                        whileTap={{ scale: 0.98 }}
                         onClick={onStart}
-                        className="w-full py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-xl font-bold text-lg shadow-lg shadow-orange-500/25 transition-all transform active:scale-95"
+                        className={`w-full py-4 rounded-xl font-bold text-lg shadow-lg transition-all ${workout.status === 'completed'
+                            ? 'bg-stone-100 text-stone-400 cursor-not-allowed'
+                            : 'bg-orange-500 hover:bg-orange-600 text-white shadow-orange-500/25'
+                            }`}
+                        disabled={workout.status === 'completed'}
                     >
-                        Start Workout
-                    </button>
-                    <button
+                        {workout.status === 'active' ? 'Resume Workout' :
+                            workout.status === 'completed' ? 'Workout Finished' : 'Start Workout'}
+                    </motion.button>
+
+                    <motion.button
+                        whileTap={{ scale: 0.98 }}
                         onClick={onView}
                         className={`w-full py-3 rounded-xl font-medium text-sm transition-colors ${isActive
                             ? 'bg-white/10 hover:bg-white/20 text-white dark:text-stone-900 border border-white/10'
@@ -71,9 +88,10 @@ export function WorkoutCard({ workout, isActive, onStart, onView }: WorkoutCardP
                             }`}
                     >
                         View Details
-                    </button>
+                    </motion.button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
+

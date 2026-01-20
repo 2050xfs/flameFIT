@@ -1,6 +1,8 @@
 import React from 'react'
 import { MainNav } from './MainNav'
 import { UserMenu } from './UserMenu'
+import { PageTransition } from './PageTransition'
+import { SparkChat } from '../ai/SparkChat'
 
 interface SubItem {
     label: string
@@ -24,6 +26,8 @@ interface AppShellProps {
     onLogout?: () => void
 }
 
+import { MeshGradient } from './MeshGradient'
+
 export function AppShell({
     children,
     navigationItems,
@@ -32,8 +36,10 @@ export function AppShell({
     onLogout
 }: AppShellProps) {
     return (
-        <div className="min-h-screen bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans">
+        <div className="min-h-screen bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans relative">
+            <MeshGradient />
             {/* Desktop Sidebar */}
+
             <aside className="hidden md:flex flex-col fixed inset-y-0 left-0 w-64 border-r border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900">
                 <div className="p-6">
                     <h1 className="text-2xl font-bold font-heading text-orange-500 tracking-tight">flameFit</h1>
@@ -48,23 +54,32 @@ export function AppShell({
                 </div>
             </aside>
 
+
             {/* Mobile Header */}
-            <header className="md:hidden flex items-center justify-between p-4 bg-white dark:bg-stone-900 border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50">
+            <header className="md:hidden flex items-center justify-between p-4 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl border-b border-stone-200 dark:border-stone-800 sticky top-0 z-50">
                 <span className="text-xl font-bold font-heading text-orange-500">flameFit</span>
                 <UserMenu user={user} onLogout={onLogout} mobile />
             </header>
 
+
             {/* Main Content */}
             <main className="md:pl-64 min-h-screen transition-all duration-300">
                 <div className="container mx-auto p-4 md:p-8 max-w-7xl">
-                    {children}
+                    <PageTransition>
+                        {children}
+                    </PageTransition>
                 </div>
             </main>
 
+
+
             {/* Mobile Bottom Nav */}
-            <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md border-t border-stone-200 dark:border-stone-800 pb-safe z-50">
+            <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl border-t border-stone-200 dark:border-stone-800 pb-safe z-50">
                 <MainNav items={navigationItems} onNavigate={onNavigate} mobile />
             </nav>
+
+            {/* AI Assistant */}
+            <SparkChat />
         </div>
     )
 }

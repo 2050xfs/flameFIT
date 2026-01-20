@@ -1,20 +1,26 @@
 import { DashboardProps } from "@/lib/types";
 import { createClient } from "@/lib/supabase/server";
+import { handleSupabaseError } from "./base";
 
 type DashboardData = Omit<DashboardProps, 'onStartWorkout' | 'onLogMeal' | 'onViewDetails'>;
 
-const macroTargets = {
-    calories: 2800,
-    protein: 200,
-    carbs: 300,
-    fats: 90
+// Default macro targets based on typical active male (will be overridden by user profile)
+const getDefaultMacroTargets = (weight?: number) => {
+    // If we have weight, use a simple formula: ~35 cal/kg, 2g protein/kg
+    const baseWeight = weight || 75; // default 75kg
+    return {
+        calories: Math.round(baseWeight * 35),
+        protein: Math.round(baseWeight * 2),
+        carbs: Math.round(baseWeight * 4),
+        fats: Math.round(baseWeight * 1)
+    };
 };
 
-const emptyDashboard: DashboardData = {
+const getEmptyDashboard = (macroTargets: ReturnType<typeof getDefaultMacroTargets>): DashboardData => ({
     readiness: {
         score: 70,
         status: 'High Readiness',
-        message: 'Log your meals and workouts to personalize today’s readiness.'
+        message: 'Log your meals and workouts to personalize today\'s readiness.'
     },
     macros: {
         calories: { current: 0, target: macroTargets.calories },
@@ -22,8 +28,9 @@ const emptyDashboard: DashboardData = {
         carbs: { current: 0, target: macroTargets.carbs },
         fats: { current: 0, target: macroTargets.fats }
     },
+    water: { current: 0, target: 8 },
     timeline: []
-};
+});
 
 const clamp = (value: number, min = 0, max = 100) => Math.min(Math.max(value, min), max);
 
@@ -46,20 +53,38 @@ const summarizeMeal = (foodNames: string[]) => {
 };
 
 export async function getDashboardData(): Promise<DashboardData> {
+    const defaultTargets = getDefaultMacroTargets();
+
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-        return emptyDashboard;
+        return getEmptyDashboard(defaultTargets);
     }
 
     const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
+    const { data: { user }, error: userError } = await supabase.auth.getUser();
 
-    if (!user) {
-        return emptyDashboard;
+    if (userError || !user) {
+        console.warn("No user found for dashboard, returning empty state");
+        return getEmptyDashboard(defaultTargets);
     }
 
     const today = new Date().toISOString().split('T')[0];
 
-    const [{ data: logs, error: logsError }, { data: sessions, error: sessionsError }] = await Promise.all([
+    // Fetch user profile for weight and macro targets
+    const { data: profile, error: profileError } = await supabase
+        .from('profiles')
+        .select('weight, preferences')
+        .eq('id', user.id)
+        .single();
+
+    if (profileError) {
+        console.warn("Error fetching profile, using defaults:", profileError.message);
+    }
+
+    // Use profile weight for default calculation, or fall back to generic default
+    const macroTargets = getDefaultMacroTargets(profile?.weight || undefined);
+
+    // Fetch data with error handling
+    const [logsResult, sessionsResult, waterResult] = await Promise.all([
         supabase
             .from('nutrient_logs')
             .select(`
@@ -89,13 +114,28 @@ export async function getDashboardData(): Promise<DashboardData> {
             .from('workout_sessions')
             .select('id, name, status, duration, date, created_at')
             .eq('user_id', user.id)
+            .eq('date', today),
+        supabase
+            .from('water_logs')
+            .select('amount')
+            .eq('user_id', user.id)
             .eq('date', today)
+            .maybeSingle()
     ]);
+
+    // Handle errors globally for the dashboard
+    handleSupabaseError(logsResult.error);
+    handleSupabaseError(sessionsResult.error);
+    // waterResult.error is ignored if it's just 'not found' which maybeSingle handles
+
+    const logs = (logsResult?.data || []) as any[];
+    const sessions = (sessionsResult?.data || []) as any[];
+    const waterLog = waterResult?.data as { amount: number } | null;
 
     const macroTotals = { calories: 0, protein: 0, carbs: 0, fats: 0 };
     const timelineEntries: Array<DashboardProps['timeline'][number] & { sortKey: string }> = [];
 
-    if (!logsError && logs) {
+    if (logs) {
         logs.forEach((log: any) => {
             let logCalories = log.total_calories ?? 0;
             let logProtein = log.total_protein ?? 0;
@@ -108,10 +148,10 @@ export async function getDashboardData(): Promise<DashboardData> {
                     const food = item.food_items;
                     if (!food) return;
                     const quantity = item.quantity ?? 1;
-                    logCalories += food.calories * quantity;
-                    logProtein += food.protein * quantity;
-                    logCarbs += food.carbs * quantity;
-                    logFats += food.fats * quantity;
+                    logCalories += (food.calories || 0) * quantity;
+                    logProtein += (food.protein || 0) * quantity;
+                    logCarbs += (food.carbs || 0) * quantity;
+                    logFats += (food.fats || 0) * quantity;
                     foodNames.push(food.name);
                 });
             }
@@ -133,7 +173,7 @@ export async function getDashboardData(): Promise<DashboardData> {
         });
     }
 
-    if (!sessionsError && sessions) {
+    if (sessions) {
         sessions.forEach((session: any) => {
             const status = session.status === 'completed' ? 'completed' : 'upcoming';
             const statusLabel = session.status === 'completed' ? 'Completed' : 'Scheduled';
@@ -172,6 +212,42 @@ export async function getDashboardData(): Promise<DashboardData> {
                 ? 'You’re primed for a solid session. Stick to the plan.'
                 : 'Dial it back and prioritize recovery work today.';
 
+    // Generate Spark Insight
+    let insight: DashboardData['insight'] = null;
+    const completion = profile?.weight ? 100 : 75;
+
+    if (completion < 100) {
+        insight = {
+            type: 'info',
+            message: `Profile Progress: ${completion}%. Spark requires your weight and height to architect precision metabolic targets.`,
+            actionLabel: 'Complete Profile'
+        };
+    } else if (workoutActive) {
+        insight = {
+            type: 'info',
+            message: "Training session active. Intensity is looking high—stay focused on the eccentric phase.",
+            actionLabel: 'Resume Session'
+        };
+    } else if (macroCompletion < 0.5 && new Date().getHours() > 18) {
+        insight = {
+            type: 'warning',
+            message: "Anabolic window alert: You're lagging on fuel. Spark suggests a high-protein intake now.",
+            actionLabel: 'Log Protein'
+        };
+    } else if (workoutCompleted) {
+        insight = {
+            type: 'success',
+            message: "Session protocol executed. Volume tracked. Metrics indicate a localized recovery phase is optimal.",
+            actionLabel: 'View Performance'
+        };
+    } else {
+        insight = {
+            type: 'info',
+            message: "Operational readiness high. Program 'Apex Predator' session is loaded and primed.",
+            actionLabel: 'Start Training'
+        };
+    }
+
     timelineEntries.sort((a, b) => a.sortKey.localeCompare(b.sortKey));
 
     return {
@@ -186,6 +262,11 @@ export async function getDashboardData(): Promise<DashboardData> {
             carbs: { current: Math.round(macroTotals.carbs), target: macroTargets.carbs },
             fats: { current: Math.round(macroTotals.fats), target: macroTargets.fats }
         },
-        timeline: timelineEntries.map(({ sortKey, ...entry }) => entry)
+        water: {
+            current: waterLog?.amount || 0,
+            target: 8
+        },
+        timeline: timelineEntries.map(({ sortKey, ...entry }) => entry),
+        insight
     };
 }

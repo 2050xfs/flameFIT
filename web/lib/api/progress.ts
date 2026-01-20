@@ -1,72 +1,113 @@
 import { ProgressData } from "../types";
+import { createClient } from "../supabase/server";
+import { handleSupabaseError } from "./base";
 
 export const getProgressData = async (): Promise<ProgressData> => {
-    // Simulate API delay
-    await new Promise(resolve => setTimeout(resolve, 500));
+    const supabase = await createClient();
+    const { data: { user }, error: authError } = await supabase.auth.getUser();
+
+    if (authError || !user) {
+        return {
+            charts: { weight: [] },
+            stats: [],
+            photos: [],
+            history: []
+        };
+    }
+
+    // 1. Fetch weight history
+    const { data: weightLogs, error: weightError } = await supabase
+        .from('body_stats')
+        .select('date, weight')
+        .eq('user_id', user.id)
+        .order('date', { ascending: true })
+        .limit(30);
+
+    handleSupabaseError(weightError);
+
+    const weightChart = (weightLogs || []).map(log => ({
+        date: new Date(log.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+        value: Number(log.weight)
+    }));
+
+    // 2. Fetch recent stats (latest weight, latest bf)
+    const { data: latestStat } = await supabase
+        .from('body_stats')
+        .select('weight, body_fat_pct, date')
+        .eq('user_id', user.id)
+        .order('date', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+
+    // 3. Fetch workout history and volume
+    const { data: sessions, error: sessionsError } = await supabase
+        .from('workout_sessions')
+        .select(`
+            id,
+            date,
+            name,
+            duration,
+            set_logs (
+                id,
+                weight,
+                reps
+            )
+        `)
+        .eq('user_id', user.id)
+        .eq('status', 'completed')
+        .order('date', { ascending: false })
+        .limit(10);
+
+    handleSupabaseError(sessionsError);
+
+    const history = (sessions || []).map(session => {
+        const volume = session.set_logs?.reduce((acc: number, set: any) => acc + (set.weight * set.reps), 0) || 0;
+        return {
+            id: session.id,
+            date: new Date(session.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+            title: session.name || 'Strength Session',
+            volume: `${volume.toLocaleString()} lbs`,
+            records: 0 // Mocked for now
+        };
+    });
+
+    // 4. Calculate stats items
+    const currentWeight = latestStat?.weight || 0;
+    const bodyFat = latestStat?.body_fat_pct || 0;
+
+    const stats = [
+        {
+            label: 'Current Weight',
+            value: currentWeight.toString(),
+            unit: 'lbs',
+            trend: 'Last logged ' + (latestStat ? new Date(latestStat.date).toLocaleDateString() : 'never'),
+            trendDir: 'up' as const
+        },
+        {
+            label: 'Body Fat',
+            value: bodyFat ? bodyFat.toString() : '--',
+            unit: '%',
+            trend: 'Measured via body scan',
+            trendDir: 'up' as const
+        },
+        {
+            label: 'Workouts',
+            value: (sessions?.length || 0).toString(),
+            unit: 'this mo',
+            trend: 'Keep it up!',
+            trendDir: 'up' as const
+        }
+    ];
 
     return {
         charts: {
-            weight: [
-                { date: 'Jan 1', value: 195 },
-                { date: 'Jan 8', value: 194 },
-                { date: 'Jan 15', value: 192.5 },
-                { date: 'Jan 22', value: 191 },
-                { date: 'Jan 29', value: 190 },
-                { date: 'Feb 5', value: 188.5 },
-                { date: 'Feb 12', value: 187 },
-                { date: 'Feb 19', value: 186 },
-                { date: 'Feb 26', value: 185 }
+            weight: weightChart.length > 0 ? weightChart : [
+                { date: 'Initial', value: currentWeight }
             ]
         },
-        stats: [
-            {
-                label: 'Current Weight',
-                value: '185.0',
-                unit: 'lbs',
-                trend: '-0.5 lbs this week',
-                trendDir: 'up' // up in this context might mean good progress, but usually weight down is green. The component uses teal for up... let's check.
-                // Component: trendDir === 'up' ? 'text-teal-500'. So we want 'up' for good things.
-            },
-            {
-                label: 'Body Fat',
-                value: '18.5',
-                unit: '%',
-                trend: '-1.2% this month',
-                trendDir: 'up'
-            },
-            {
-                label: 'Muscle Mass',
-                value: '142.5',
-                unit: 'lbs',
-                trend: '+2.1 lbs this month',
-                trendDir: 'up'
-            },
-            {
-                label: 'Weekly Volume',
-                value: '42.5k',
-                unit: 'lbs',
-                trend: '+5% vs last week',
-                trendDir: 'up'
-            },
-            {
-                label: 'Workouts',
-                value: '12',
-                unit: '/mo',
-                trend: 'On track',
-                trendDir: 'up'
-            }
-        ],
-        photos: [
-            { id: '1', url: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop', date: 'Today' },
-            { id: '2', url: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=2070&auto=format&fit=crop', date: 'Jan 12' },
-            { id: '3', url: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=2070&auto=format&fit=crop', date: 'Dec 15' },
-        ],
-        history: [
-            { id: '1', date: 'Today', title: 'Leg Day (Hypertrophy)', volume: '18,500 lbs', records: 2 },
-            { id: '2', date: 'Yesterday', title: 'Pull Day', volume: '14,200 lbs', records: 0 },
-            { id: '3', date: 'Jan 13', title: 'Push Day', volume: '16,800 lbs', records: 1 },
-            { id: '4', date: 'Jan 11', title: 'Leg Day', volume: '17,900 lbs', records: 1 },
-            { id: '5', date: 'Jan 10', title: 'Cardio', volume: '0 lbs', records: 0 },
-        ]
+        stats,
+        photos: [], // Still mocked as we don't have storage logic yet
+        history
     };
 };
+

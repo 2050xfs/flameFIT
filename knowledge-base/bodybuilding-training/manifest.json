@@ -1,0 +1,1527 @@
+{
+  "total_articles": 190,
+  "scraped_at": "2026-01-18T13:25:58.171540",
+  "categories": {},
+  "articles": [
+    {
+      "slug": "why-muscle-matters-for-long-term-health",
+      "title": "Why Muscle Matters for Long-Term Health",
+      "folder": "articles/why-muscle-matters-for-long-term-health",
+      "tags": [],
+      "date": "September 09, 2025",
+      "word_count": 450
+    },
+    {
+      "slug": "3-ways-to-keep-training-on-track-during-daylight-savings",
+      "title": "3 Ways To Keep Training on Track During Daylight Savings",
+      "folder": "articles/3-ways-to-keep-training-on-track-during-daylight-savings",
+      "tags": [],
+      "date": "October 30, 2025",
+      "word_count": 327
+    },
+    {
+      "slug": "how-to-make",
+      "title": "How to Make the Most of Your Winter Arc",
+      "folder": "articles/how-to-make",
+      "tags": [],
+      "date": "November 06, 2025",
+      "word_count": 361
+    },
+    {
+      "slug": "3-moves-to-add-to-your-routine-to-improve-your-squat",
+      "title": "3 Moves to Add to Your Routine to Improve Your Squat",
+      "folder": "articles/3-moves-to-add-to-your-routine-to-improve-your-squat",
+      "tags": [],
+      "date": "June 24, 2025",
+      "word_count": 567
+    },
+    {
+      "slug": "3-reasons-you-re-not-losing-stubborn-fat",
+      "title": "3 Reasons You\u2019re Not Losing Stubborn Fat",
+      "folder": "articles/3-reasons-you-re-not-losing-stubborn-fat",
+      "tags": [],
+      "date": "June 24, 2025",
+      "word_count": 729
+    },
+    {
+      "slug": "is-barefoot-training-really-beneficial",
+      "title": "Is Barefoot Training Really Beneficial?",
+      "folder": "articles/is-barefoot-training-really-beneficial",
+      "tags": [],
+      "date": "June 20, 2025",
+      "word_count": 594
+    },
+    {
+      "slug": "this-strength-metric-is-correlated-to-longevity-predictions",
+      "title": "This Strength Metric is Correlated to Longevity Predictions",
+      "folder": "articles/this-strength-metric-is-correlated-to-longevity-predictions",
+      "tags": [],
+      "date": "June 20, 2025",
+      "word_count": 776
+    },
+    {
+      "slug": "the-ultimate-shredding-guide-to-burn-fat-fast",
+      "title": "The Ultimate Shredding Guide to Burn Fat Fast",
+      "folder": "articles/the-ultimate-shredding-guide-to-burn-fat-fast",
+      "tags": [],
+      "date": "June 20, 2025",
+      "word_count": 1198
+    },
+    {
+      "slug": "4-signs-overtraining-is-stalling-your-progress",
+      "title": "4 Signs Overtraining is Stalling Your Progress",
+      "folder": "articles/4-signs-overtraining-is-stalling-your-progress",
+      "tags": [],
+      "date": "July 10, 2025",
+      "word_count": 712
+    },
+    {
+      "slug": "the-brand-that-s-innovating-the-way-we-approach-fitness-footwear",
+      "title": "The Brand That\u2019s Innovating the Way We Approach Fitness Footwear",
+      "folder": "articles/the-brand-that-s-innovating-the-way-we-approach-fitness-footwear",
+      "tags": [],
+      "date": "August 01, 2025",
+      "word_count": 813
+    },
+    {
+      "slug": "the-best-workouts-to-build-a-bigger-chest",
+      "title": "The Best Workouts to Build a Bigger Chest",
+      "folder": "articles/the-best-workouts-to-build-a-bigger-chest",
+      "tags": [],
+      "date": null,
+      "word_count": 1080
+    },
+    {
+      "slug": "unlock-calf-growth-with-these-3-exercises",
+      "title": "Unlock Calf Growth With These 3 Exercises",
+      "folder": "articles/unlock-calf-growth-with-these-3-exercises",
+      "tags": [],
+      "date": null,
+      "word_count": 844
+    },
+    {
+      "slug": "3-ways-to-survive-the-crowded-gym",
+      "title": "3 Ways to Survive the Crowded Gym",
+      "folder": "articles/3-ways-to-survive-the-crowded-gym",
+      "tags": [],
+      "date": null,
+      "word_count": 651
+    },
+    {
+      "slug": "building-a-dynamic-warmup-a-4-phase-approach",
+      "title": "Building a Dynamic Warmup: A 4-Phase Approach",
+      "folder": "articles/building-a-dynamic-warmup-a-4-phase-approach",
+      "tags": [],
+      "date": null,
+      "word_count": 445
+    },
+    {
+      "slug": "mastering-overhead-press-form-essential-techniques-and-cues",
+      "title": "Mastering Overhead Press Form: Essential Techniques and Cues",
+      "folder": "articles/mastering-overhead-press-form-essential-techniques-and-cues",
+      "tags": [],
+      "date": null,
+      "word_count": 796
+    },
+    {
+      "slug": "the-3-move-shoulder-builder",
+      "title": "The 3-Move Shoulder Builder",
+      "folder": "articles/the-3-move-shoulder-builder",
+      "tags": [],
+      "date": null,
+      "word_count": 814
+    },
+    {
+      "slug": "build-killer-pecs-in-just-3-moves",
+      "title": "Build Killer Pecs In Just 3 Moves",
+      "folder": "articles/build-killer-pecs-in-just-3-moves",
+      "tags": [],
+      "date": null,
+      "word_count": 783
+    },
+    {
+      "slug": "how-to-be-a-successful-spotter",
+      "title": "How to be a Successful Spotter",
+      "folder": "articles/how-to-be-a-successful-spotter",
+      "tags": [],
+      "date": null,
+      "word_count": 905
+    },
+    {
+      "slug": "maximizing-muscle-growth-through-sleep",
+      "title": "Maximizing Muscle Growth Through Sleep",
+      "folder": "articles/maximizing-muscle-growth-through-sleep",
+      "tags": [],
+      "date": null,
+      "word_count": 557
+    },
+    {
+      "slug": "what-s-the-best-training-split-for-strength-and-building-muscle",
+      "title": "What\u2019s The Best Training Split For Strength and Building Muscle?",
+      "folder": "articles/what-s-the-best-training-split-for-strength-and-building-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 1106
+    },
+    {
+      "slug": "2023-world-s-strongest-man-event-winner-predictions",
+      "title": "2023 World\u2019s Strongest Man Event Winner Predictions",
+      "folder": "articles/2023-world-s-strongest-man-event-winner-predictions",
+      "tags": [],
+      "date": null,
+      "word_count": 797
+    },
+    {
+      "slug": "how-to-structure-a-workout-on-the-fly",
+      "title": "How to Structure a Workout on the Fly",
+      "folder": "articles/how-to-structure-a-workout-on-the-fly",
+      "tags": [],
+      "date": null,
+      "word_count": 794
+    },
+    {
+      "slug": "upper-body-functional-training-workout-for-strength-mobility",
+      "title": "Upper Body Functional Training Workout for Strength & Mobility",
+      "folder": "articles/upper-body-functional-training-workout-for-strength-mobility",
+      "tags": [],
+      "date": null,
+      "word_count": 1053
+    },
+    {
+      "slug": "3-ways-to-improve-posture-with-one-set-of-dumbells",
+      "title": "3 Ways to Improve Posture with One Set of Dumbells",
+      "folder": "articles/3-ways-to-improve-posture-with-one-set-of-dumbells",
+      "tags": [],
+      "date": null,
+      "word_count": 495
+    },
+    {
+      "slug": "reps-and-sets-how-many-reps-per-workout-set-should-you-do",
+      "title": "Reps and Sets: How Many Reps Per Workout Set Should You Do?",
+      "folder": "articles/reps-and-sets-how-many-reps-per-workout-set-should-you-do",
+      "tags": [],
+      "date": null,
+      "word_count": 1803
+    },
+    {
+      "slug": "summer-fitness-by-the-sea-beach-exercises-to-keep-you-in-shape",
+      "title": "Summer Fitness by the Sea: Beach Exercises to Keep You in Shape",
+      "folder": "articles/summer-fitness-by-the-sea-beach-exercises-to-keep-you-in-shape",
+      "tags": [],
+      "date": null,
+      "word_count": 1268
+    },
+    {
+      "slug": "keep-your-training-on-track-by-setting-better-fitness-goals",
+      "title": "Keep Your Training on Track by Setting Better Fitness Goals",
+      "folder": "articles/keep-your-training-on-track-by-setting-better-fitness-goals",
+      "tags": [],
+      "date": null,
+      "word_count": 472
+    },
+    {
+      "slug": "how-to-increase-testosterone-for-optimal-performance",
+      "title": "How to Increase Testosterone for Optimal Performance",
+      "folder": "articles/how-to-increase-testosterone-for-optimal-performance",
+      "tags": [],
+      "date": null,
+      "word_count": 905
+    },
+    {
+      "slug": "6-back-workouts-to-get-a-bigger-stronger-back",
+      "title": "6 Back Workouts to Get a Bigger, Stronger Back",
+      "folder": "articles/6-back-workouts-to-get-a-bigger-stronger-back",
+      "tags": [],
+      "date": null,
+      "word_count": 1861
+    },
+    {
+      "slug": "best-workout-split-for-bulking-vs-cutting",
+      "title": "Best Workout Split for Bulking vs Cutting",
+      "folder": "articles/best-workout-split-for-bulking-vs-cutting",
+      "tags": [],
+      "date": null,
+      "word_count": 568
+    },
+    {
+      "slug": "three-benefits-of-following-a-workout-program",
+      "title": "Three Benefits of Following a Workout Program",
+      "folder": "articles/three-benefits-of-following-a-workout-program",
+      "tags": [],
+      "date": null,
+      "word_count": 681
+    },
+    {
+      "slug": "leg-workouts-for-women-build-strong-sculpted-quads",
+      "title": "Leg Workouts for Women: Build Strong, Sculpted Quads!",
+      "folder": "articles/leg-workouts-for-women-build-strong-sculpted-quads",
+      "tags": [],
+      "date": null,
+      "word_count": 3047
+    },
+    {
+      "slug": "is-stretching-worth-it",
+      "title": "Is Stretching Worth It?",
+      "folder": "articles/is-stretching-worth-it",
+      "tags": [],
+      "date": null,
+      "word_count": 1185
+    },
+    {
+      "slug": "how-when-to-use-a-weightlifting-belt",
+      "title": "How & When To Use a Weightlifting Belt",
+      "folder": "articles/how-when-to-use-a-weightlifting-belt",
+      "tags": [],
+      "date": null,
+      "word_count": 748
+    },
+    {
+      "slug": "understanding-primal-movements",
+      "title": "Understanding Primal Movements",
+      "folder": "articles/understanding-primal-movements",
+      "tags": [],
+      "date": null,
+      "word_count": 858
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-harry-vargas",
+      "title": "Harry Vargas",
+      "folder": "articles/meet-bodybuilding-com-master-coach-harry-vargas",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "common-workout-mistakes-and-how-to-avoid-making-them",
+      "title": "Common Workout Mistakes and How to Avoid Making Them",
+      "folder": "articles/common-workout-mistakes-and-how-to-avoid-making-them",
+      "tags": [],
+      "date": null,
+      "word_count": 821
+    },
+    {
+      "slug": "understanding-glp-1-and-its-pairing-with-strength-training",
+      "title": "Understanding GLP-1 and Its Pairing With Strength Training",
+      "folder": "articles/understanding-glp-1-and-its-pairing-with-strength-training",
+      "tags": [],
+      "date": null,
+      "word_count": 1512
+    },
+    {
+      "slug": "workouts-for-women-the-female-training-bible",
+      "title": "Workouts For Women: Weight Training For A Better Body",
+      "folder": "articles/workouts-for-women-the-female-training-bible",
+      "tags": [],
+      "date": null,
+      "word_count": 4545
+    },
+    {
+      "slug": "10-best-and-worst-exercise-machines-for-cardio",
+      "title": "10 Best And Worst Exercise Machines For Cardio",
+      "folder": "articles/10-best-and-worst-exercise-machines-for-cardio",
+      "tags": [],
+      "date": null,
+      "word_count": 1370
+    },
+    {
+      "slug": "shoulder-workouts-for-women-add-shape-and-size",
+      "title": "Shoulder Workouts for Women: Add Shape and Size!",
+      "folder": "articles/shoulder-workouts-for-women-add-shape-and-size",
+      "tags": [],
+      "date": null,
+      "word_count": 1888
+    },
+    {
+      "slug": "kettlebells-for-strength-endurance",
+      "title": "Kettlebells for Strength & Endurance",
+      "folder": "articles/kettlebells-for-strength-endurance",
+      "tags": [],
+      "date": null,
+      "word_count": 809
+    },
+    {
+      "slug": "dynamic-running-warmup",
+      "title": "Dynamic Running Warmup",
+      "folder": "articles/dynamic-running-warmup",
+      "tags": [],
+      "date": null,
+      "word_count": 635
+    },
+    {
+      "slug": "the-importance-of-rest-days-and-how-to-do-them-right",
+      "title": "The Importance of Rest Days and How to Do Them Right",
+      "folder": "articles/the-importance-of-rest-days-and-how-to-do-them-right",
+      "tags": [],
+      "date": null,
+      "word_count": 658
+    },
+    {
+      "slug": "the-ultimate-machine-quad-workout-for-bigger-legs",
+      "title": "The Ultimate Machine Quad Workout for Bigger Legs",
+      "folder": "articles/the-ultimate-machine-quad-workout-for-bigger-legs",
+      "tags": [],
+      "date": null,
+      "word_count": 869
+    },
+    {
+      "slug": "max-out-like-a-pro-how-to-test-your-one-rep-max-effectively",
+      "title": "Max Out Like a Pro: How to Test Your One-Rep Max Effectively",
+      "folder": "articles/max-out-like-a-pro-how-to-test-your-one-rep-max-effectively",
+      "tags": [],
+      "date": null,
+      "word_count": 921
+    },
+    {
+      "slug": "get-a-total-body-workout-at-home-with-only-a-barbell",
+      "title": "Get A Total Body Workout At Home With Only A Barbell",
+      "folder": "articles/get-a-total-body-workout-at-home-with-only-a-barbell",
+      "tags": [],
+      "date": null,
+      "word_count": 3084
+    },
+    {
+      "slug": "which-squat-variation-is-right-for-me",
+      "title": "Which Squat Variation is Right for Me?",
+      "folder": "articles/which-squat-variation-is-right-for-me",
+      "tags": [],
+      "date": null,
+      "word_count": 616
+    },
+    {
+      "slug": "the-key-to-faster-progress-raise-the-floor-on-your-goals",
+      "title": "The Key To Faster Progress: Raise the Floor on Your Goals",
+      "folder": "articles/the-key-to-faster-progress-raise-the-floor-on-your-goals",
+      "tags": [],
+      "date": null,
+      "word_count": 559
+    },
+    {
+      "slug": "shoulder-workouts-for-men-get-bigger-delts",
+      "title": "Shoulder Workouts For Men: Get Bigger Delts",
+      "folder": "articles/shoulder-workouts-for-men-get-bigger-delts",
+      "tags": [],
+      "date": null,
+      "word_count": 1736
+    },
+    {
+      "slug": "5-best-bodybuilding-programs-for-a-chisled-physique",
+      "title": "5 Best Bodybuilding Programs For A Chisled Physique",
+      "folder": "articles/5-best-bodybuilding-programs-for-a-chisled-physique",
+      "tags": [],
+      "date": null,
+      "word_count": 3769
+    },
+    {
+      "slug": "2-types-of-reverse-lunges-to-grow-your-glutes-step-by-step-guide",
+      "title": "2 Types of Reverse Lunges to Grow Your Glutes: Step-by-Step Guide",
+      "folder": "articles/2-types-of-reverse-lunges-to-grow-your-glutes-step-by-step-guide",
+      "tags": [],
+      "date": null,
+      "word_count": 639
+    },
+    {
+      "slug": "leg-workouts-for-men-get-thicker-quads-glutes-and-hams",
+      "title": "Leg Workouts For Men: Get Thicker Quads, Glutes, and Hams",
+      "folder": "articles/leg-workouts-for-men-get-thicker-quads-glutes-and-hams",
+      "tags": [],
+      "date": null,
+      "word_count": 2554
+    },
+    {
+      "slug": "get-your-annual-physical-top-5-things-to-ask-your-health-care-professional",
+      "title": "Get Your Annual Physical: Top 5 Things to Ask Your Health Care Professional",
+      "folder": "articles/get-your-annual-physical-top-5-things-to-ask-your-health-care-professional",
+      "tags": [],
+      "date": null,
+      "word_count": 1208
+    },
+    {
+      "slug": "5-biggest-mistakes-people-make-in-the-gym",
+      "title": "5 Biggest Mistakes People Make in the Gym",
+      "folder": "articles/5-biggest-mistakes-people-make-in-the-gym",
+      "tags": [],
+      "date": null,
+      "word_count": 548
+    },
+    {
+      "slug": "building-the-mind-muscle-connection",
+      "title": "Building the Mind-Muscle Connection",
+      "folder": "articles/building-the-mind-muscle-connection",
+      "tags": [],
+      "date": null,
+      "word_count": 623
+    },
+    {
+      "slug": "arnolds-classic-shoulder-and-arms-workout",
+      "title": "Arnold's Classic Shoulder and Arms Workout",
+      "folder": "articles/arnolds-classic-shoulder-and-arms-workout",
+      "tags": [],
+      "date": null,
+      "word_count": 1376
+    },
+    {
+      "slug": "3-tips-to-improve-bulgarian-split-squats",
+      "title": "3 Tips to Improve Bulgarian Split Squats",
+      "folder": "articles/3-tips-to-improve-bulgarian-split-squats",
+      "tags": [],
+      "date": null,
+      "word_count": 710
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-gabe-snow",
+      "title": "Gabe Snow",
+      "folder": "articles/meet-bodybuilding-com-master-coach-gabe-snow",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "10-best-ab-exercises-for-building-muscle",
+      "title": "10 Best Ab Exercises for Building Muscle",
+      "folder": "articles/10-best-ab-exercises-for-building-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 2987
+    },
+    {
+      "slug": "how-to-stop-feeling-tired-all-the-time",
+      "title": "How to Stop Feeling Tired All the Time",
+      "folder": "articles/how-to-stop-feeling-tired-all-the-time",
+      "tags": [],
+      "date": null,
+      "word_count": 1785
+    },
+    {
+      "slug": "how-to-best-shake-up-your-gym-routine",
+      "title": "How to Best Shake Up Your Gym Routine",
+      "folder": "articles/how-to-best-shake-up-your-gym-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 502
+    },
+    {
+      "slug": "4-strength-exercises-for-runners",
+      "title": "4 Strength Exercises for Runners",
+      "folder": "articles/4-strength-exercises-for-runners",
+      "tags": [],
+      "date": null,
+      "word_count": 1275
+    },
+    {
+      "slug": "how-to-make-your-workouts-functional-and-dynamic",
+      "title": "How to Make Your Workouts Functional and Dynamic",
+      "folder": "articles/how-to-make-your-workouts-functional-and-dynamic",
+      "tags": [],
+      "date": null,
+      "word_count": 1116
+    },
+    {
+      "slug": "the-best-ab-workouts-to-build-a-muscular-six-pack",
+      "title": "The Best Ab Workouts to Build a Muscular Six-Pack",
+      "folder": "articles/the-best-ab-workouts-to-build-a-muscular-six-pack",
+      "tags": [],
+      "date": null,
+      "word_count": 927
+    },
+    {
+      "slug": "the-5-best-back-machines-for-maximum-growth",
+      "title": "The 5 Best Back Machines For Maximum Growth",
+      "folder": "articles/the-5-best-back-machines-for-maximum-growth",
+      "tags": [],
+      "date": null,
+      "word_count": 866
+    },
+    {
+      "slug": "the-best-calisthenics-workout-plan-and-exercises",
+      "title": "The Best Calisthenics Workout Plan and Exercises",
+      "folder": "articles/the-best-calisthenics-workout-plan-and-exercises",
+      "tags": [],
+      "date": null,
+      "word_count": 2161
+    },
+    {
+      "slug": "the-best-workouts-to-build-bigger-arms",
+      "title": "The Best Workouts to Build Bigger Arms",
+      "folder": "articles/the-best-workouts-to-build-bigger-arms",
+      "tags": [],
+      "date": null,
+      "word_count": 1436
+    },
+    {
+      "slug": "10-best-shoulder-exercises-for-building-muscle",
+      "title": "10 Best Shoulder Exercises for Building Muscle",
+      "folder": "articles/10-best-shoulder-exercises-for-building-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 2773
+    },
+    {
+      "slug": "the-best-exercises-for-new-gym-goers",
+      "title": "The Best Exercises for New Gym Goers",
+      "folder": "articles/the-best-exercises-for-new-gym-goers",
+      "tags": [],
+      "date": null,
+      "word_count": 462
+    },
+    {
+      "slug": "how-to-prepare-for-a-morning-workout-the-night-before",
+      "title": "How to Prepare for a Morning Workout the Night Before",
+      "folder": "articles/how-to-prepare-for-a-morning-workout-the-night-before",
+      "tags": [],
+      "date": null,
+      "word_count": 874
+    },
+    {
+      "slug": "push-ups-for-gains",
+      "title": "Push-Ups for Gains",
+      "folder": "articles/push-ups-for-gains",
+      "tags": [],
+      "date": null,
+      "word_count": 894
+    },
+    {
+      "slug": "3-essential-moves-for-powerhouse-hamstrings",
+      "title": "3 Essential Moves For Powerhouse Hamstrings",
+      "folder": "articles/3-essential-moves-for-powerhouse-hamstrings",
+      "tags": [],
+      "date": null,
+      "word_count": 1863
+    },
+    {
+      "slug": "get-a-grip-3-ways-to-increase-grip-strength",
+      "title": "Get a Grip: 3 Ways to Increase Grip Strength",
+      "folder": "articles/get-a-grip-3-ways-to-increase-grip-strength",
+      "tags": [],
+      "date": null,
+      "word_count": 501
+    },
+    {
+      "slug": "your-best-body-ever-5-tips-to-burn-fat-and-build-muscle",
+      "title": "Your Best Body Ever: 5 Tips to Burn Fat and Build Muscle",
+      "folder": "articles/your-best-body-ever-5-tips-to-burn-fat-and-build-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 767
+    },
+    {
+      "slug": "german-volume-training-plans-the-10-sets-method",
+      "title": "German Volume Training Plans: The 10 Sets Method",
+      "folder": "articles/german-volume-training-plans-the-10-sets-method",
+      "tags": [],
+      "date": null,
+      "word_count": 1646
+    },
+    {
+      "slug": "the-biomechanics-of-muscle-growth",
+      "title": "The Biomechanics of Muscle Growth",
+      "folder": "articles/the-biomechanics-of-muscle-growth",
+      "tags": [],
+      "date": null,
+      "word_count": 763
+    },
+    {
+      "slug": "gaining-muscle-after-40-a-complete-beginners-guide",
+      "title": "Gaining Muscle After 40: A Complete Beginner's Guide!",
+      "folder": "articles/gaining-muscle-after-40-a-complete-beginners-guide",
+      "tags": [],
+      "date": null,
+      "word_count": 1105
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-yaya-vargas",
+      "title": "Yadira Vargas",
+      "folder": "articles/meet-bodybuilding-com-master-coach-yaya-vargas",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "the-4-best-chest-machines-for-maximum-growth",
+      "title": "The 4 Best Chest Machines for Maximum Growth",
+      "folder": "articles/the-4-best-chest-machines-for-maximum-growth",
+      "tags": [],
+      "date": null,
+      "word_count": 681
+    },
+    {
+      "slug": "how-heat-affects-your-body-during-exercise",
+      "title": "How Heat Affects Your Body During Exercise",
+      "folder": "articles/how-heat-affects-your-body-during-exercise",
+      "tags": [],
+      "date": null,
+      "word_count": 964
+    },
+    {
+      "slug": "hypertrophy-101-how-to-build-the-biggest-you-yet",
+      "title": "Hypertrophy 101: How to Build the Biggest You Yet",
+      "folder": "articles/hypertrophy-101-how-to-build-the-biggest-you-yet",
+      "tags": [],
+      "date": null,
+      "word_count": 617
+    },
+    {
+      "slug": "sculpt-a-6-pack-with-just-3-moves",
+      "title": "Sculpt A 6-Pack With Just 3 Moves!",
+      "folder": "articles/sculpt-a-6-pack-with-just-3-moves",
+      "tags": [],
+      "date": null,
+      "word_count": 887
+    },
+    {
+      "slug": "fall-back-into-fitness-overcoming-post-summer-workout-slumps",
+      "title": "Fall Back into Fitness: Overcoming Post-Summer Workout Slumps",
+      "folder": "articles/fall-back-into-fitness-overcoming-post-summer-workout-slumps",
+      "tags": [],
+      "date": null,
+      "word_count": 568
+    },
+    {
+      "slug": "which-squat-load-position-is-right-for-you",
+      "title": "Which Squat Load Position is Right For You?",
+      "folder": "articles/which-squat-load-position-is-right-for-you",
+      "tags": [],
+      "date": null,
+      "word_count": 1470
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-ken-yu",
+      "title": "Ken Yu",
+      "folder": "articles/meet-bodybuilding-com-master-coach-ken-yu",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "why-cardio-isn-t-the-first-step-to-losing-weight",
+      "title": "Why Cardio isn\u2019t the First Step to Losing Weight",
+      "folder": "articles/why-cardio-isn-t-the-first-step-to-losing-weight",
+      "tags": [],
+      "date": null,
+      "word_count": 788
+    },
+    {
+      "slug": "whats-the-best-workout-for-training-body-parts-twice-per-week",
+      "title": "What's the Best Workout for Training Body Parts Twice per Week?",
+      "folder": "articles/whats-the-best-workout-for-training-body-parts-twice-per-week",
+      "tags": [],
+      "date": null,
+      "word_count": 7804
+    },
+    {
+      "slug": "arnold-schwarzeneggers-mammoth-chest-and-back-workout",
+      "title": "Arnold Schwarzenegger's Mammoth Chest And Back Workout",
+      "folder": "articles/arnold-schwarzeneggers-mammoth-chest-and-back-workout",
+      "tags": [],
+      "date": null,
+      "word_count": 1556
+    },
+    {
+      "slug": "the-importance-of-vo2-max-testing-regardless-of-your-fitness-goals",
+      "title": "The Importance of VO2 Max Testing, Regardless of Your Fitness Goals",
+      "folder": "articles/the-importance-of-vo2-max-testing-regardless-of-your-fitness-goals",
+      "tags": [],
+      "date": null,
+      "word_count": 1613
+    },
+    {
+      "slug": "4-cross-training-modalities-for-runners",
+      "title": "4 Cross Training Modalities for Runners",
+      "folder": "articles/4-cross-training-modalities-for-runners",
+      "tags": [],
+      "date": null,
+      "word_count": 1288
+    },
+    {
+      "slug": "training-for-power-do-i-need-it-and-how-should-i-add-it-to-my-routine",
+      "title": "Training for Power: Do I Need it and How Should I Add it to My Routine?",
+      "folder": "articles/training-for-power-do-i-need-it-and-how-should-i-add-it-to-my-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 588
+    },
+    {
+      "slug": "the-essential-8-exercises-that-will-get-you-ripped",
+      "title": "The Essential 8: Exercises That Will Get You Ripped",
+      "folder": "articles/the-essential-8-exercises-that-will-get-you-ripped",
+      "tags": [],
+      "date": null,
+      "word_count": 2721
+    },
+    {
+      "slug": "developing-a-proper-warm-up-routine",
+      "title": "Developing a Proper Warm-Up Routine",
+      "folder": "articles/developing-a-proper-warm-up-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 870
+    },
+    {
+      "slug": "picking-the-right-running-shoe",
+      "title": "Picking the Right Running Shoe",
+      "folder": "articles/picking-the-right-running-shoe",
+      "tags": [],
+      "date": null,
+      "word_count": 2793
+    },
+    {
+      "slug": "the-12-week-muscle-building-kettlebell-master-plan",
+      "title": "The 12-Week Muscle-Building Kettlebell Master-Plan",
+      "folder": "articles/the-12-week-muscle-building-kettlebell-master-plan",
+      "tags": [],
+      "date": null,
+      "word_count": 2033
+    },
+    {
+      "slug": "should-you-change-up-your-workout-routine-often",
+      "title": "Should You Change Up Your Workout Routine Often?",
+      "folder": "articles/should-you-change-up-your-workout-routine-often",
+      "tags": [],
+      "date": null,
+      "word_count": 1149
+    },
+    {
+      "slug": "what-is-the-right-amount-of-weekly-volume-to-build-muscle",
+      "title": "What is the Right Amount of Weekly Volume To Build Muscle?",
+      "folder": "articles/what-is-the-right-amount-of-weekly-volume-to-build-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 1434
+    },
+    {
+      "slug": "the-ultimate-fat-burning-hiit-cardio-workout-program",
+      "title": "The Ultimate Fat-Burning HIIT Cardio Workout Program",
+      "folder": "articles/the-ultimate-fat-burning-hiit-cardio-workout-program",
+      "tags": [],
+      "date": null,
+      "word_count": 1379
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-kristen-lettenberger",
+      "title": "Kristen Lettenberger",
+      "folder": "articles/meet-bodybuilding-com-master-coach-kristen-lettenberger",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "the-top-3-essential-pre-run-habits-for-cold-mornings",
+      "title": "The Top 3 Essential Pre-Run Habits For Cold Mornings",
+      "folder": "articles/the-top-3-essential-pre-run-habits-for-cold-mornings",
+      "tags": [],
+      "date": null,
+      "word_count": 1091
+    },
+    {
+      "slug": "how-to-squat-layne-nortons-squat-tutorial",
+      "title": "How To Squat: Layne Norton's Squat Tutorial",
+      "folder": "articles/how-to-squat-layne-nortons-squat-tutorial",
+      "tags": [],
+      "date": null,
+      "word_count": 2130
+    },
+    {
+      "slug": "back-workouts-for-women-build-the-shape-you-want",
+      "title": "Back Workouts for Women: Build the Shape You Want!",
+      "folder": "articles/back-workouts-for-women-build-the-shape-you-want",
+      "tags": [],
+      "date": null,
+      "word_count": 1700
+    },
+    {
+      "slug": "the-ultimate-full-body-dumbbell-workout",
+      "title": "The Ultimate Full-Body Dumbbell Workout",
+      "folder": "articles/the-ultimate-full-body-dumbbell-workout",
+      "tags": [],
+      "date": null,
+      "word_count": 1450
+    },
+    {
+      "slug": "how-arnold-built-his-legs-and-abs",
+      "title": "How Arnold Built His Legs And Abs",
+      "folder": "articles/how-arnold-built-his-legs-and-abs",
+      "tags": [],
+      "date": null,
+      "word_count": 1217
+    },
+    {
+      "slug": "how-to-simplify-your-training",
+      "title": "How to Simplify Your Training",
+      "folder": "articles/how-to-simplify-your-training",
+      "tags": [],
+      "date": null,
+      "word_count": 502
+    },
+    {
+      "slug": "tips-for-surviving-your-first-week-of-working-out",
+      "title": "Tips for Surviving Your First Week of Working Out",
+      "folder": "articles/tips-for-surviving-your-first-week-of-working-out",
+      "tags": [],
+      "date": null,
+      "word_count": 320
+    },
+    {
+      "slug": "the-five-most-effective-exercises-for-glute-strength-and-hypertrophy",
+      "title": "The Five Most Effective Exercises for Glute Strength and Hypertrophy",
+      "folder": "articles/the-five-most-effective-exercises-for-glute-strength-and-hypertrophy",
+      "tags": [],
+      "date": null,
+      "word_count": 1405
+    },
+    {
+      "slug": "when-should-you-increase-the-amount-of-weight-you-lift",
+      "title": "When Should You Increase The Amount Of Weight You Lift?",
+      "folder": "articles/when-should-you-increase-the-amount-of-weight-you-lift",
+      "tags": [],
+      "date": null,
+      "word_count": 622
+    },
+    {
+      "slug": "how-wide-should-your-bench-press-grip-be",
+      "title": "How Wide Should Your Bench-Press Grip Be?",
+      "folder": "articles/how-wide-should-your-bench-press-grip-be",
+      "tags": [],
+      "date": null,
+      "word_count": 522
+    },
+    {
+      "slug": "glute-workouts-for-women-get-a-bigger-butt",
+      "title": "Glute Workouts for Women: Get A Bigger Butt!",
+      "folder": "articles/glute-workouts-for-women-get-a-bigger-butt",
+      "tags": [],
+      "date": null,
+      "word_count": 1447
+    },
+    {
+      "slug": "squat-width-to-target-your-glutes-versus-your-quads",
+      "title": "Squat Width to Target Your Glutes Versus Your Quads",
+      "folder": "articles/squat-width-to-target-your-glutes-versus-your-quads",
+      "tags": [],
+      "date": null,
+      "word_count": 657
+    },
+    {
+      "slug": "the-benefits-of-nose-breathing-top-4-reasons-you-shouldnt-be-a-mouth-breather",
+      "title": "The Benefits of Nose Breathing: Top 4 Reasons You Shouldn't Be a Mouth-Breather",
+      "folder": "articles/the-benefits-of-nose-breathing-top-4-reasons-you-shouldnt-be-a-mouth-breather",
+      "tags": [],
+      "date": null,
+      "word_count": 1746
+    },
+    {
+      "slug": "how-to-hack-your-immune-system-with-science",
+      "title": "How to Hack Your Immune System with Science",
+      "folder": "articles/how-to-hack-your-immune-system-with-science",
+      "tags": [],
+      "date": null,
+      "word_count": 1104
+    },
+    {
+      "slug": "training-to-failure-is-it-necessary",
+      "title": "Training to Failure - Is it Necessary?",
+      "folder": "articles/training-to-failure-is-it-necessary",
+      "tags": [],
+      "date": null,
+      "word_count": 513
+    },
+    {
+      "slug": "why-low-grip-strength-can-affect-your-overall-health",
+      "title": "Why Low Grip Strength Can Affect Your Overall Health",
+      "folder": "articles/why-low-grip-strength-can-affect-your-overall-health",
+      "tags": [],
+      "date": null,
+      "word_count": 848
+    },
+    {
+      "slug": "unilateral-vs-bilateral-training",
+      "title": "Unilateral VS Bilateral Training",
+      "folder": "articles/unilateral-vs-bilateral-training",
+      "tags": [],
+      "date": null,
+      "word_count": 870
+    },
+    {
+      "slug": "benefits-of-heart-rate-training-by-goals",
+      "title": "Benefits of Heart Rate Training By Goals",
+      "folder": "articles/benefits-of-heart-rate-training-by-goals",
+      "tags": [],
+      "date": null,
+      "word_count": 862
+    },
+    {
+      "slug": "how-to-prepare-for-a-pr-attempt",
+      "title": "How to Prepare for a PR Attempt",
+      "folder": "articles/how-to-prepare-for-a-pr-attempt",
+      "tags": [],
+      "date": null,
+      "word_count": 523
+    },
+    {
+      "slug": "best-rep-range-to-build-muscle-where-is-the-science-today",
+      "title": "Best Rep Range to Build Muscle: Where is the Science Today?",
+      "folder": "articles/best-rep-range-to-build-muscle-where-is-the-science-today",
+      "tags": [],
+      "date": null,
+      "word_count": 1231
+    },
+    {
+      "slug": "biceps-and-triceps-workout-triple-threat-arm-assault",
+      "title": "Biceps and Triceps Workout: Triple-Threat Arm Assault",
+      "folder": "articles/biceps-and-triceps-workout-triple-threat-arm-assault",
+      "tags": [],
+      "date": null,
+      "word_count": 999
+    },
+    {
+      "slug": "how-to-train-peak-performance-like-kenyan-marathon-runner-eliud-kipchoge",
+      "title": "How to Train Peak Performance like Kenyan Marathon Runner Eliud Kipchoge",
+      "folder": "articles/how-to-train-peak-performance-like-kenyan-marathon-runner-eliud-kipchoge",
+      "tags": [],
+      "date": null,
+      "word_count": 994
+    },
+    {
+      "slug": "5-swim-workouts-when-youre-looking-for-low-impact",
+      "title": "5 Swim Workouts When You're Looking for Low Impact",
+      "folder": "articles/5-swim-workouts-when-youre-looking-for-low-impact",
+      "tags": [],
+      "date": null,
+      "word_count": 469
+    },
+    {
+      "slug": "what-is-the-best-bulking-workout-plan-to-gain-size",
+      "title": "What Is the Best Bulking Workout Plan to Gain Size?",
+      "folder": "articles/what-is-the-best-bulking-workout-plan-to-gain-size",
+      "tags": [],
+      "date": null,
+      "word_count": 4644
+    },
+    {
+      "slug": "keep-your-weights-close-and-your-enemies-closer",
+      "title": "Keep Your Weights Close and Your Enemies Closer",
+      "folder": "articles/keep-your-weights-close-and-your-enemies-closer",
+      "tags": [],
+      "date": null,
+      "word_count": 519
+    },
+    {
+      "slug": "build-serious-strength-and-size-with-a-5x5-workout-program",
+      "title": "Build Serious Strength and Size with a 5x5 Workout Program",
+      "folder": "articles/build-serious-strength-and-size-with-a-5x5-workout-program",
+      "tags": [],
+      "date": null,
+      "word_count": 994
+    },
+    {
+      "slug": "improving-your-circadian-clock",
+      "title": "Improving Your Circadian Clock",
+      "folder": "articles/improving-your-circadian-clock",
+      "tags": [],
+      "date": null,
+      "word_count": 869
+    },
+    {
+      "slug": "the-full-body-workout-routine-to-get-jacked-fast",
+      "title": "The Full-Body Workout Routine To Get Jacked Fast!",
+      "folder": "articles/the-full-body-workout-routine-to-get-jacked-fast",
+      "tags": [],
+      "date": null,
+      "word_count": 1042
+    },
+    {
+      "slug": "the-best-workouts-to-get-bigger-shoulders",
+      "title": "The Best Workouts to Get Bigger Shoulders",
+      "folder": "articles/the-best-workouts-to-get-bigger-shoulders",
+      "tags": [],
+      "date": null,
+      "word_count": 1256
+    },
+    {
+      "slug": "make-cardio-fun-this-summer",
+      "title": "Make Cardio Fun This Summer",
+      "folder": "articles/make-cardio-fun-this-summer",
+      "tags": [],
+      "date": null,
+      "word_count": 601
+    },
+    {
+      "slug": "5-reasons-to-download-the-bodybuilding-com-app",
+      "title": "5 Reasons to Download the Bodybuilding.com App",
+      "folder": "articles/5-reasons-to-download-the-bodybuilding-com-app",
+      "tags": [],
+      "date": null,
+      "word_count": 786
+    },
+    {
+      "slug": "cardio-before-or-after-lifting-weights",
+      "title": "Cardio Before or After Lifting Weights?",
+      "folder": "articles/cardio-before-or-after-lifting-weights",
+      "tags": [],
+      "date": null,
+      "word_count": 821
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-craig-bongelli",
+      "title": "Craig Bongelli",
+      "folder": "articles/meet-bodybuilding-com-master-coach-craig-bongelli",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "shape-building-upper-body-workouts-for-women",
+      "title": "Shape-Building Upper Body Workouts for Women",
+      "folder": "articles/shape-building-upper-body-workouts-for-women",
+      "tags": [],
+      "date": null,
+      "word_count": 1627
+    },
+    {
+      "slug": "what-is-the-best-cutting-workout-plan",
+      "title": "What Is the Best Cutting Workout Plan?",
+      "folder": "articles/what-is-the-best-cutting-workout-plan",
+      "tags": [],
+      "date": null,
+      "word_count": 7919
+    },
+    {
+      "slug": "the-5-essential-landmine-exercises",
+      "title": "The 5 Essential Landmine Exercises",
+      "folder": "articles/the-5-essential-landmine-exercises",
+      "tags": [],
+      "date": null,
+      "word_count": 1348
+    },
+    {
+      "slug": "our-top-3-day-workout-splits-for-muscle-building",
+      "title": "Our Top 3-Day Workout Splits For Muscle Building",
+      "folder": "articles/our-top-3-day-workout-splits-for-muscle-building",
+      "tags": [],
+      "date": null,
+      "word_count": 5184
+    },
+    {
+      "slug": "machines-versus-free-weights-what-s-the-difference",
+      "title": "Machines versus Free Weights: What\u2019s the Difference?",
+      "folder": "articles/machines-versus-free-weights-what-s-the-difference",
+      "tags": [],
+      "date": null,
+      "word_count": 938
+    },
+    {
+      "slug": "4-exercises-to-prepare-you-for-summer-hiking",
+      "title": "4 Exercises to Prepare You for Summer Hiking",
+      "folder": "articles/4-exercises-to-prepare-you-for-summer-hiking",
+      "tags": [],
+      "date": null,
+      "word_count": 668
+    },
+    {
+      "slug": "progressing-the-deadlift-a-beginner-to-expert-level-guide",
+      "title": "Progressing the Deadlift: A Beginner to Expert Level Guide",
+      "folder": "articles/progressing-the-deadlift-a-beginner-to-expert-level-guide",
+      "tags": [],
+      "date": null,
+      "word_count": 1258
+    },
+    {
+      "slug": "meet-bodybuilding-com-master-coach-kris-gethin",
+      "title": "Kris Gethin",
+      "folder": "articles/meet-bodybuilding-com-master-coach-kris-gethin",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "the-best-workouts-to-build-a-bigger-back",
+      "title": "The Best Workouts to Build a Bigger Back",
+      "folder": "articles/the-best-workouts-to-build-a-bigger-back",
+      "tags": [],
+      "date": null,
+      "word_count": 1148
+    },
+    {
+      "slug": "arm-workouts-for-men-to-build-bigger-biceps",
+      "title": "Arm Workouts for Men to Build Bigger Biceps",
+      "folder": "articles/arm-workouts-for-men-to-build-bigger-biceps",
+      "tags": [],
+      "date": null,
+      "word_count": 1396
+    },
+    {
+      "slug": "arm-workouts-for-women-build-shape-size-and-strength",
+      "title": "Arm Workouts for Women: Build Shape, Size, and Strength!",
+      "folder": "articles/arm-workouts-for-women-build-shape-size-and-strength",
+      "tags": [],
+      "date": null,
+      "word_count": 1502
+    },
+    {
+      "slug": "what-does-functional-training-actually-mean-if-anything-at-all",
+      "title": "What Does Functional Training Actually Mean, if Anything at all?",
+      "folder": "articles/what-does-functional-training-actually-mean-if-anything-at-all",
+      "tags": [],
+      "date": null,
+      "word_count": 1094
+    },
+    {
+      "slug": "5-ways-to-build-a-bigger-bench-press",
+      "title": "5 Ways to Build a Bigger Bench Press",
+      "folder": "articles/5-ways-to-build-a-bigger-bench-press",
+      "tags": [],
+      "date": null,
+      "word_count": 853
+    },
+    {
+      "slug": "exercises-to-improve-balance",
+      "title": "Exercises to Improve Balance",
+      "folder": "articles/exercises-to-improve-balance",
+      "tags": [],
+      "date": null,
+      "word_count": 835
+    },
+    {
+      "slug": "the-ultimate-guide-to-an-effective-workout-split",
+      "title": "The Ultimate Guide to An Effective Workout Split",
+      "folder": "articles/the-ultimate-guide-to-an-effective-workout-split",
+      "tags": [],
+      "date": null,
+      "word_count": 2385
+    },
+    {
+      "slug": "shoulder-exercises-to-add-to-your-routine",
+      "title": "Shoulder Exercises to Add to Your Routine",
+      "folder": "articles/shoulder-exercises-to-add-to-your-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 780
+    },
+    {
+      "slug": "progressing-past-a-bench-press-plateau",
+      "title": "Progressing Past a Bench Press Plateau",
+      "folder": "articles/progressing-past-a-bench-press-plateau",
+      "tags": [],
+      "date": null,
+      "word_count": 658
+    },
+    {
+      "slug": "three-changes-to-your-routine-to-build-more-muscular-arms",
+      "title": "Three Changes to Your Routine to Build More Muscular Arms",
+      "folder": "articles/three-changes-to-your-routine-to-build-more-muscular-arms",
+      "tags": [],
+      "date": null,
+      "word_count": 1670
+    },
+    {
+      "slug": "how-to-overhead-press-a-beginners-guide",
+      "title": "How To Overhead Press: A Beginner's Guide",
+      "folder": "articles/how-to-overhead-press-a-beginners-guide",
+      "tags": [],
+      "date": null,
+      "word_count": 1696
+    },
+    {
+      "slug": "4-ways-to-train-core-without-adding-more-core-exercises",
+      "title": "4 Ways to Train Core without Adding More Core Exercises",
+      "folder": "articles/4-ways-to-train-core-without-adding-more-core-exercises",
+      "tags": [],
+      "date": null,
+      "word_count": 803
+    },
+    {
+      "slug": "mastering-bent-over-row-form-essential-techniques-and-cues",
+      "title": "Mastering Bent Over Row Form: Essential Techniques and Cues",
+      "folder": "articles/mastering-bent-over-row-form-essential-techniques-and-cues",
+      "tags": [],
+      "date": null,
+      "word_count": 649
+    },
+    {
+      "slug": "barbell-back-squat-form-are-your-tight-shoulders-getting-in-the-way",
+      "title": "Barbell Back Squat Form: Are Your Tight Shoulders Getting in the Way?",
+      "folder": "articles/barbell-back-squat-form-are-your-tight-shoulders-getting-in-the-way",
+      "tags": [],
+      "date": null,
+      "word_count": 811
+    },
+    {
+      "slug": "no-weights-no-problem-5-calisthenics-exercises-when-first-starting-out",
+      "title": "No Weights, No Problem! 5 Calisthenics Exercises When First Starting Out",
+      "folder": "articles/no-weights-no-problem-5-calisthenics-exercises-when-first-starting-out",
+      "tags": [],
+      "date": null,
+      "word_count": 970
+    },
+    {
+      "slug": "what-order-should-you-do-exercises-in",
+      "title": "What Order Should You Do Exercises in?",
+      "folder": "articles/what-order-should-you-do-exercises-in",
+      "tags": [],
+      "date": null,
+      "word_count": 671
+    },
+    {
+      "slug": "mastering-bench-press-form-essential-techniques-and-cues",
+      "title": "Mastering Bench Press Form: Essential Techniques and Cues",
+      "folder": "articles/mastering-bench-press-form-essential-techniques-and-cues",
+      "tags": [],
+      "date": null,
+      "word_count": 881
+    },
+    {
+      "slug": "short-length-partial-reps-for-strength",
+      "title": "Short Length Partial Reps for Strength",
+      "folder": "articles/short-length-partial-reps-for-strength",
+      "tags": [],
+      "date": null,
+      "word_count": 1015
+    },
+    {
+      "slug": "these-workouts-are-how-strong-women-get-built",
+      "title": "These Workouts Are How Strong Women Get Built!",
+      "folder": "articles/these-workouts-are-how-strong-women-get-built",
+      "tags": [],
+      "date": null,
+      "word_count": 1464
+    },
+    {
+      "slug": "abs-and-forearms-into-your-routine",
+      "title": "Abs and Forearms into your Routine",
+      "folder": "articles/abs-and-forearms-into-your-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 637
+    },
+    {
+      "slug": "summer-motivation-boost-keep-your-goals-on-track-this-season",
+      "title": "Summer Motivation Boost: Keep Your Goals on Track This Season",
+      "folder": "articles/summer-motivation-boost-keep-your-goals-on-track-this-season",
+      "tags": [],
+      "date": null,
+      "word_count": 646
+    },
+    {
+      "slug": "10-best-chest-exercises-for-building-muscle",
+      "title": "10 Best Chest Exercises for Building Muscle",
+      "folder": "articles/10-best-chest-exercises-for-building-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 2892
+    },
+    {
+      "slug": "the-ultimate-shoulders-and-triceps-blast",
+      "title": "The Ultimate Shoulders And Triceps Blast",
+      "folder": "articles/the-ultimate-shoulders-and-triceps-blast",
+      "tags": [],
+      "date": null,
+      "word_count": 946
+    },
+    {
+      "slug": "creative-ways-to-fit-in-cardio",
+      "title": "Creative Ways to Fit In Cardio",
+      "folder": "articles/creative-ways-to-fit-in-cardio",
+      "tags": [],
+      "date": null,
+      "word_count": 841
+    },
+    {
+      "slug": "how-to-deadlift-a-beginners-guide",
+      "title": "How To Deadlift: A Beginner's Guide",
+      "folder": "articles/how-to-deadlift-a-beginners-guide",
+      "tags": [],
+      "date": null,
+      "word_count": 1919
+    },
+    {
+      "slug": "build-balance-power-lower-body-functional-training-workout",
+      "title": "Build Balance & Power: Lower Body Functional Training Workout",
+      "folder": "articles/build-balance-power-lower-body-functional-training-workout",
+      "tags": [],
+      "date": null,
+      "word_count": 975
+    },
+    {
+      "slug": "swimming-into-your-fitness-routine",
+      "title": "Swimming into Your Fitness Routine",
+      "folder": "articles/swimming-into-your-fitness-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 645
+    },
+    {
+      "slug": "crush-your-pr-with-the-best-pull-up-program-ever",
+      "title": "Crush Your PR With the Best Pull-Up Program EVER",
+      "folder": "articles/crush-your-pr-with-the-best-pull-up-program-ever",
+      "tags": [],
+      "date": null,
+      "word_count": 721
+    },
+    {
+      "slug": "building-a-recovery-toolkit-3-passive-recovery-methods-to-add-to-your-routine",
+      "title": "Building a Recovery Toolkit: 3 Passive Recovery Methods to Add to Your Routine",
+      "folder": "articles/building-a-recovery-toolkit-3-passive-recovery-methods-to-add-to-your-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 902
+    },
+    {
+      "slug": "lifting-for-strength-vs-hypertrophy-vs-endurance",
+      "title": "Lifting for Strength vs. Hypertrophy vs. Endurance",
+      "folder": "articles/lifting-for-strength-vs-hypertrophy-vs-endurance",
+      "tags": [],
+      "date": null,
+      "word_count": 752
+    },
+    {
+      "slug": "hplt-is-the-fitness-experience-that-s-shifting-the-industry",
+      "title": "HPLT is The Fitness Experience That\u2019s Shifting the Industry",
+      "folder": "articles/hplt-is-the-fitness-experience-that-s-shifting-the-industry",
+      "tags": [],
+      "date": null,
+      "word_count": 2304
+    },
+    {
+      "slug": "what-is-the-best-5-day-workout-split",
+      "title": "What Is The Best 5-Day Workout Split?",
+      "folder": "articles/what-is-the-best-5-day-workout-split",
+      "tags": [],
+      "date": null,
+      "word_count": 3359
+    },
+    {
+      "slug": "3-lessons-on-discipline-from-a-navy-seal-commander",
+      "title": "3 Lessons on Discipline From a Navy SEAL Commander",
+      "folder": "articles/3-lessons-on-discipline-from-a-navy-seal-commander",
+      "tags": [],
+      "date": null,
+      "word_count": 597
+    },
+    {
+      "slug": "pull-ups-vs-chin-ups-how-these-two-moves-differ",
+      "title": "Pull Ups vs. Chin Ups: How These Two Moves Differ",
+      "folder": "articles/pull-ups-vs-chin-ups-how-these-two-moves-differ",
+      "tags": [],
+      "date": null,
+      "word_count": 483
+    },
+    {
+      "slug": "doug-miller",
+      "title": "Doug Miller",
+      "folder": "articles/doug-miller",
+      "tags": [],
+      "date": null,
+      "word_count": 13
+    },
+    {
+      "slug": "3-moves-to-a-brick-thick-back",
+      "title": "3 Moves to a Brick-Thick Back",
+      "folder": "articles/3-moves-to-a-brick-thick-back",
+      "tags": [],
+      "date": null,
+      "word_count": 623
+    },
+    {
+      "slug": "six-science-backed-ways-to-optimize-your-circulation",
+      "title": "Six Science Backed Ways to Optimize Your Circulation",
+      "folder": "articles/six-science-backed-ways-to-optimize-your-circulation",
+      "tags": [],
+      "date": null,
+      "word_count": 1188
+    },
+    {
+      "slug": "10-best-triceps-exercises-for-building-muscle",
+      "title": "10 Best Triceps Exercises for Building Muscle",
+      "folder": "articles/10-best-triceps-exercises-for-building-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 2675
+    },
+    {
+      "slug": "3-reasons-to-start-your-gym-routine-before-the-new-year",
+      "title": "3 Reasons to Start Your Gym Routine Before the New Year",
+      "folder": "articles/3-reasons-to-start-your-gym-routine-before-the-new-year",
+      "tags": [],
+      "date": null,
+      "word_count": 631
+    },
+    {
+      "slug": "10-best-back-exercises-for-building-muscle",
+      "title": "10 Best Back Exercises For Building Muscle",
+      "folder": "articles/10-best-back-exercises-for-building-muscle",
+      "tags": [],
+      "date": null,
+      "word_count": 2546
+    },
+    {
+      "slug": "mindful-movement-the-intersection-of-fitness-and-mental-health",
+      "title": "Mindful Movement: The Intersection of Fitness and Mental Health",
+      "folder": "articles/mindful-movement-the-intersection-of-fitness-and-mental-health",
+      "tags": [],
+      "date": null,
+      "word_count": 536
+    },
+    {
+      "slug": "the-proper-form-to-bench-press-more-weight",
+      "title": "The Proper Form to Bench Press More Weight",
+      "folder": "articles/the-proper-form-to-bench-press-more-weight",
+      "tags": [],
+      "date": null,
+      "word_count": 1784
+    },
+    {
+      "slug": "arnold-schwarzeneggers-8-best-training-principles",
+      "title": "Arnold Schwarzenegger's 8 Best Training Principles",
+      "folder": "articles/arnold-schwarzeneggers-8-best-training-principles",
+      "tags": [],
+      "date": null,
+      "word_count": 1431
+    },
+    {
+      "slug": "the-benefits-of-functional-push-pull-exercises-vs-machines",
+      "title": "The Benefits of Functional Push-Pull Exercises vs. Machines",
+      "folder": "articles/the-benefits-of-functional-push-pull-exercises-vs-machines",
+      "tags": [],
+      "date": null,
+      "word_count": 1170
+    },
+    {
+      "slug": "choosing-the-best-workout-split",
+      "title": "Choosing the Best Workout Split",
+      "folder": "articles/choosing-the-best-workout-split",
+      "tags": [],
+      "date": null,
+      "word_count": 768
+    },
+    {
+      "slug": "what-is-steady-state-cardio-and-how-can-it-help-me-burn-fat",
+      "title": "What is Steady-State Cardio and How Can it Help Me Burn Fat?",
+      "folder": "articles/what-is-steady-state-cardio-and-how-can-it-help-me-burn-fat",
+      "tags": [],
+      "date": null,
+      "word_count": 553
+    },
+    {
+      "slug": "does-olympic-lifting-deserve-a-place-in-your-routine",
+      "title": "Does Olympic Lifting Deserve a Place in Your Routine?",
+      "folder": "articles/does-olympic-lifting-deserve-a-place-in-your-routine",
+      "tags": [],
+      "date": null,
+      "word_count": 681
+    },
+    {
+      "slug": "the-best-ab-workout-for-a-six-pack",
+      "title": "The Best Ab Workout For A Six Pack",
+      "folder": "articles/the-best-ab-workout-for-a-six-pack",
+      "tags": [],
+      "date": null,
+      "word_count": 1328
+    },
+    {
+      "slug": "5-beginner-tips-for-finding-your-fitness-flow",
+      "title": "5 Beginner Tips for Finding Your Fitness Flow",
+      "folder": "articles/5-beginner-tips-for-finding-your-fitness-flow",
+      "tags": [],
+      "date": null,
+      "word_count": 765
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import type { KnowledgeBaseProps } from '@/lib/types'
 import { ContentRail } from './ContentRail'
 import { SearchIcon, Bookmark } from 'lucide-react'
+import Link from 'next/link'
 
 export function KnowledgeBase({
     featured,
@@ -73,12 +74,21 @@ export function KnowledgeBase({
                             <h3 className="text-4xl font-bold font-heading text-white mb-3">{featured[0].title}</h3>
                             <p className="text-lg text-white/90 mb-6 line-clamp-2">{featured[0].description}</p>
                             <div className="flex gap-3">
-                                <button
-                                    onClick={() => onViewContent?.(featured[0].id)}
-                                    className="px-6 py-3 bg-white text-stone-900 rounded-xl font-bold hover:bg-stone-100 transition-colors"
-                                >
-                                    ▶ Play Now
-                                </button>
+                                {featured[0].slug ? (
+                                    <Link
+                                        href={`/knowledge-base/articles/${featured[0].slug}`}
+                                        className="px-6 py-3 bg-white text-stone-900 rounded-xl font-bold hover:bg-stone-100 transition-colors flex items-center justify-center"
+                                    >
+                                        ▶ Read Now
+                                    </Link>
+                                ) : (
+                                    <button
+                                        onClick={() => onViewContent?.(featured[0].id)}
+                                        className="px-6 py-3 bg-white text-stone-900 rounded-xl font-bold hover:bg-stone-100 transition-colors"
+                                    >
+                                        ▶ Play Now
+                                    </button>
+                                )}
                                 <button
                                     onClick={() => onBookmark?.(featured[0].id)}
                                     className="px-6 py-3 bg-white/10 backdrop-blur-sm text-white rounded-xl font-medium hover:bg-white/20 transition-colors flex items-center gap-2"
@@ -115,17 +125,17 @@ export function KnowledgeBase({
 
             {/* Empty State */}
             {featured.length === 0 && bookmarked.length === 0 &&
-             categoryData.every(cat => cat.items.length === 0) && (
-                <div className="text-center py-20">
-                    <div className="text-6xl mb-4">📚</div>
-                    <h3 className="text-2xl font-bold font-heading text-stone-900 dark:text-white mb-2">
-                        No Content Available
-                    </h3>
-                    <p className="text-stone-500 dark:text-stone-400">
-                        Check back soon for educational content and tutorials.
-                    </p>
-                </div>
-            )}
+                categoryData.every(cat => cat.items.length === 0) && (
+                    <div className="text-center py-20">
+                        <div className="text-6xl mb-4">📚</div>
+                        <h3 className="text-2xl font-bold font-heading text-stone-900 dark:text-white mb-2">
+                            No Content Available
+                        </h3>
+                        <p className="text-stone-500 dark:text-stone-400">
+                            Check back soon for educational content and tutorials.
+                        </p>
+                    </div>
+                )}
         </div>
     )
 }

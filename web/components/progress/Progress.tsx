@@ -1,14 +1,28 @@
-import React from 'react'
 import type { ProgressProps } from '@/lib/types'
 import { PhotoCompare } from './PhotoCompare'
 import { HistoryList } from './HistoryList'
+import { WorkoutLibrary } from './WorkoutLibrary'
 
-export { PhotoCompare, HistoryList }
+export { PhotoCompare, HistoryList, WorkoutLibrary }
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 
-export function Progress({ data, onMetricChange, onComparePhotos }: ProgressProps) {
-    const [activeTab, setActiveTab] = useState<'stats' | 'photos' | 'history'>('stats')
+export function Progress({ data, onMetricChange, onComparePhotos, onLogWeight }: ProgressProps) {
+    const searchParams = useSearchParams();
+    const tabParam = searchParams.get('tab');
+
+    // Initialize tab from URL or default to 'stats'
+    const [activeTab, setActiveTab] = useState<'stats' | 'photos' | 'history' | 'library'>(
+        (tabParam === 'library' || tabParam === 'photos' || tabParam === 'history') ? tabParam : 'stats'
+    );
+
+    // Sync tab with URL if it changes externally
+    useEffect(() => {
+        if (tabParam && ['stats', 'photos', 'history', 'library'].includes(tabParam)) {
+            setActiveTab(tabParam as any);
+        }
+    }, [tabParam]);
 
     return (
         <div className="space-y-8 animate-in fade-in duration-500 pb-20">
@@ -19,20 +33,29 @@ export function Progress({ data, onMetricChange, onComparePhotos }: ProgressProp
                     <h2 className="text-3xl font-bold font-heading text-stone-900 dark:text-white">Progress</h2>
                     <p className="text-stone-500 dark:text-stone-400 text-sm">Track your transformation</p>
                 </div>
-                <div className="flex bg-stone-100 dark:bg-stone-800 p-1 rounded-xl">
-                    {['Stats', 'Photos', 'History'].map(tab => (
-                        <button
-                            key={tab}
-                            onClick={() => setActiveTab(tab.toLowerCase() as any)}
-                            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${activeTab === tab.toLowerCase()
-                                ? 'bg-white dark:bg-stone-700 text-stone-900 dark:text-white shadow-sm'
-                                : 'text-stone-500'
-                                }`}
-                        >
-                            {tab}
-                        </button>
-                    ))}
+                <div className="flex gap-2">
+                    <button
+                        onClick={onLogWeight}
+                        className="bg-teal-500/10 text-teal-600 px-4 py-2 rounded-xl text-xs font-bold hover:bg-teal-500/20 transition-all"
+                    >
+                        Log Weight
+                    </button>
+                    <div className="flex bg-stone-100 dark:bg-stone-800 p-1 rounded-xl">
+                        {['Stats', 'Photos', 'History', 'Library'].map(tab => (
+                            <button
+                                key={tab}
+                                onClick={() => setActiveTab(tab.toLowerCase() as any)}
+                                className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${activeTab === tab.toLowerCase()
+                                    ? 'bg-white dark:bg-stone-700 text-stone-900 dark:text-white shadow-sm'
+                                    : 'text-stone-500'
+                                    }`}
+                            >
+                                {tab}
+                            </button>
+                        ))}
+                    </div>
                 </div>
+
             </div>
 
             {/* Stats View */}
@@ -145,6 +168,11 @@ export function Progress({ data, onMetricChange, onComparePhotos }: ProgressProp
                         </div>
                     ))}
                 </div>
+            )}
+
+            {/* Library View */}
+            {activeTab === 'library' && (
+                <WorkoutLibrary />
             )}
         </div>
     )

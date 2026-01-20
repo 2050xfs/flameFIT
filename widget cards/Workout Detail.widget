@@ -1,0 +1,250 @@
+{
+  "version": "1.0",
+  "name": "Workout Detail",
+  "template": "{\"type\":\"Card\",\"size\":\"md\",\"background\":{{ (background) | tojson }},\"theme\":\"dark\",\"confirm\":{\"label\":\"Start Session\",\"action\":{\"type\":\"workout.start\",\"payload\":{\"id\":{{ (id) | tojson }}}}},\"children\":[{\"type\":\"Col\",\"gap\":3,\"children\":[{\"type\":\"Image\",\"src\":{{ (heroImage) | tojson }},\"alt\":\"Workout hero\",\"aspectRatio\":{{ ((16 / 9)) | tojson }},\"flush\":true},{\"type\":\"Col\",\"gap\":1,\"children\":[{\"type\":\"Title\",\"value\":{{ (title) | tojson }},\"size\":\"lg\",\"color\":{{ (accentPrimary) | tojson }}},{\"type\":\"Row\",\"gap\":4,\"align\":\"center\",\"children\":[{\"type\":\"Row\",\"gap\":1,\"align\":\"center\",\"children\":[{\"type\":\"Icon\",\"name\":\"calendar\",\"color\":{{ (accentPrimary) | tojson }}},{\"type\":\"Caption\",\"value\":{{ (duration) | tojson }}}]},{\"type\":\"Row\",\"gap\":1,\"align\":\"center\",\"children\":[{\"type\":\"Icon\",\"name\":\"bolt\",\"color\":{{ (accentPrimary) | tojson }}},{\"type\":\"Caption\",\"value\":{{ (difficulty) | tojson }}}]},{\"type\":\"Row\",\"gap\":1,\"align\":\"center\",\"children\":[{\"type\":\"Icon\",\"name\":\"cube\",\"color\":{{ (accentPrimary) | tojson }}},{\"type\":\"Caption\",\"value\":{{ (equipment) | tojson }}}]}]}]},{\"type\":\"Row\",\"children\":[{\"type\":\"Button\",\"label\":\"Play video\",\"iconStart\":\"play\",\"variant\":\"outline\",\"onClickAction\":{\"type\":\"video.open\",\"payload\":{\"url\":{{ (videoUrl) | tojson }},\"id\":{{ (id) | tojson }}}}},{\"type\":\"Spacer\"},{\"type\":\"Badge\",\"label\":\"Tips\",\"color\":\"discovery\"}]},{\"type\":\"Col\",\"gap\":2,\"children\":[{%- set _c -%}{%-for t in tips -%}{%-set i = loop.index0 -%},{\"type\":\"Row\",\"key\":{{ ((\"tip-\" ~ i)) | tojson }},\"gap\":2,\"align\":\"center\",\"children\":[{\"type\":\"Icon\",\"name\":\"lightbulb\",\"color\":{{ (accentSecondary) | tojson }}},{\"type\":\"Text\",\"value\":{{ (t) | tojson }},\"size\":\"sm\",\"color\":\"secondary\"}]}{%-endfor-%}{%- endset -%}{{- (_c[1:] if _c and _c[0] == ',' else _c) -}}]}]}]}",
+  "jsonSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "heroImage": {
+        "type": "string",
+        "format": "uri"
+      },
+      "duration": {
+        "type": "string"
+      },
+      "difficulty": {
+        "type": "string"
+      },
+      "equipment": {
+        "type": "string"
+      },
+      "videoUrl": {
+        "type": "string",
+        "format": "uri"
+      },
+      "tips": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "background": {
+        "type": "string"
+      },
+      "accentPrimary": {
+        "type": "string"
+      },
+      "accentSecondary": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "heroImage",
+      "duration",
+      "difficulty",
+      "equipment",
+      "videoUrl",
+      "tips",
+      "background",
+      "accentPrimary",
+      "accentSecondary"
+    ],
+    "additionalProperties": false
+  },
+  "outputJsonPreview": {
+    "type": "Card",
+    "size": "md",
+    "background": "#0B0B0B",
+    "theme": "dark",
+    "confirm": {
+      "label": "Start Session",
+      "action": {
+        "type": "workout.start",
+        "payload": {
+          "id": "wf_morning_hiit"
+        }
+      }
+    },
+    "children": [
+      {
+        "type": "Col",
+        "gap": 3,
+        "children": [
+          {
+            "type": "Image",
+            "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/HIIT_Workout.jpg",
+            "alt": "Workout hero",
+            "aspectRatio": 1.7777777777777777,
+            "flush": true
+          },
+          {
+            "type": "Col",
+            "gap": 1,
+            "children": [
+              {
+                "type": "Title",
+                "value": "Morning HIIT Blast",
+                "size": "lg",
+                "color": "#FF5A1F"
+              },
+              {
+                "type": "Row",
+                "gap": 4,
+                "align": "center",
+                "children": [
+                  {
+                    "type": "Row",
+                    "gap": 1,
+                    "align": "center",
+                    "children": [
+                      {
+                        "type": "Icon",
+                        "name": "calendar",
+                        "color": "#FF5A1F"
+                      },
+                      {
+                        "type": "Caption",
+                        "value": "20 min"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Row",
+                    "gap": 1,
+                    "align": "center",
+                    "children": [
+                      {
+                        "type": "Icon",
+                        "name": "bolt",
+                        "color": "#FF5A1F"
+                      },
+                      {
+                        "type": "Caption",
+                        "value": "High Intensity"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "Row",
+                    "gap": 1,
+                    "align": "center",
+                    "children": [
+                      {
+                        "type": "Icon",
+                        "name": "cube",
+                        "color": "#FF5A1F"
+                      },
+                      {
+                        "type": "Caption",
+                        "value": "Dumbbells"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "Row",
+            "children": [
+              {
+                "type": "Button",
+                "label": "Play video",
+                "iconStart": "play",
+                "variant": "outline",
+                "onClickAction": {
+                  "type": "video.open",
+                  "payload": {
+                    "url": "https://www.youtube.com/watch?v=UEYLl-HYhok",
+                    "id": "wf_morning_hiit"
+                  }
+                }
+              },
+              {
+                "type": "Spacer"
+              },
+              {
+                "type": "Badge",
+                "label": "Tips",
+                "color": "discovery"
+              }
+            ]
+          },
+          {
+            "type": "Col",
+            "gap": 2,
+            "children": [
+              {
+                "type": "Row",
+                "key": "tip-0",
+                "gap": 2,
+                "align": "center",
+                "children": [
+                  {
+                    "type": "Icon",
+                    "name": "lightbulb",
+                    "color": "#B11226"
+                  },
+                  {
+                    "type": "Text",
+                    "value": "3‑minute warm‑up before starting",
+                    "size": "sm",
+                    "color": "secondary"
+                  }
+                ]
+              },
+              {
+                "type": "Row",
+                "key": "tip-1",
+                "gap": 2,
+                "align": "center",
+                "children": [
+                  {
+                    "type": "Icon",
+                    "name": "lightbulb",
+                    "color": "#B11226"
+                  },
+                  {
+                    "type": "Text",
+                    "value": "Keep core tight; land soft on jumps",
+                    "size": "sm",
+                    "color": "secondary"
+                  }
+                ]
+              },
+              {
+                "type": "Row",
+                "key": "tip-2",
+                "gap": 2,
+                "align": "center",
+                "children": [
+                  {
+                    "type": "Icon",
+                    "name": "lightbulb",
+                    "color": "#B11226"
+                  },
+                  {
+                    "type": "Text",
+                    "value": "Hydrate and 3‑minute cooldown",
+                    "size": "sm",
+                    "color": "secondary"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "encodedWidget": "eyJpZCI6ImZmZWQxZDI1LTQ4NDEtNDhmMC1iODRjLWFhNDE5YjgxNTEzMCIsIm5hbWUiOiJXb3Jrb3V0IERldGFpbCIsInZpZXciOiI8Q2FyZFxuICBzaXplPVwibWRcIlxuICBiYWNrZ3JvdW5kPXtiYWNrZ3JvdW5kfVxuICB0aGVtZT1cImRhcmtcIlxuICBjb25maXJtPXt7XG4gICAgbGFiZWw6IFwiU3RhcnQgU2Vzc2lvblwiLFxuICAgIGFjdGlvbjogeyB0eXBlOiBcIndvcmtvdXQuc3RhcnRcIiwgcGF5bG9hZDogeyBpZCB9IH0sXG4gIH19XG4-XG4gIDxDb2wgZ2FwPXszfT5cbiAgICA8SW1hZ2Ugc3JjPXtoZXJvSW1hZ2V9IGFsdD1cIldvcmtvdXQgaGVyb1wiIGFzcGVjdFJhdGlvPXsxNiAvIDl9IGZsdXNoIC8-XG4gICAgPENvbCBnYXA9ezF9PlxuICAgICAgPFRpdGxlIHZhbHVlPXt0aXRsZX0gc2l6ZT1cImxnXCIgY29sb3I9e2FjY2VudFByaW1hcnl9IC8-XG4gICAgICA8Um93IGdhcD17NH0gYWxpZ249XCJjZW50ZXJcIj5cbiAgICAgICAgPFJvdyBnYXA9ezF9IGFsaWduPVwiY2VudGVyXCI-XG4gICAgICAgICAgPEljb24gbmFtZT1cImNhbGVuZGFyXCIgY29sb3I9e2FjY2VudFByaW1hcnl9IC8-XG4gICAgICAgICAgPENhcHRpb24gdmFsdWU9e2R1cmF0aW9ufSAvPlxuICAgICAgICA8L1Jvdz5cbiAgICAgICAgPFJvdyBnYXA9ezF9IGFsaWduPVwiY2VudGVyXCI-XG4gICAgICAgICAgPEljb24gbmFtZT1cImJvbHRcIiBjb2xvcj17YWNjZW50UHJpbWFyeX0gLz5cbiAgICAgICAgICA8Q2FwdGlvbiB2YWx1ZT17ZGlmZmljdWx0eX0gLz5cbiAgICAgICAgPC9Sb3c-XG4gICAgICAgIDxSb3cgZ2FwPXsxfSBhbGlnbj1cImNlbnRlclwiPlxuICAgICAgICAgIDxJY29uIG5hbWU9XCJjdWJlXCIgY29sb3I9e2FjY2VudFByaW1hcnl9IC8-XG4gICAgICAgICAgPENhcHRpb24gdmFsdWU9e2VxdWlwbWVudH0gLz5cbiAgICAgICAgPC9Sb3c-XG4gICAgICA8L1Jvdz5cbiAgICA8L0NvbD5cblxuICAgIDxSb3c-XG4gICAgICA8QnV0dG9uXG4gICAgICAgIGxhYmVsPVwiUGxheSB2aWRlb1wiXG4gICAgICAgIGljb25TdGFydD1cInBsYXlcIlxuICAgICAgICB2YXJpYW50PVwib3V0bGluZVwiXG4gICAgICAgIG9uQ2xpY2tBY3Rpb249e3sgdHlwZTogXCJ2aWRlby5vcGVuXCIsIHBheWxvYWQ6IHsgdXJsOiB2aWRlb1VybCwgaWQgfSB9fVxuICAgICAgLz5cbiAgICAgIDxTcGFjZXIgLz5cbiAgICAgIDxCYWRnZSBsYWJlbD1cIlRpcHNcIiBjb2xvcj1cImRpc2NvdmVyeVwiIC8-XG4gICAgPC9Sb3c-XG5cbiAgICA8Q29sIGdhcD17Mn0-XG4gICAgICB7dGlwcy5tYXAoKHQsIGkpID0-IChcbiAgICAgICAgPFJvdyBrZXk9e2B0aXAtJHtpfWB9IGdhcD17Mn0gYWxpZ249XCJjZW50ZXJcIj5cbiAgICAgICAgICA8SWNvbiBuYW1lPVwibGlnaHRidWxiXCIgY29sb3I9e2FjY2VudFNlY29uZGFyeX0gLz5cbiAgICAgICAgICA8VGV4dCB2YWx1ZT17dH0gc2l6ZT1cInNtXCIgY29sb3I9XCJzZWNvbmRhcnlcIiAvPlxuICAgICAgICA8L1Jvdz5cbiAgICAgICkpfVxuICAgIDwvQ29sPlxuICA8L0NvbD5cbjwvQ2FyZD4iLCJkZWZhdWx0U3RhdGUiOnsiaWQiOiJ3Zl9tb3JuaW5nX2hpaXQiLCJ0aXRsZSI6Ik1vcm5pbmcgSElJVCBCbGFzdCIsImhlcm9JbWFnZSI6Imh0dHBzOi8vdXBsb2FkLndpa2ltZWRpYS5vcmcvd2lraXBlZGlhL2NvbW1vbnMvZi9mMC9ISUlUX1dvcmtvdXQuanBnIiwiZHVyYXRpb24iOiIyMCBtaW4iLCJkaWZmaWN1bHR5IjoiSGlnaCBJbnRlbnNpdHkiLCJlcXVpcG1lbnQiOiJEdW1iYmVsbHMiLCJ2aWRlb1VybCI6Imh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9VUVZTGwtSFlob2siLCJ0aXBzIjpbIjPigJFtaW51dGUgd2FybeKAkXVwIGJlZm9yZSBzdGFydGluZyIsIktlZXAgY29yZSB0aWdodDsgbGFuZCBzb2Z0IG9uIGp1bXBzIiwiSHlkcmF0ZSBhbmQgM-KAkW1pbnV0ZSBjb29sZG93biJdLCJiYWNrZ3JvdW5kIjoiIzBCMEIwQiIsImFjY2VudFByaW1hcnkiOiIjRkY1QTFGIiwiYWNjZW50U2Vjb25kYXJ5IjoiI0IxMTIyNiJ9LCJzdGF0ZXMiOltdLCJzY2hlbWEiOiJpbXBvcnQgeyB6IH0gZnJvbSBcInpvZFwiXG5cbmNvbnN0IFdpZGdldFN0YXRlID0gei5zdHJpY3RPYmplY3Qoe1xuICBpZDogei5zdHJpbmcoKSxcbiAgdGl0bGU6IHouc3RyaW5nKCksXG4gIGhlcm9JbWFnZTogei5zdHJpbmcoKS51cmwoKSxcbiAgZHVyYXRpb246IHouc3RyaW5nKCksXG4gIGRpZmZpY3VsdHk6IHouc3RyaW5nKCksXG4gIGVxdWlwbWVudDogei5zdHJpbmcoKSxcbiAgdmlkZW9Vcmw6IHouc3RyaW5nKCkudXJsKCksXG4gIHRpcHM6IHouYXJyYXkoei5zdHJpbmcoKSksXG4gIGJhY2tncm91bmQ6IHouc3RyaW5nKCksXG4gIGFjY2VudFByaW1hcnk6IHouc3RyaW5nKCksXG4gIGFjY2VudFNlY29uZGFyeTogei5zdHJpbmcoKSxcbn0pXG5cbmV4cG9ydCBkZWZhdWx0IFdpZGdldFN0YXRlIiwianNvblNjaGVtYSI6e30sInNjaGVtYU1vZGUiOiJ6b2QiLCJzY2hlbWFWYWxpZGl0eSI6InZhbGlkIiwidmlld1ZhbGlkaXR5IjoidmFsaWQiLCJkZWZhdWx0U3RhdGVWYWxpZGl0eSI6InZhbGlkIn0"
+}

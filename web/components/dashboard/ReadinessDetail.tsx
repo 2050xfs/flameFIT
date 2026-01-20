@@ -1,5 +1,5 @@
 import React from 'react'
-import type { ReadinessData } from '@/../product/sections/dashboard/types'
+import type { ReadinessData } from '@/lib/types'
 
 interface ReadinessDetailProps {
     readiness: ReadinessData
