@@ -8,7 +8,7 @@ export const getSparkContext = async (userId: string) => {
     // Fetch user profile
     const { data: profile, error: profileError } = await supabase
         .from('profiles')
-        .select('name, weight, height, goals, preferences, bio')
+        .select('name, weight, height, goals, preferences')
         .eq('id', userId)
         .maybeSingle();
 
@@ -65,7 +65,6 @@ export const formatContextForPrompt = (context: any) => {
     if (profile) {
         prompt += `- Name: ${profile.name}\n`;
         prompt += `- Goals: ${profile.goals?.join(', ')}\n`;
-        prompt += `- Bio: ${profile.bio}\n`;
         prompt += `- Stats: ${profile.weight}kg, ${profile.height}cm\n`;
     }
 
