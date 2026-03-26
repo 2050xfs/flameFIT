@@ -2,18 +2,51 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Lock } from 'lucide-react';
+import { Lock, Crown, Zap } from 'lucide-react';
 import { createClient } from '@/lib/supabase/client';
+
+export type SubscriptionTier = 'free' | 'pro' | 'elite';
 
 interface PremiumGateProps {
     isPremiumContent: boolean;
+    requiredTier?: SubscriptionTier;
     children: React.ReactNode;
     title?: string;
     description?: string;
 }
 
+async function getUserTier(): Promise<SubscriptionTier> {
+    const supabase = createClient();
+    if (!supabase) return 'free';
+
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return 'free';
+
+    const { data: profile } = await supabase
+        .from('profiles')
+        .select('subscription_tier, subscription_expires_at')
+        .eq('id', user.id)
+        .single();
+
+    if (!profile) return 'free';
+
+    // Check if subscription has expired
+    if (profile.subscription_expires_at) {
+        const expiry = new Date(profile.subscription_expires_at);
+        if (expiry < new Date()) return 'free';
+    }
+
+    return (profile.subscription_tier as SubscriptionTier) || 'free';
+}
+
+function tierMeetsRequirement(userTier: SubscriptionTier, required: SubscriptionTier): boolean {
+    const ranks: Record<SubscriptionTier, number> = { free: 0, pro: 1, elite: 2 };
+    return ranks[userTier] >= ranks[required];
+}
+
 export function PremiumGate({
     isPremiumContent,
+    requiredTier = 'pro',
     children,
     title = "Premium Content",
     description = "Subscribe to FlameFit Pro to access this exclusive functionality."
@@ -28,37 +61,19 @@ export function PremiumGate({
             return;
         }
 
-        const checkAccess = async () => {
-            const supabase = createClient();
-            if (!supabase) {
-                setIsLoading(false);
-                return;
-            }
-
-            const { data: { user } } = await supabase.auth.getUser();
-
-            // TODO: Fetch actual subscription status from profile table
-            // For now, we mock access if user is logged in (or specific user)
-            // Ideally: const { data: profile } = await supabase.from('profiles').select('subscription_tier').eq('id', user.id).single();
-            // const isPro = profile?.subscription_tier === 'pro' || profile?.subscription_tier === 'elite';
-
-            const isPro = !!user; // TEMPORARY: Allow any logged-in user for testing, or assume false if strict.
-
-            setHasAccess(isPro);
+        getUserTier().then(tier => {
+            setHasAccess(tierMeetsRequirement(tier, requiredTier));
             setIsLoading(false);
-        };
-
-        checkAccess();
-    }, [isPremiumContent]);
+        });
+    }, [isPremiumContent, requiredTier]);
 
     if (!isPremiumContent) {
         return <>{children}</>;
     }
 
     if (isLoading) {
-        // Show a skeleton or loading state that mimics the content
         return (
-            <div className="animate-pulse space-y-4">
+            <div className="animate-pulse space-y-4 p-6">
                 <div className="h-4 bg-stone-200 dark:bg-stone-800 rounded w-3/4"></div>
                 <div className="h-4 bg-stone-200 dark:bg-stone-800 rounded w-full"></div>
                 <div className="h-4 bg-stone-200 dark:bg-stone-800 rounded w-5/6"></div>
@@ -70,42 +85,61 @@ export function PremiumGate({
         return <>{children}</>;
     }
 
-    // Locked State
+    const tierLabel = requiredTier === 'elite' ? 'Elite' : 'Pro';
+    const tierIcon = requiredTier === 'elite' ? Crown : Zap;
+    const TierIcon = tierIcon;
+
     return (
         <div className="relative">
-            {/* Blurred Content Preview */}
-            <div className="blur-md select-none pointer-events-none opacity-50 h-[400px] overflow-hidden mask-image-gradient">
-                {/* Render children to show underlying structure but blurred?
-                     Or just placeholders to prevent leaking info in DOM?
-                     Safest is placeholders, but visual effect needs children.
-                     If children are text, it's in DOM.
-                     For security, don't render children if sensitive.
-                     But for "teaser", maybe render first paragraph?
-                  */}
-                <div dangerouslySetInnerHTML={{ __html: "<h1>Content Locked</h1><p>Lorem ipsum dolor sit amet...</p>" }} />
+            {/* Blurred placeholder preview */}
+            <div className="blur-md select-none pointer-events-none opacity-40 h-[320px] overflow-hidden">
+                <div className="p-8 space-y-4">
+                    <div className="h-6 bg-stone-300 dark:bg-stone-700 rounded w-1/2" />
+                    <div className="h-4 bg-stone-200 dark:bg-stone-800 rounded w-full" />
+                    <div className="h-4 bg-stone-200 dark:bg-stone-800 rounded w-4/5" />
+                    <div className="h-24 bg-stone-200 dark:bg-stone-800 rounded-2xl w-full" />
+                    <div className="h-4 bg-stone-200 dark:bg-stone-800 rounded w-3/4" />
+                </div>
             </div>
 
-            {/* Overlay */}
-            <div className="absolute inset-0 z-10 flex items-center justify-center p-6 bg-gradient-to-b from-transparent to-white dark:to-stone-950">
-                <div className="bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl border border-stone-200 dark:border-stone-800 p-8 rounded-3xl max-w-md w-full text-center shadow-2xl transform transition-all hover:scale-105">
-                    <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <Lock className="w-8 h-8 text-orange-500" />
+            {/* Gradient fade */}
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/60 to-white dark:via-stone-950/60 dark:to-stone-950 pointer-events-none" />
+
+            {/* Overlay card */}
+            <div className="absolute inset-0 z-10 flex items-center justify-center p-6">
+                <div className="bg-white/95 dark:bg-stone-900/95 backdrop-blur-xl border border-stone-200 dark:border-stone-800 p-8 rounded-3xl max-w-sm w-full text-center shadow-2xl">
+                    <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <Lock className="w-7 h-7 text-orange-500" />
                     </div>
-                    <h3 className="text-2xl font-bold font-heading text-stone-900 dark:text-white mb-2">
+
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-500/10 text-orange-500 text-xs font-bold uppercase tracking-wider mb-4">
+                        <TierIcon className="w-3 h-3" />
+                        {tierLabel} Feature
+                    </div>
+
+                    <h3 className="text-xl font-bold font-heading text-stone-900 dark:text-white mb-2">
                         {title}
                     </h3>
-                    <p className="text-stone-500 dark:text-stone-400 mb-8 leading-relaxed">
+                    <p className="text-stone-500 dark:text-stone-400 mb-6 text-sm leading-relaxed">
                         {description}
                     </p>
-                    <div className="space-y-4">
+
+                    <div className="space-y-3">
                         <Link
-                            href="/pro/subscribe"
-                            className="block w-full py-4 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-orange-500/25"
+                            href="/profile?tab=subscription"
+                            className="flex items-center justify-center gap-2 w-full py-3.5 bg-gradient-to-r from-orange-500 to-rose-500 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-orange-500/30 hover:opacity-90 text-sm"
                         >
-                            Unlock Pro Access
+                            <Crown className="w-4 h-4" />
+                            Unlock {tierLabel} Access
                         </Link>
                         <p className="text-xs text-stone-400">
-                            Already a member? <Link href="/login" className="text-orange-500 hover:underline">Sign In</Link>
+                            Already subscribed?{' '}
+                            <button
+                                onClick={() => window.location.reload()}
+                                className="text-orange-500 hover:underline"
+                            >
+                                Refresh
+                            </button>
                         </p>
                     </div>
                 </div>

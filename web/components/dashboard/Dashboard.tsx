@@ -16,8 +16,9 @@ export function Dashboard({
     onLogMeal,
     onAddWater,
     onViewDetails,
-    onInsightAction
-}: DashboardProps & { onInsightAction?: () => void }) {
+    onInsightAction,
+    onLogReadiness,
+}: DashboardProps & { onInsightAction?: () => void; onLogReadiness?: () => void }) {
 
     return (
         <div className="space-y-8 animate-in fade-in duration-500">
@@ -33,7 +34,7 @@ export function Dashboard({
 
             {/* Header Area */}
             <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <ReadinessCard readiness={readiness} />
+                <ReadinessCard readiness={readiness} onLogReadiness={onLogReadiness} />
                 <HydrationWidget water={water} onAddWater={onAddWater} />
                 <QuickActions onStartWorkout={onStartWorkout} onLogMeal={onLogMeal} />
             </section>

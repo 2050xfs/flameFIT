@@ -38,25 +38,30 @@ export default function SparkArchitect() {
     };
 
     const handleGenerate = async () => {
-        // Trigger generation logic (Step 3)
         setStep(3);
-        // Mock generation delay for now
-        setTimeout(() => {
-            const mockWorkout: GeneratedWorkout = {
-                id: 'spark-123',
-                title: 'AI Generated Protocol',
-                description: `A ${config.intensity} intensity ${config.objective} session focusing on ${config.muscles.join(', ')}.`,
-                exercises: [], // Populated in Step 4
-                stats: {
-                    volume: 12000,
-                    intensity: 8.5,
-                    calories: 450,
-                    duration: config.duration
-                }
-            };
-            setGeneratedWorkout(mockWorkout);
+        try {
+            const res = await fetch('/api/ai/generate-workout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(config),
+            });
+            if (!res.ok) throw new Error('Generation failed');
+            const workout: GeneratedWorkout = await res.json();
+            setGeneratedWorkout(workout);
             setStep(4);
-        }, 3000);
+        } catch (err) {
+            console.error('Workout generation error:', err);
+            // Fallback: show a sensible default so UX doesn't break
+            const fallback: GeneratedWorkout = {
+                id: `spark-${Date.now()}`,
+                title: 'Custom Protocol',
+                description: `A ${config.intensity} intensity ${config.objective} session${config.muscles.length ? ` targeting ${config.muscles.join(', ')}` : ''}.`,
+                exercises: [],
+                stats: { volume: 0, intensity: 7, calories: 350, duration: config.duration }
+            };
+            setGeneratedWorkout(fallback);
+            setStep(4);
+        }
     };
 
 
