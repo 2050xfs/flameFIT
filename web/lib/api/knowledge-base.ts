@@ -32,11 +32,11 @@ export async function getKnowledgeBaseData(): Promise<Omit<KnowledgeBaseProps, '
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
-    // Fetch content from new table
+    // Fetch content from knowledge_base_content table
     const { data: dbContent } = await supabase
-        .from('knowledge_base_articles')
-        .select('id, title, description, category, thumbnail_url, tags, is_premium, slug')
-        .order('date', { ascending: false });
+        .from('knowledge_base_content')
+        .select('id, title, description, category, thumbnail_url, tags, duration, difficulty, video_url')
+        .order('created_at', { ascending: false });
 
     // Fetch user bookmarks
     const { data: bookmarks } = user ? await supabase
@@ -53,13 +53,11 @@ export async function getKnowledgeBaseData(): Promise<Omit<KnowledgeBaseProps, '
         description: c.description || '',
         category: c.category || 'strength',
         tags: c.tags || [],
-        duration: '5 min read',
-        difficulty: 'intermediate',
+        duration: c.duration || '5 min',
+        difficulty: c.difficulty || 'intermediate',
         thumbnailUrl: c.thumbnail_url || '',
-        videoUrl: undefined,
+        videoUrl: c.video_url || undefined,
         isBookmarked: bookmarkIds.has(c.id),
-        isPremium: c.is_premium,
-        slug: c.slug
     }));
 
     // Use mock if DB is empty (fallback)
