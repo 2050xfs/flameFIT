@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { ProfileClient } from "./ProfileClient";
+import { Loader2 } from "lucide-react";
 
 export default async function ProfilePage() {
     const supabase = await createClient();
@@ -20,9 +21,11 @@ export default async function ProfilePage() {
     return (
         <div className="max-w-2xl mx-auto py-8 px-4">
             <h1 className="text-3xl font-heading font-bold text-stone-900 dark:text-white mb-2">My Profile</h1>
-            <p className="text-stone-500 dark:text-stone-400 mb-8">Manage your personal information and fitness goals.</p>
+            <p className="text-stone-500 dark:text-stone-400 mb-8">Manage your personal information and subscription.</p>
 
-            <ProfileClient initialData={profile} />
+            <Suspense fallback={<div className="flex justify-center py-16"><Loader2 className="w-8 h-8 animate-spin text-orange-500" /></div>}>
+                <ProfileClient initialData={profile} />
+            </Suspense>
         </div>
     );
 }

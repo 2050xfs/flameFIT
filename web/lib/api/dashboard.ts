@@ -84,7 +84,7 @@ export async function getDashboardData(): Promise<DashboardData> {
     const macroTargets = getDefaultMacroTargets(profile?.weight || undefined);
 
     // Fetch data with error handling
-    const [logsResult, sessionsResult, waterResult] = await Promise.all([
+    const [logsResult, sessionsResult, waterResult, readinessResult] = await Promise.all([
         supabase
             .from('nutrient_logs')
             .select(`
@@ -120,6 +120,12 @@ export async function getDashboardData(): Promise<DashboardData> {
             .select('amount')
             .eq('user_id', user.id)
             .eq('date', today)
+            .maybeSingle(),
+        supabase
+            .from('readiness_logs')
+            .select('sleep_hours, sleep_quality, mood, soreness')
+            .eq('user_id', user.id)
+            .eq('date', today)
             .maybeSingle()
     ]);
 
@@ -131,6 +137,7 @@ export async function getDashboardData(): Promise<DashboardData> {
     const logs = (logsResult?.data || []) as any[];
     const sessions = (sessionsResult?.data || []) as any[];
     const waterLog = waterResult?.data as { amount: number } | null;
+    const readinessLog = readinessResult?.data as { sleep_hours: number; sleep_quality: number; mood: number; soreness: number } | null;
 
     const macroTotals = { calories: 0, protein: 0, carbs: 0, fats: 0 };
     const timelineEntries: Array<DashboardProps['timeline'][number] & { sortKey: string }> = [];
@@ -195,22 +202,47 @@ export async function getDashboardData(): Promise<DashboardData> {
     const workoutActive = sessions?.some((session: any) => session.status === 'active');
 
     let readinessScore = readinessBase;
+
+    // Macro & workout signals
     if (macroCompletion >= 0.75) readinessScore += 5;
     if (macroCompletion <= 0.4 && macroTotals.calories > 0) readinessScore -= 5;
     if (workoutCompleted) readinessScore += 8;
     if (workoutActive) readinessScore += 4;
 
+    // Readiness log signals (sleep, mood, soreness)
+    if (readinessLog) {
+        // Sleep: ideal is 7-9 hours
+        const sleep = readinessLog.sleep_hours || 0;
+        if (sleep >= 7 && sleep <= 9) readinessScore += 6;
+        else if (sleep >= 6 && sleep < 7) readinessScore += 2;
+        else if (sleep < 6 && sleep > 0) readinessScore -= 8;
+
+        // Sleep quality: 1-5, baseline at 3
+        const sq = readinessLog.sleep_quality || 3;
+        readinessScore += (sq - 3) * 3; // +/- 6 pts
+
+        // Mood: 1-5
+        const mood = readinessLog.mood || 3;
+        readinessScore += (mood - 3) * 2; // +/- 4 pts
+
+        // Soreness: high soreness reduces readiness
+        const soreness = readinessLog.soreness || 1;
+        readinessScore -= (soreness - 1) * 4; // -0 to -16 pts
+    }
+
     readinessScore = clamp(Math.round(readinessScore));
 
     const readinessStatus: DashboardProps['readiness']['status'] =
-        readinessScore >= 85 ? 'Optimal' : readinessScore >= 70 ? 'High Readiness' : 'Low Recovery';
+        readinessScore >= 85 ? 'Optimal' : readinessScore >= 65 ? 'High Readiness' : 'Low Recovery';
 
-    const readinessMessage =
-        readinessStatus === 'Optimal'
+    const hasReadinessData = !!readinessLog;
+    const readinessMessage = !hasReadinessData
+        ? 'Log your sleep and recovery to get your personalized readiness score.'
+        : readinessStatus === 'Optimal'
             ? 'Recovery looks strong. Great day to push your main lift.'
             : readinessStatus === 'High Readiness'
-                ? 'You’re primed for a solid session. Stick to the plan.'
-                : 'Dial it back and prioritize recovery work today.';
+                ? "You're primed for a solid session. Stick to the plan."
+                : 'High soreness detected. Prioritize recovery and mobility today.';
 
     // Generate Spark Insight
     let insight: DashboardData['insight'] = null;
