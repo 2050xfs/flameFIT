@@ -3,7 +3,7 @@ const { Pinecone } = require('@pinecone-database/pinecone');
 
 async function testPinecone() {
     const apiKey = process.env.PINECONE_API_KEY;
-    const indexName = 'flamefit-knowledge-base'; // Hardcoded matches MCP
+    const indexName = process.env.PINECONE_INDEX_NAME || 'flamefit-knowledge';
 
     console.log("Testing Pinecone Connection...");
     console.log(`API Key present: ${!!apiKey}`);
