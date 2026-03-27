@@ -4,6 +4,12 @@ import { vi, describe, it, expect } from 'vitest'
 import { Progress } from '@/components/progress/Progress'
 import { ProgressProps } from '@/lib/types'
 
+vi.mock('next/navigation', () => ({
+    useSearchParams: () => new URLSearchParams(),
+    useRouter: () => ({ push: vi.fn(), replace: vi.fn() }),
+    usePathname: () => '/dashboard/progress',
+}))
+
 const mockData: ProgressProps['data'] = {
     charts: {
         weight: [
