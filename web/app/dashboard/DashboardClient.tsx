@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useOptimistic, startTransition, useState } from "react";
+import React, { useOptimistic, startTransition, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Dashboard } from "@/components/dashboard/Dashboard";
 import { DashboardProps } from "@/lib/types";
 import { Moon, Smile, Zap, X } from "lucide-react";
+import { OnboardingModal } from "@/components/dashboard/OnboardingModal";
 
 type DashboardData = Omit<DashboardProps, "onStartWorkout" | "onLogMeal" | "onViewDetails">;
 
@@ -141,6 +142,32 @@ function ReadinessModal({ onClose, onSave }: { onClose: () => void; onSave: (dat
 export function DashboardClient({ initialData }: { initialData: DashboardData }) {
     const router = useRouter();
     const [showReadinessModal, setShowReadinessModal] = useState(false);
+    const [showOnboarding, setShowOnboarding] = useState(false);
+
+    // Show onboarding if profile is incomplete and user hasn't dismissed it this session
+    useEffect(() => {
+        const profileIncomplete = initialData.insight?.message?.includes('Profile Progress');
+        const dismissed = sessionStorage.getItem('onboarding_dismissed');
+        if (profileIncomplete && !dismissed) {
+            // Small delay so dashboard renders first
+            const t = setTimeout(() => setShowOnboarding(true), 800);
+            return () => clearTimeout(t);
+        }
+    }, [initialData.insight]);
+
+    const handleOnboardingComplete = async (data: any) => {
+        const { completeOnboardingAction } = await import('@/app/dashboard/actions');
+        await completeOnboardingAction(data);
+        sessionStorage.setItem('onboarding_dismissed', '1');
+        setShowOnboarding(false);
+        router.refresh();
+    };
+
+    const handleOnboardingSkip = () => {
+        sessionStorage.setItem('onboarding_dismissed', '1');
+        setShowOnboarding(false);
+    };
+
     const [optimisticWater, addOptimisticWater] = useOptimistic(
         initialData.water,
         (state, amount: number) => ({ ...state, current: state.current + amount })
@@ -204,6 +231,12 @@ export function DashboardClient({ initialData }: { initialData: DashboardData })
 
     return (
         <>
+            {showOnboarding && (
+                <OnboardingModal
+                    onComplete={handleOnboardingComplete}
+                    onSkip={handleOnboardingSkip}
+                />
+            )}
             {showReadinessModal && (
                 <ReadinessModal
                     onClose={() => setShowReadinessModal(false)}

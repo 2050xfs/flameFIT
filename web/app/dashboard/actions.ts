@@ -11,6 +11,13 @@ export interface ReadinessInput {
     notes?: string;
 }
 
+export interface OnboardingInput {
+    name: string;
+    weight: string; // string from form input, parsed server-side
+    height: string;
+    goals: string[];
+}
+
 export async function logReadinessAction(input: ReadinessInput) {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
@@ -38,7 +45,6 @@ export async function logReadinessAction(input: ReadinessInput) {
         throw new Error('Failed to log readiness');
     }
 
-    // Recompute readiness score and update dashboard
     revalidatePath('/dashboard');
     return { success: true };
 }
@@ -65,4 +71,33 @@ export async function getTodayReadinessAction(): Promise<ReadinessInput | null> 
         soreness: data.soreness,
         notes: data.notes,
     };
+}
+
+export async function completeOnboardingAction(input: OnboardingInput) {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) throw new Error('Unauthorized');
+
+    const weight = input.weight ? parseFloat(input.weight) : null;
+    const height = input.height ? parseFloat(input.height) : null;
+
+    const { error } = await supabase
+        .from('profiles')
+        .update({
+            name: input.name.trim(),
+            weight: weight && weight > 0 ? weight : null,
+            height: height && height > 0 ? height : null,
+            goals: input.goals,
+            updated_at: new Date().toISOString(),
+        })
+        .eq('id', user.id);
+
+    if (error) {
+        console.error('Onboarding save error:', error);
+        throw new Error('Failed to save profile');
+    }
+
+    revalidatePath('/dashboard');
+    revalidatePath('/profile');
+    return { success: true };
 }
