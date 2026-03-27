@@ -11,6 +11,7 @@ vi.mock('@/lib/supabase/server', () => ({
             select: vi.fn().mockReturnThis(),
             eq: vi.fn().mockReturnThis(),
             single: vi.fn().mockReturnThis(),
+            maybeSingle: vi.fn().mockReturnThis(),
             then: (callback: any) => {
                 if (table === 'nutrient_logs') {
                     return Promise.resolve(callback({ data: [], error: null }))
@@ -19,7 +20,7 @@ vi.mock('@/lib/supabase/server', () => ({
                     return Promise.resolve(callback({ data: { amount: 5 }, error: null }))
                 }
                 if (table === 'profiles') {
-                    return Promise.resolve(callback({ data: { weight_lbs: 200 }, error: null }))
+                    return Promise.resolve(callback({ data: { weight: 90 }, error: null }))
                 }
                 return Promise.resolve(callback({ data: null, error: null }))
             }
@@ -30,8 +31,8 @@ vi.mock('@/lib/supabase/server', () => ({
 describe('Kitchen API Integration', () => {
     it('getKitchenData calculates macro targets based on weight', async () => {
         const data = await getKitchenData()
-        // weight 200 * 15 = 3000
-        expect(data.macros.calories.target).toBe(3000)
+        // weight 90kg * 35 cal/kg = 3150
+        expect(data.macros.calories.target).toBe(3150)
     })
 
     it('getKitchenData fetches real water intake', async () => {

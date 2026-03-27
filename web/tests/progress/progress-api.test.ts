@@ -13,6 +13,7 @@ vi.mock('@/lib/supabase/server', () => ({
             order: vi.fn().mockReturnThis(),
             limit: vi.fn().mockReturnThis(),
             single: vi.fn().mockReturnThis(),
+            maybeSingle: vi.fn().mockReturnThis(),
             then: (callback: any) => {
                 if (table === 'body_stats') {
                     // For progress charts and stats

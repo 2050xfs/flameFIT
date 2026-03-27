@@ -16,6 +16,10 @@ const mockData: DashboardProps = {
         carbs: { current: 150, target: 250 },
         fats: { current: 50, target: 80 }
     },
+    water: {
+        current: 4,
+        target: 8
+    },
     timeline: [
         { id: '1', time: '08:00 AM', title: 'Breakfast', type: 'meal', status: 'completed', details: 'Oatmeal & Protein Shake' },
         { id: '2', time: '05:00 PM', title: 'Push Workout', type: 'workout', status: 'upcoming', details: 'Chest & Triceps Focus' }

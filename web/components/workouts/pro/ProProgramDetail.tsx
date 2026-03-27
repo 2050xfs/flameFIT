@@ -8,12 +8,18 @@ import { Play, ChevronDown, ChevronUp, BookOpen, Crown, User, Calendar, Flame, C
 import Image from 'next/image';
 import { PremiumGate } from '@/components/ui/PremiumGate';
 import Link from 'next/link';
+import { ProgramProgressCard } from './ProgramProgressCard';
 
 interface ProProgramDetailProps {
     program: DetailedProProgram;
+    subscription?: { id: string; current_week: number; created_at: string; status: string } | null;
 }
 
-export function ProProgramDetail({ program }: ProProgramDetailProps) {
+export function ProProgramDetail({ program, subscription }: ProProgramDetailProps) {
+    const handleAdvanceWeek = async () => {
+        const { advanceProgramWeekAction } = await import('@/app/workouts/actions');
+        await advanceProgramWeekAction(program.id);
+    };
     const [expandedChapter, setExpandedChapter] = useState<string | null>(null);
 
     return (
@@ -163,6 +169,18 @@ export function ProProgramDetail({ program }: ProProgramDetailProps) {
 
                     {/* Right: Author Bio & Sticky Buy */}
                     <div className="space-y-8">
+                        {/* Progress Card (only when subscribed) */}
+                        {subscription && (
+                            <ProgramProgressCard
+                                programId={program.id}
+                                programTitle={program.title}
+                                totalWeeks={program.durationWeeks}
+                                currentWeek={subscription.current_week}
+                                subscribedAt={subscription.created_at}
+                                onAdvanceWeek={handleAdvanceWeek}
+                            />
+                        )}
+
                         {/* Author Card */}
                         <div className="bg-stone-900 rounded-3xl p-6 border border-white/5 space-y-6">
                             <div className="flex items-center gap-4">
