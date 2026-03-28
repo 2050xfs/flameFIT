@@ -29,11 +29,14 @@ export async function getGeneratedWorkoutsAction() {
 
 export async function startWorkoutSession(id: string) {
     const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return { success: false, error: 'Unauthorized' };
 
     const { error } = await supabase
         .from('workout_sessions')
         .update({ status: 'active' })
-        .eq('id', id);
+        .eq('id', id)
+        .eq('user_id', user.id); // Prevent cross-user session hijacking
 
     if (error) {
         console.error("Error starting workout:", error);
@@ -49,15 +52,18 @@ export async function startWorkoutSession(id: string) {
 
 export async function completeWorkoutSession(id: string, duration?: number) {
     const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return { success: false, error: 'Unauthorized' };
 
     const { error } = await supabase
         .from('workout_sessions')
         .update({
             status: 'completed',
             duration: duration || 60,
-            created_at: new Date().toISOString() // Mark as finished now
+            // Do NOT update created_at — it's used for timeline sort order
         })
-        .eq('id', id);
+        .eq('id', id)
+        .eq('user_id', user.id);
 
     if (error) {
         console.error("Error completing workout:", error);
