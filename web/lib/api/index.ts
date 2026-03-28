@@ -4,7 +4,6 @@ export * from './dashboard';
 export * from './workout';
 export * from './kitchen';
 export * from './knowledge-base';
-export * from './nutrition';
 export * from './progress';
 export * from './spark';
 export * from './workout-actions';
