@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { X, Send, Sparkles, User, Loader2 } from 'lucide-react';
 import { ChatWidget } from '@/types/chat-widgets';
 import { QuickLogWidgetComponent } from './widgets/QuickLogWidget';
@@ -20,6 +21,7 @@ interface Message {
 }
 
 export function SparkChat() {
+    const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
     const [input, setInput] = useState('');
     const [sessionId, setSessionId] = useState<string | null>(null);
@@ -309,8 +311,8 @@ export function SparkChat() {
                                             {msg.widget.type === 'workout_builder' && (
                                                 <WorkoutBuilderWidgetComponent
                                                     widget={msg.widget}
-                                                    onComplete={(data) => {
-                                                        console.log("Workout Architecture Generated:", data);
+                                                    onComplete={() => {
+                                                        router.push('/workouts');
                                                     }}
                                                 />
                                             )}

@@ -77,7 +77,9 @@ export async function saveCustomWorkout(data: {
     if (!user) throw new Error("Unauthorized");
 
     // Map the custom workout format to generated_workouts schema
-    const exercises = data.protocol.map(p => ({
+    const exercises = data.protocol.map((p, i) => ({
+        id: `ex-${i + 1}`,
+        exerciseId: `ex-${i + 1}`,
         name: p.name,
         sets: parseInt(p.sets) || 3,
         reps: p.reps,
