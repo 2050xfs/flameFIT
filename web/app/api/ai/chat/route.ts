@@ -186,7 +186,12 @@ CORE DIRECTIVES:
                 title: 'Biometric Protocol',
                 missingFields: missing
             };
-        } else if (lowerAiContent.includes('workout') || lowerAiContent.includes('build') || lowerAiContent.includes('create') || lowerAiContent.includes('program') || lowerAiContent.includes('save')) {
+        } else if (
+            // Require explicit user intent — not just AI vocabulary
+            ['build me a workout', 'create a workout', 'make me a workout', 'generate a workout',
+             'build a protocol', 'create a protocol', 'new workout plan', 'design a workout',
+             'write me a workout', 'give me a workout', 'workout program for me'].some(phrase => lowerContent.includes(phrase))
+        ) {
             widget = { type: 'workout_builder', id: Date.now().toString(), title: 'Protocol Architect', step: 'goal' };
         } else if (lowerContent.includes('log')) {
             widget = { type: 'quick_log', id: Date.now().toString(), title: 'Quick Log', inputs: [{ name: 'activity', label: 'Details', type: 'text' }], submitLabel: 'Log' };

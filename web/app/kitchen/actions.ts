@@ -115,6 +115,22 @@ export async function logMealAction(mealData: z.infer<typeof LogMealSchema>) {
         throw new Error("Failed to log entry");
     }
 
+    // D. Update pre-computed totals on nutrient_logs (read by dashboard)
+    const { error: totalsError } = await supabase
+        .from('nutrient_logs')
+        .update({
+            total_calories: (nutrientLog.total_calories || 0) + validated.calories,
+            total_protein: (nutrientLog.total_protein || 0) + validated.protein,
+            total_carbs: (nutrientLog.total_carbs || 0) + validated.carbs,
+            total_fats: (nutrientLog.total_fats || 0) + validated.fats,
+        })
+        .eq('id', nutrientLog.id);
+
+    if (totalsError) {
+        console.error("Totals Update Error:", totalsError);
+        // Non-fatal: entry was logged, just totals cache is stale
+    }
+
     // 4. Revalidate
     revalidatePath('/kitchen');
     revalidatePath('/dashboard');

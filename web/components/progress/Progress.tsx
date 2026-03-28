@@ -8,7 +8,7 @@ export { PhotoCompare, HistoryList, WorkoutLibrary }
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-export function Progress({ data, onMetricChange, onComparePhotos, onLogWeight }: ProgressProps) {
+export function Progress({ data, onMetricChange, onComparePhotos, onLogWeight, onUploadPhoto }: ProgressProps) {
     const searchParams = useSearchParams();
     const tabParam = searchParams.get('tab');
 
@@ -129,7 +129,7 @@ export function Progress({ data, onMetricChange, onComparePhotos, onLogWeight }:
                                 </div>
                             </div>
                         ))}
-                        <button className="aspect-[3/4] rounded-2xl border-2 border-dashed border-stone-300 dark:border-stone-700 flex flex-col items-center justify-center text-stone-400 hover:border-orange-500 hover:text-orange-500 transition-colors gap-2">
+                        <button onClick={onUploadPhoto} className="aspect-[3/4] rounded-2xl border-2 border-dashed border-stone-300 dark:border-stone-700 flex flex-col items-center justify-center text-stone-400 hover:border-orange-500 hover:text-orange-500 transition-colors gap-2">
                             <span className="text-3xl">📷</span>
                             <span className="text-xs font-bold">Add Photo</span>
                         </button>

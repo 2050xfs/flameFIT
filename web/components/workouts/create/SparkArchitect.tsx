@@ -26,6 +26,7 @@ export default function SparkArchitect() {
         intensity: 'moderate'
     });
     const [generatedWorkout, setGeneratedWorkout] = useState<GeneratedWorkout | null>(null);
+    const [generationError, setGenerationError] = useState<string | null>(null);
 
     const totalSteps = 4;
 
@@ -39,28 +40,29 @@ export default function SparkArchitect() {
 
     const handleGenerate = async () => {
         setStep(3);
+        setGenerationError(null);
         try {
             const res = await fetch('/api/ai/generate-workout', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(config),
             });
+            if (res.status === 429) {
+                const data = await res.json();
+                setGenerationError(`Rate limit reached. Try again in ${data.resetIn}s.`);
+                return; // Stay on step 3 to show error
+            }
             if (!res.ok) throw new Error('Generation failed');
             const workout: GeneratedWorkout = await res.json();
+            if (!workout.exercises || workout.exercises.length === 0) {
+                setGenerationError('AI returned an empty workout. Please try again.');
+                return;
+            }
             setGeneratedWorkout(workout);
             setStep(4);
         } catch (err) {
             console.error('Workout generation error:', err);
-            // Fallback: show a sensible default so UX doesn't break
-            const fallback: GeneratedWorkout = {
-                id: `spark-${Date.now()}`,
-                title: 'Custom Protocol',
-                description: `A ${config.intensity} intensity ${config.objective} session${config.muscles.length ? ` targeting ${config.muscles.join(', ')}` : ''}.`,
-                exercises: [],
-                stats: { volume: 0, intensity: 7, calories: 350, duration: config.duration }
-            };
-            setGeneratedWorkout(fallback);
-            setStep(4);
+            setGenerationError('Generation failed. Check your connection and try again.');
         }
     };
 
@@ -80,7 +82,7 @@ export default function SparkArchitect() {
         });
 
         if (result.success) {
-            router.push('/progress?tab=library');
+            router.push('/workouts');
         } else {
             console.error("Failed to save:", result.error);
             // Ideally show a toast here
@@ -141,7 +143,20 @@ export default function SparkArchitect() {
                             />
                         )}
                         {step === 3 && (
-                            <GenerationStep config={config} />
+                            <div className="flex-1 flex flex-col items-center justify-center gap-6">
+                                <GenerationStep config={config} />
+                                {generationError && (
+                                    <div className="w-full max-w-md bg-red-500/10 border border-red-500/30 rounded-2xl p-4 text-center">
+                                        <p className="text-red-400 text-sm font-medium">{generationError}</p>
+                                        <button
+                                            onClick={() => { setGenerationError(null); setStep(2); }}
+                                            className="mt-3 px-6 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-sm font-bold transition-all"
+                                        >
+                                            Go Back & Retry
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
                         )}
                         {step === 4 && generatedWorkout && (
                             <ReviewStep

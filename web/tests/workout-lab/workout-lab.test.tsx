@@ -25,9 +25,9 @@ const mockDataWithWorkout: WorkoutLabProps = {
         duration: "75 min",
         muscles: ["Quads", "Hamstrings", "Glutes", "Calves"],
         exercises: [
-            { name: "Barbell Squat", sets: 4, reps: "8-10" },
-            { name: "Romanian Deadlift", sets: 3, reps: "10-12" },
-            { name: "Bulgarian Split Squat", sets: 3, reps: "12/leg" }
+            { id: "e1", exerciseId: "ex1", name: "Barbell Squat", sets: 4, reps: "8-10" },
+            { id: "e2", exerciseId: "ex2", name: "Romanian Deadlift", sets: 3, reps: "10-12" },
+            { id: "e3", exerciseId: "ex3", name: "Bulgarian Split Squat", sets: 3, reps: "12/leg" }
         ]
     },
     upcomingWorkouts: [
@@ -38,7 +38,7 @@ const mockDataWithWorkout: WorkoutLabProps = {
             duration: "60 min",
             muscles: ["Chest", "Shoulders", "Triceps"],
             exercises: [
-                { name: "Bench Press", sets: 4, reps: "6-8" }
+                { id: "e4", exerciseId: "ex4", name: "Bench Press", sets: 4, reps: "6-8" }
             ],
             date: "17"
         }

@@ -33,11 +33,24 @@ export function ActiveSession({ workout }: ActiveSessionProps) {
 
     const currentExercise = workout.exercises[currentExerciseIdx]
 
+    if (workout.exercises.length === 0) {
+        return (
+            <div className="h-[calc(100vh-120px)] flex flex-col items-center justify-center bg-stone-950 text-white rounded-3xl p-10 text-center gap-6">
+                <p className="text-5xl">⚠️</p>
+                <h2 className="text-2xl font-bold font-heading">This workout has no exercises</h2>
+                <p className="text-stone-400 text-sm">The workout may have been generated with errors. Return to your library and delete it, then generate a new one.</p>
+                <button onClick={() => router.push('/workouts')} className="px-8 py-3 bg-orange-600 hover:bg-orange-500 text-white rounded-2xl font-bold transition-all">
+                    Back to Workouts
+                </button>
+            </div>
+        );
+    }
+
     const handleLogSet = async () => {
         if (!weight || !reps) return;
 
         setIsLogging(true)
-        const success = await logSet(
+        const result = await logSet(
             workout.id,
             currentExercise.exerciseId,
             parseFloat(weight),
@@ -45,8 +58,7 @@ export function ActiveSession({ workout }: ActiveSessionProps) {
         )
         setIsLogging(false)
 
-        if (success) {
-            // Optional: reset fields or show success animation
+        if (result.success) {
             setReps('')
         }
     }
