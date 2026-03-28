@@ -65,7 +65,7 @@ export const formatContextForPrompt = (context: any) => {
     if (profile) {
         prompt += `- Name: ${profile.name}\n`;
         prompt += `- Goals: ${profile.goals?.join(', ')}\n`;
-        prompt += `- Stats: ${profile.weight}kg, ${profile.height}cm\n`;
+        prompt += `- Stats: ${profile.weight}lbs, ${profile.height}cm\n`;
     }
 
     prompt += "\nRECENT WORKOUTS (Last 7 Days):\n";

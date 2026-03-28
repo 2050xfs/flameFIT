@@ -84,7 +84,7 @@ export async function getKnowledgeBaseData(): Promise<Omit<KnowledgeBaseProps, '
     };
 
     return {
-        featured: items.slice(0, 1),
+        featured: items.slice(0, 4),
         categories: categorized,
         bookmarked: items.filter(c => c.isBookmarked)
     };

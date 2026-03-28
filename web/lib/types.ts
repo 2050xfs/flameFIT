@@ -291,6 +291,7 @@ export interface ProgressProps {
     onMetricChange?: (metric: string) => void;
     onComparePhotos?: () => void;
     onLogWeight?: () => void;
+    onUploadPhoto?: () => void;
 }
 export interface SparkConfig {
     objective: 'hypertrophy' | 'strength' | 'endurance' | 'mobility' | 'fat-loss';

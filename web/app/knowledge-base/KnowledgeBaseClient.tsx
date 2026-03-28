@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import { KnowledgeBase } from "@/components/knowledge-base";
 import { KnowledgeBaseProps, ContentItem } from "@/lib/types";
 
@@ -9,6 +10,7 @@ import { KnowledgeBaseProps, ContentItem } from "@/lib/types";
 type KnowledgeBaseData = Omit<KnowledgeBaseProps, "onViewContent" | "onSearch" | "onBookmark">;
 
 export function KnowledgeBaseClient({ initialData }: { initialData: KnowledgeBaseData }) {
+    const router = useRouter();
     const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(
         new Set(initialData.bookmarked.map(item => item.id))
     );
@@ -16,8 +18,7 @@ export function KnowledgeBaseClient({ initialData }: { initialData: KnowledgeBas
     const [isSearching, setIsSearching] = useState(false);
 
     const handleViewContent = (id: string) => {
-        console.log("View content:", id);
-        // Navigate or open modal
+        router.push(`/knowledge-base/articles/${id}`);
     };
 
     const handleSearch = async (query: string) => {

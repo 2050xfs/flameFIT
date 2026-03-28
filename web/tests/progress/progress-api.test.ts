@@ -15,20 +15,17 @@ vi.mock('@/lib/supabase/server', () => ({
             single: vi.fn().mockReturnThis(),
             maybeSingle: vi.fn().mockReturnThis(),
             then: (callback: any) => {
-                if (table === 'body_stats') {
-                    // For progress charts and stats
+                if (table === 'weight_logs') {
                     const data = [
-                        { weight: 190, date: '2024-01-10', body_fat_pct: 15.5 },
-                        { weight: 185, date: '2024-01-17', body_fat_pct: 15 }
+                        { weight_kg: 190, date: '2024-01-10' },
+                        { weight_kg: 185, date: '2024-01-17' }
                     ];
-                    // Handle the difference between list (return array) and single (return first item)
-                    // Simplified: for this test, we can just return the array or the first item based on what the code expects.
-                    // But wait, the code calls single() then maps.
-                    // Actually, the code does:
-                    // 1. weightLogs = .select() ... (list)
-                    // 2. latestStat = .select() ... .single()
-                    // My mock currently returns the same thing for both if I'm not careful.
-
+                    return Promise.resolve(callback({ data: data, error: null }))
+                }
+                if (table === 'body_stats') {
+                    const data = [
+                        { body_fat_pct: 15.5, date: '2024-01-10' },
+                    ];
                     return Promise.resolve(callback({ data: data, error: null }))
                 }
                 if (table === 'workout_sessions') {

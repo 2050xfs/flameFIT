@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import OpenAI from 'openai';
 import { SparkConfig, GeneratedWorkout, WorkoutExercise } from '@/lib/types';
+import { rateLimit } from '@/lib/utils/rate-limit';
 
 const EQUIPMENT_MAP: Record<string, string> = {
     'full-gym': 'full commercial gym with barbells, cables, machines, and free weights',
@@ -24,6 +25,17 @@ export async function POST(req: NextRequest) {
         const { data: { user } } = await supabase.auth.getUser();
         if (!user) {
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+        }
+
+        // Rate limiting: 10 generations per minute, 30 per hour
+        const [perMinute, perHour] = await Promise.all([
+            rateLimit(`generate:${user.id}:min`, 10, 60),
+            rateLimit(`generate:${user.id}:hour`, 30, 3600),
+        ]);
+
+        if (!perMinute.allowed || !perHour.allowed) {
+            const resetIn = !perMinute.allowed ? perMinute.resetIn : perHour.resetIn;
+            return NextResponse.json({ error: 'Rate limit exceeded', resetIn }, { status: 429 });
         }
 
         const apiKey = process.env.OPENAI_API_KEY;
