@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Spark Pack — Ignis Studio</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <style>
+    .product-hero { padding: 130px 0 80px; }
+    .breadcrumb { font-size:0.8rem; color:var(--muted); margin-bottom:24px; }
+    .breadcrumb a { color:var(--flame); text-decoration:none; }
+    .product-split { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+    @media(max-width:768px){ .product-split{grid-template-columns:1fr;gap:40px;} }
+    .sticky-panel { position:sticky; top:100px; }
+    .purchase-card {
+      background:var(--surface); border:1px solid var(--border);
+      border-radius:var(--radius-lg); padding:32px;
+    }
+    .purchase-card .price-amount { font-family:'Outfit',sans-serif; font-size:3rem; font-weight:900; color:var(--white); }
+    .purchase-card .price-amount sup { font-size:1.4rem; }
+    .guarantee-badge {
+      background:rgba(13,148,136,0.1); border:1px solid rgba(13,148,136,0.25);
+      border-radius:var(--radius); padding:14px 18px;
+      font-size:0.82rem; color:#0D9488; margin-top:16px;
+      display:flex; gap:10px; align-items:flex-start;
+    }
+    .what-you-get { margin-top:40px; }
+    .what-you-get h3 { font-family:'Outfit',sans-serif; font-size:1.3rem; font-weight:700; color:var(--white); margin-bottom:20px; }
+    .deliverable-item {
+      background:var(--surface); border:1px solid var(--border);
+      border-radius:var(--radius); padding:20px 22px;
+      margin-bottom:12px;
+    }
+    .deliverable-title { font-weight:700; color:var(--white); margin-bottom:6px; font-size:0.95rem; }
+    .deliverable-desc { font-size:0.84rem; color:var(--muted); line-height:1.6; }
+    .tag-row { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .for-who { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; margin-top:40px; }
+    .for-who h3 { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:16px; }
+    .who-item { display:flex; gap:10px; font-size:0.88rem; color:var(--light); padding:8px 0; border-bottom:1px solid var(--border); }
+    .who-item:last-child { border-bottom:none; }
+    .who-item::before { content:'→'; color:var(--flame); flex-shrink:0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">ignis<span>studio</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#products">Products</a></li>
+    <li><a href="../index.html#process">Process</a></li>
+    <li><a href="../index.html#faq">FAQ</a></li>
+  </ul>
+  <a href="../index.html#products" class="nav-cta">All Products</a>
+</nav>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="../index.html#products">Products</a> → The Spark Pack</div>
+
+    <div class="product-split">
+      <!-- LEFT: Details -->
+      <div>
+        <div class="product-tier" style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--flame);margin-bottom:10px;">Tier 01 — Starter Kit</div>
+        <h1 style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:16px;">The Spark Pack</h1>
+        <p style="font-size:1.05rem;color:var(--soft);line-height:1.7;margin-bottom:32px;">Your first unfair advantage. 15 professionally designed gym post templates and everything you need to show up consistently — without spending hours figuring out design from scratch.</p>
+
+        <div class="what-you-get">
+          <h3>Everything You Get</h3>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">15 Gym Post Templates</div>
+            <div class="deliverable-desc">Feed-ready designs for Instagram and TikTok cover frames. Mix of workout tips, motivational quotes, exercise breakdowns, and transformation formats. All with bold contrast and high-CTR composition.</div>
+            <div class="tag-row">
+              <span class="tag">Instagram 1080×1080</span>
+              <span class="tag">TikTok 1080×1920</span>
+              <span class="tag">Canva-ready</span>
+            </div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">5 Story Templates</div>
+            <div class="deliverable-desc">Countdown timers, tip carousels, CTA slides, and engagement hooks. Designed to push viewers toward DMs, links, and profile follows.</div>
+            <div class="tag-row">
+              <span class="tag">1080×1920</span>
+              <span class="tag">Story format</span>
+            </div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Color Swap Guide</div>
+            <div class="deliverable-desc">Step-by-step Canva walkthrough for adapting every template to your brand colors. Includes color psychology notes for fitness — what creates urgency, trust, and premium feel.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Font Pairing Cheat Sheet</div>
+            <div class="deliverable-desc">3 proven gym-content font pairings (free on Google Fonts) with usage rules: which fonts headline, which support, and how to scale size for mobile readability.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Hook Headline Formula PDF</div>
+            <div class="deliverable-desc">20 proven headline structures with gym-specific examples. Covers curiosity hooks, urgency triggers, result-first copy, and "pattern interrupt" formats that stop the scroll.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Source Files</div>
+            <div class="deliverable-desc">All 20 designs delivered as editable Canva links + exported PNG files. No software required beyond a free Canva account.</div>
+            <div class="tag-row">
+              <span class="tag">.canva (editable)</span>
+              <span class="tag">.png (export-ready)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="for-who">
+          <h3>This is for you if:</h3>
+          <div class="who-item">You're a trainer, coach, or gym creator just building your content presence</div>
+          <div class="who-item">You want to post consistently but don't have design skills</div>
+          <div class="who-item">You're tired of bland stock-template designs that don't represent your brand</div>
+          <div class="who-item">You need a quick-start system before investing in full custom work</div>
+          <div class="who-item">You want to test content styles and see what resonates with your audience</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Purchase panel -->
+      <div class="sticky-panel">
+        <div class="purchase-card">
+          <div style="margin-bottom:20px;">
+            <div class="purchase-card price-amount"><sup>$</sup>97</div>
+            <div style="font-size:0.82rem;color:var(--muted);margin-top:6px;">One-time payment · Instant download</div>
+          </div>
+
+          <a href="../index.html" class="card-cta card-cta--primary" style="display:block;text-align:center;margin-bottom:12px;">Get The Spark Pack →</a>
+          <a href="../index.html" class="card-cta card-cta--outline" style="display:block;text-align:center;">View All Products</a>
+
+          <div class="guarantee-badge">
+            <span>🛡</span>
+            <span><strong>7-Day Money-Back.</strong> If the templates don't work for your brand, reach out within 7 days for a full refund. No questions.</span>
+          </div>
+
+          <div style="margin-top:24px;border-top:1px solid var(--border);padding-top:20px;">
+            <div style="font-size:0.8rem;color:var(--muted);margin-bottom:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">What's included</div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> 15 feed post templates</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> 5 story templates</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Color swap guide</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Font pairing cheat sheet</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Hook headline formula PDF</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Canva + PNG source files</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:20px;padding:14px;background:var(--surface-3);border-radius:var(--radius);font-size:0.8rem;color:var(--muted);line-height:1.6;">
+            <strong style="color:var(--soft);">Upgrade later.</strong> The Spark Pack credit ($97) is applied as a discount when upgrading to any higher tier within 90 days.
+          </div>
+        </div>
+
+        <!-- Upgrade suggestion -->
+        <div style="margin-top:16px;background:var(--surface);border:1px solid rgba(255,90,31,0.25);border-radius:var(--radius-lg);padding:22px;">
+          <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:8px;">Most Popular</div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:6px;">The Blaze Monthly</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;line-height:1.5;">Want everything done for you? 30 custom posts/month, captions, and a strategy call.</div>
+          <a href="blaze-monthly.html" style="color:var(--flame);font-size:0.85rem;font-weight:600;text-decoration:none;">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">ignis<span>studio</span></div>
+      <ul class="footer-links">
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy">© 2026 Ignis Studio · under construction</div>
+  </div>
+</footer>
+
+</body>
+</html>

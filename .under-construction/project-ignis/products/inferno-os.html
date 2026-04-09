@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Inferno Content OS — Ignis Studio</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <style>
+    .product-hero { padding: 130px 0 80px; }
+    .breadcrumb { font-size:0.8rem; color:var(--muted); margin-bottom:24px; }
+    .breadcrumb a { color:var(--flame); text-decoration:none; }
+    .product-split { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+    @media(max-width:768px){ .product-split{grid-template-columns:1fr;gap:40px;} }
+    .sticky-panel { position:sticky; top:100px; }
+    .purchase-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; }
+    .guarantee-badge { background:rgba(13,148,136,0.1); border:1px solid rgba(13,148,136,0.25); border-radius:var(--radius); padding:14px 18px; font-size:0.82rem; color:#0D9488; margin-top:16px; display:flex; gap:10px; align-items:flex-start; }
+    .deliverable-item { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px; margin-bottom:12px; }
+    .deliverable-title { font-weight:700; color:var(--white); margin-bottom:6px; font-size:0.95rem; }
+    .deliverable-desc { font-size:0.84rem; color:var(--muted); line-height:1.6; }
+    .tag-row { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .os-module { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:24px; margin-bottom:16px; }
+    .os-module-num { font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--flame); margin-bottom:8px; }
+    .os-module-title { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:8px; }
+    .os-module-desc { font-size:0.84rem; color:var(--muted); line-height:1.6; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">ignis<span>studio</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#products">Products</a></li>
+    <li><a href="../index.html#process">Process</a></li>
+    <li><a href="../index.html#faq">FAQ</a></li>
+  </ul>
+  <a href="../index.html#products" class="nav-cta">All Products</a>
+</nav>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="../index.html#products">Products</a> → The Inferno Content OS</div>
+
+    <div class="product-split">
+      <div>
+        <div class="product-tier" style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--flame);margin-bottom:10px;">Tier 04 — Full System</div>
+        <h1 style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:16px;">The Inferno Content OS</h1>
+        <p style="font-size:1.05rem;color:var(--soft);line-height:1.7;margin-bottom:32px;">This isn't a template pack or a brand refresh. It's the whole operating system — brand identity, content strategy, design assets, caption frameworks, analytics tracking, and a 90-day roadmap built around your brand. Install it once. Run it forever.</p>
+
+        <!-- What's built in -->
+        <div style="background:linear-gradient(145deg,rgba(255,90,31,0.07) 0%,var(--surface) 60%);border:1px solid rgba(255,90,31,0.2);border-radius:var(--radius-lg);padding:28px;margin-bottom:40px;">
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:20px;font-size:1.05rem;">The OS is built in 5 modules</div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;gap:12px;align-items:center;font-size:0.88rem;color:var(--light);">
+              <span style="background:var(--flame);color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.7rem;flex-shrink:0;">1</span>
+              Brand Identity (logo, colors, typography, profile setup)
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;font-size:0.88rem;color:var(--light);">
+              <span style="background:var(--flame);color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.7rem;flex-shrink:0;">2</span>
+              Content Architecture (calendar, themes, pillar strategy)
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;font-size:0.88rem;color:var(--light);">
+              <span style="background:var(--flame);color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.7rem;flex-shrink:0;">3</span>
+              Copy Toolkit (50 hooks, caption templates, CTA bank)
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;font-size:0.88rem;color:var(--light);">
+              <span style="background:var(--flame);color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.7rem;flex-shrink:0;">4</span>
+              Growth Playbook (algorithm guide, repurposing, platform tactics)
+            </div>
+            <div style="display:flex;gap:12px;align-items:center;font-size:0.88rem;color:var(--light);">
+              <span style="background:var(--flame);color:#fff;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.7rem;flex-shrink:0;">5</span>
+              Analytics Tracker (Notion template, performance metrics, benchmarks)
+            </div>
+          </div>
+        </div>
+
+        <!-- Module breakdown -->
+        <h3 style="font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:20px;">Inside Each Module</h3>
+
+        <div class="os-module">
+          <div class="os-module-num">MODULE 01 — BRAND IDENTITY</div>
+          <div class="os-module-title">Everything from the Flame Brand Kit</div>
+          <div class="os-module-desc">Full logo suite (primary, icon, wordmark), brand color system, typography guide, social profile setup across all platforms, bio optimization, brand usage guidelines, and 10 post templates. Delivered in 7 days. This module alone is worth $497 standalone.</div>
+        </div>
+
+        <div class="os-module">
+          <div class="os-module-num">MODULE 02 — CONTENT ARCHITECTURE</div>
+          <div class="os-module-title">90-Day Calendar + Content Pillar Strategy</div>
+          <div class="os-module-desc">A complete 90-day posting calendar (Notion + Google Sheets) with daily post themes, content pillars, seasonal hooks, and platform-specific timing. Includes a Content Pillar Framework — the 4–5 topic buckets your brand will rotate through, and how each drives a different conversion goal.</div>
+          <div class="tag-row"><span class="tag">Notion template</span><span class="tag">Google Sheets</span><span class="tag">90 days mapped</span></div>
+        </div>
+
+        <div class="os-module">
+          <div class="os-module-num">MODULE 03 — COPY TOOLKIT</div>
+          <div class="os-module-title">50 Hook Formulas + Caption Templates</div>
+          <div class="os-module-desc">50 proven headline hooks adapted for the gym niche — curiosity, urgency, result-first, pattern interrupt, and storytelling formats. 20 fill-in-the-blank caption frameworks for workout posts, motivational content, client results, promo posts, and educational threads. A full CTA bank with 30 variations tested for fitness audiences.</div>
+        </div>
+
+        <div class="os-module">
+          <div class="os-module-num">MODULE 04 — GROWTH PLAYBOOK</div>
+          <div class="os-module-title">Platform Algorithms + Repurposing System</div>
+          <div class="os-module-desc">An in-depth breakdown of how Instagram, TikTok, and YouTube recommend content in 2026 — what signals matter, what kills reach, and how to game each differently. A content repurposing map showing exactly how one piece of content becomes 5–8 posts across platforms. Hashtag research methodology and high-performing gym niche hashtag stacks.</div>
+        </div>
+
+        <div class="os-module">
+          <div class="os-module-num">MODULE 05 — ANALYTICS TRACKER</div>
+          <div class="os-module-title">Performance Dashboard + Benchmarks</div>
+          <div class="os-module-desc">A Notion-based analytics dashboard to track reach, engagement rate, saves, profile visits, and follower growth weekly. Industry benchmarks for each metric across fitness niches — so you know what "good" actually looks like. Monthly performance review template to identify winning content patterns.</div>
+          <div class="tag-row"><span class="tag">Notion dashboard</span><span class="tag">Weekly tracking</span><span class="tag">Benchmark data</span></div>
+        </div>
+
+        <!-- Bonus -->
+        <div style="background:rgba(255,90,31,0.07);border:1px solid rgba(255,90,31,0.2);border-radius:var(--radius-lg);padding:24px;margin-top:8px;">
+          <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:12px;">Included Bonuses</div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li style="font-size:0.88rem;color:var(--light);display:flex;gap:10px;"><span style="color:var(--flame);">+</span> 2 × 30-min strategy sessions (live, recorded)</li>
+            <li style="font-size:0.88rem;color:var(--light);display:flex;gap:10px;"><span style="color:var(--flame);">+</span> Competitor analysis PDF (3 top accounts in your niche)</li>
+            <li style="font-size:0.88rem;color:var(--light);display:flex;gap:10px;"><span style="color:var(--flame);">+</span> 30-day check-in after delivery to troubleshoot and adjust</li>
+            <li style="font-size:0.88rem;color:var(--light);display:flex;gap:10px;"><span style="color:var(--flame);">+</span> Access to any future updates to the OS templates</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sticky-panel">
+        <div class="purchase-card">
+          <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:10px;">One-Time · 14-Day Delivery</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:3rem;font-weight:900;color:var(--white);line-height:1;"><sup style="font-size:1.4rem;">$</sup>797</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;margin-bottom:8px;">one-time · owned forever</div>
+          <div style="font-size:0.8rem;color:var(--muted);margin-bottom:24px;">($497 Brand Kit + $300 for strategy, copy, and playbook modules)</div>
+
+          <a href="../index.html" class="card-cta card-cta--primary" style="display:block;text-align:center;margin-bottom:12px;font-size:1rem;">Get Inferno Content OS →</a>
+          <a href="forge-consulting.html" class="card-cta card-cta--outline" style="display:block;text-align:center;">Have questions? Book a call</a>
+
+          <div class="guarantee-badge">
+            <span>🛡</span>
+            <span><strong>Revision guarantee.</strong> We revise each module until you're satisfied before moving on. Delivered in stages so you stay in control.</span>
+          </div>
+
+          <div style="margin-top:24px;border-top:1px solid var(--border);padding-top:20px;">
+            <div style="font-size:0.75rem;color:var(--muted);margin-bottom:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">14-Day Delivery Schedule</div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+              <li style="display:flex;gap:8px;font-size:0.82rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding-top:2px;min-width:40px;">Day 1</span> Brand brief + intake call</li>
+              <li style="display:flex;gap:8px;font-size:0.82rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding-top:2px;min-width:40px;">Day 4</span> Brand identity concepts</li>
+              <li style="display:flex;gap:8px;font-size:0.82rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding-top:2px;min-width:40px;">Day 7</span> Brand approved + calendar delivered</li>
+              <li style="display:flex;gap:8px;font-size:0.82rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding-top:2px;min-width:40px;">Day 10</span> Copy toolkit + playbook delivered</li>
+              <li style="display:flex;gap:8px;font-size:0.82rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding-top:2px;min-width:40px;">Day 13</span> Analytics tracker + final review</li>
+              <li style="display:flex;gap:8px;font-size:0.82rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.68rem;padding-top:2px;min-width:40px;">Day 14</span> All files delivered + strategy call #1</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px;">
+          <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--soft);margin-bottom:8px;">Prefer done-for-you?</div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:6px;">The Blaze Monthly</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;line-height:1.5;">30 custom posts/month with captions, calendar, and strategy — without lifting a finger.</div>
+          <a href="blaze-monthly.html" style="color:var(--flame);font-size:0.85rem;font-weight:600;text-decoration:none;">See Blaze Monthly →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">ignis<span>studio</span></div>
+      <ul class="footer-links">
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy">© 2026 Ignis Studio · under construction</div>
+  </div>
+</footer>
+
+</body>
+</html>

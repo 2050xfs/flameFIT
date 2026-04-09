@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Flame Brand Kit — Ignis Studio</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <style>
+    .product-hero { padding: 130px 0 80px; }
+    .breadcrumb { font-size:0.8rem; color:var(--muted); margin-bottom:24px; }
+    .breadcrumb a { color:var(--flame); text-decoration:none; }
+    .product-split { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+    @media(max-width:768px){ .product-split{grid-template-columns:1fr;gap:40px;} }
+    .sticky-panel { position:sticky; top:100px; }
+    .purchase-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; }
+    .guarantee-badge { background:rgba(13,148,136,0.1); border:1px solid rgba(13,148,136,0.25); border-radius:var(--radius); padding:14px 18px; font-size:0.82rem; color:#0D9488; margin-top:16px; display:flex; gap:10px; align-items:flex-start; }
+    .deliverable-item { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px; margin-bottom:12px; }
+    .deliverable-title { font-weight:700; color:var(--white); margin-bottom:6px; font-size:0.95rem; }
+    .deliverable-desc { font-size:0.84rem; color:var(--muted); line-height:1.6; }
+    .tag-row { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .color-swatch-row { display:flex; gap:8px; margin-top:10px; }
+    .color-swatch { width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">ignis<span>studio</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#products">Products</a></li>
+    <li><a href="../index.html#process">Process</a></li>
+    <li><a href="../index.html#faq">FAQ</a></li>
+  </ul>
+  <a href="../index.html#products" class="nav-cta">All Products</a>
+</nav>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="../index.html#products">Products</a> → The Flame Brand Kit</div>
+
+    <div class="product-split">
+      <div>
+        <div class="product-tier" style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--flame);margin-bottom:10px;">Tier 03 — Brand Identity</div>
+        <h1 style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:16px;">The Flame Brand Kit</h1>
+        <p style="font-size:1.05rem;color:var(--soft);line-height:1.7;margin-bottom:32px;">Stop looking like everyone else in the gym niche. A complete visual identity built specifically for fitness brands — designed to make you instantly recognizable and unmistakably premium.</p>
+
+        <!-- Problem / Solution -->
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;margin-bottom:40px;">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+            <div>
+              <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:12px;">Without a brand system</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+                <li style="font-size:0.83rem;color:var(--muted);display:flex;gap:8px;"><span style="color:#444;">✗</span> Inconsistent fonts and colors</li>
+                <li style="font-size:0.83rem;color:var(--muted);display:flex;gap:8px;"><span style="color:#444;">✗</span> Looks generic, forgettable</li>
+                <li style="font-size:0.83rem;color:var(--muted);display:flex;gap:8px;"><span style="color:#444;">✗</span> No visual hierarchy</li>
+                <li style="font-size:0.83rem;color:var(--muted);display:flex;gap:8px;"><span style="color:#444;">✗</span> Hard to replicate or scale</li>
+              </ul>
+            </div>
+            <div>
+              <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:12px;">With the Brand Kit</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+                <li style="font-size:0.83rem;color:var(--light);display:flex;gap:8px;"><span style="color:var(--flame);">✓</span> Cohesive, professional feel</li>
+                <li style="font-size:0.83rem;color:var(--light);display:flex;gap:8px;"><span style="color:var(--flame);">✓</span> Instant brand recognition</li>
+                <li style="font-size:0.83rem;color:var(--light);display:flex;gap:8px;"><span style="color:var(--flame);">✓</span> Designed for scroll-stopping</li>
+                <li style="font-size:0.83rem;color:var(--light);display:flex;gap:8px;"><span style="color:var(--flame);">✓</span> Replicable across any format</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:12px;"><h3 style="font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);">What You Receive</h3></div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">Logo Suite</div>
+          <div class="deliverable-desc">Primary logo, stacked variant, horizontal variant, icon/symbol mark, and wordmark — all delivered in black, white, and color versions. Formatted for every use case: social profile pics, watermarks, merchandise, print.</div>
+          <div class="tag-row"><span class="tag">.svg</span><span class="tag">.png (transparent)</span><span class="tag">.pdf</span></div>
+        </div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">Brand Color System</div>
+          <div class="deliverable-desc">A curated palette built specifically for the gym/fitness space — primary, secondary, neutral, and accent colors selected for contrast, energy, and premium feel. Full hex, RGB, and CMYK values.</div>
+          <div class="color-swatch-row">
+            <div class="color-swatch" style="background:#FF5A1F;" title="Primary"></div>
+            <div class="color-swatch" style="background:#B11226;" title="Secondary"></div>
+            <div class="color-swatch" style="background:#FF8C42;" title="Accent"></div>
+            <div class="color-swatch" style="background:#1C1C1C;" title="Dark"></div>
+            <div class="color-swatch" style="background:#F5F5F5;" title="Light"></div>
+          </div>
+        </div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">Typography Pairing Guide</div>
+          <div class="deliverable-desc">Two to three font pairings selected for your brand personality — display, body, and accent fonts with scale ratios, weight usage rules, and do/don't examples. Includes Google Fonts links for free access.</div>
+        </div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">Social Media Profile Setup</div>
+          <div class="deliverable-desc">Profile photos, cover images, and highlight covers sized and designed for Instagram, TikTok, YouTube, and Facebook. Plug-and-upload ready.</div>
+          <div class="tag-row"><span class="tag">Instagram</span><span class="tag">TikTok</span><span class="tag">YouTube</span><span class="tag">Facebook</span></div>
+        </div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">Bio + Handle Optimization</div>
+          <div class="deliverable-desc">A rewritten bio for each platform — punchy, keyword-optimized, and CTA-driven. Handle and display name recommendations to improve discoverability. Written in your voice, not generic.</div>
+        </div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">Brand Usage Guidelines PDF</div>
+          <div class="deliverable-desc">A clean, shareable brand guidelines document covering logo usage rules, color application, typography hierarchy, photo style direction, and dos/don'ts. Useful when working with editors, videographers, or future team members.</div>
+        </div>
+
+        <div class="deliverable-item">
+          <div class="deliverable-title">10 Branded Post Templates</div>
+          <div class="deliverable-desc">Canva-ready templates built using your new brand identity — ready to customize and post immediately after delivery. Covers workout tips, quotes, and promotional formats.</div>
+        </div>
+      </div>
+
+      <div class="sticky-panel">
+        <div class="purchase-card">
+          <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:10px;">One-Time · 7-Day Delivery</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:3rem;font-weight:900;color:var(--white);line-height:1;"><sup style="font-size:1.4rem;">$</sup>497</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;margin-bottom:24px;">one-time · yours to keep forever</div>
+
+          <a href="../index.html" class="card-cta card-cta--primary" style="display:block;text-align:center;margin-bottom:12px;font-size:1rem;">Get The Brand Kit →</a>
+          <a href="forge-consulting.html" class="card-cta card-cta--outline" style="display:block;text-align:center;">Have questions? Book a call</a>
+
+          <div class="guarantee-badge">
+            <span>🛡</span>
+            <span><strong>Satisfaction Guarantee.</strong> If you're not happy with the direction after the first concept review, we'll revise until you are.</span>
+          </div>
+
+          <div style="margin-top:24px;border-top:1px solid var(--border);padding-top:20px;">
+            <div style="font-size:0.75rem;color:var(--muted);margin-bottom:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Timeline</div>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+              <li style="display:flex;gap:8px;font-size:0.83rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding-top:2px;">Day 1</span> Brand brief + questionnaire</li>
+              <li style="display:flex;gap:8px;font-size:0.83rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding-top:2px;">Day 3</span> Concept presentation</li>
+              <li style="display:flex;gap:8px;font-size:0.83rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding-top:2px;">Day 5</span> Revisions round 1</li>
+              <li style="display:flex;gap:8px;font-size:0.83rem;color:var(--light);"><span style="color:var(--flame);font-family:'JetBrains Mono',monospace;font-size:0.7rem;padding-top:2px;">Day 7</span> Final delivery of all files</li>
+            </ul>
+          </div>
+
+          <div style="margin-top:20px;padding:14px;background:var(--surface-3);border-radius:var(--radius);font-size:0.8rem;color:var(--muted);line-height:1.6;">
+            <strong style="color:var(--soft);">Upgrade path.</strong> Pair this with the Inferno Content OS to get the full system — brand identity + strategy + 90-day calendar. The Brand Kit price is credited toward the OS bundle.
+          </div>
+        </div>
+
+        <div style="margin-top:16px;background:var(--surface);border:1px solid rgba(255,90,31,0.25);border-radius:var(--radius-lg);padding:22px;">
+          <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:8px;">Full System Bundle</div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:6px;">The Inferno Content OS</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;line-height:1.5;">Everything in the Brand Kit + strategy + 90-day calendar + full content playbook.</div>
+          <a href="inferno-os.html" style="color:var(--flame);font-size:0.85rem;font-weight:600;text-decoration:none;">See Inferno OS ($797) →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">ignis<span>studio</span></div>
+      <ul class="footer-links">
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy">© 2026 Ignis Studio · under construction</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge Consulting — Ignis Studio</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <style>
+    .product-hero { padding: 130px 0 80px; }
+    .breadcrumb { font-size:0.8rem; color:var(--muted); margin-bottom:24px; }
+    .breadcrumb a { color:var(--flame); text-decoration:none; }
+    .product-split { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+    @media(max-width:768px){ .product-split{grid-template-columns:1fr;gap:40px;} }
+    .sticky-panel { position:sticky; top:100px; }
+    .session-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; margin-bottom:16px; }
+    .session-card.active { border-color:var(--flame); background:linear-gradient(145deg,rgba(255,90,31,0.06) 0%,var(--surface) 60%); }
+    .session-price { font-family:'Outfit',sans-serif; font-size:2rem; font-weight:900; color:var(--white); }
+    .session-price sup { font-size:1rem; }
+    .session-title { font-family:'Outfit',sans-serif; font-weight:700; color:var(--white); margin-bottom:6px; }
+    .session-desc { font-size:0.84rem; color:var(--muted); line-height:1.6; margin-bottom:16px; }
+    .what-covers { margin-top:32px; }
+    .cover-item { display:flex; gap:14px; padding:18px 0; border-bottom:1px solid var(--border); }
+    .cover-icon { font-size:1.2rem; flex-shrink:0; padding-top:2px; }
+    .cover-title { font-weight:700; color:var(--white); margin-bottom:4px; font-size:0.92rem; }
+    .cover-desc { font-size:0.83rem; color:var(--muted); line-height:1.5; }
+    .who-box { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-lg); padding:28px; margin-top:40px; }
+    .who-item { display:flex; gap:10px; font-size:0.88rem; color:var(--light); padding:8px 0; border-bottom:1px solid var(--border); }
+    .who-item:last-child { border-bottom:none; }
+    .who-item::before { content:'→'; color:var(--flame); flex-shrink:0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">ignis<span>studio</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#products">Products</a></li>
+    <li><a href="../index.html#process">Process</a></li>
+    <li><a href="../index.html#faq">FAQ</a></li>
+  </ul>
+  <a href="../index.html#products" class="nav-cta">All Products</a>
+</nav>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="../index.html#products">Products</a> → Forge Consulting</div>
+
+    <div class="product-split">
+      <div>
+        <div class="product-tier" style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--flame);margin-bottom:10px;">Tier 05 — Strategy</div>
+        <h1 style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:16px;">Forge Consulting</h1>
+        <p style="font-size:1.05rem;color:var(--soft);line-height:1.7;margin-bottom:32px;">Not templates. Not generic advice. Real strategy built around your specific brand, audience, and goals — from someone who understands both the design side and the content-as-business side of fitness.</p>
+
+        <!-- What you get -->
+        <div class="what-covers">
+          <h3 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:4px;">What Each Session Covers</h3>
+
+          <div class="cover-item">
+            <div class="cover-icon">🔍</div>
+            <div>
+              <div class="cover-title">Full Content Audit</div>
+              <div class="cover-desc">Before the session, I review your last 30–90 days of posts, your profile structure, bio, and analytics. I come in prepared — not fishing for information on your time.</div>
+            </div>
+          </div>
+
+          <div class="cover-item">
+            <div class="cover-icon">📊</div>
+            <div>
+              <div class="cover-title">Competitor Analysis</div>
+              <div class="cover-desc">Breakdown of 2–3 competitors or reference accounts in your niche: what's working for them, what visual and copy strategies are driving their growth, and how to position against them.</div>
+            </div>
+          </div>
+
+          <div class="cover-item">
+            <div class="cover-icon">🎯</div>
+            <div>
+              <div class="cover-title">Ideal Client Avatar</div>
+              <div class="cover-desc">Define exactly who you're talking to, what they care about, what pain they're in, and what they want to become. Content that isn't aimed at a specific person rarely converts.</div>
+            </div>
+          </div>
+
+          <div class="cover-item">
+            <div class="cover-icon">🗺</div>
+            <div>
+              <div class="cover-title">Platform Growth Roadmap</div>
+              <div class="cover-desc">Platform-specific action plan for the next 30–60 days. What to post, how often, what formats to test, what to stop doing. Based on your goals — reach, lead gen, client conversions, or brand deals.</div>
+            </div>
+          </div>
+
+          <div class="cover-item">
+            <div class="cover-icon">💰</div>
+            <div>
+              <div class="cover-title">Monetization Strategy</div>
+              <div class="cover-desc">How your content funnel leads to money. Whether that's coaching clients, product sales, brand deals, digital products, or subscriptions — we map the actual path from content to cash.</div>
+            </div>
+          </div>
+
+          <div class="cover-item" style="border-bottom:none;">
+            <div class="cover-icon">📋</div>
+            <div>
+              <div class="cover-title">Session Summary + Action Plan</div>
+              <div class="cover-desc">Every session is recorded (your copy) and followed up with a written action summary within 24 hours — priorities listed, next steps numbered, nothing slips through the cracks.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="who-box">
+          <h3 style="font-family:'Outfit',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);margin-bottom:16px;">This is for you if:</h3>
+          <div class="who-item">You have content going out but can't figure out why growth isn't following</div>
+          <div class="who-item">You want a second set of experienced eyes before investing in a bigger package</div>
+          <div class="who-item">You're clear on your offer but unclear on how to position it through content</div>
+          <div class="who-item">You've hit a plateau and need a strategic reset, not more templates</div>
+          <div class="who-item">You're launching something new and want a content plan built around it</div>
+        </div>
+
+        <!-- Retainer info -->
+        <div style="background:var(--surface);border:1px solid rgba(255,90,31,0.2);border-radius:var(--radius-lg);padding:28px;margin-top:24px;">
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">Monthly Retainer Option — $597/mo</div>
+          <div style="font-size:0.88rem;color:var(--muted);line-height:1.7;margin-bottom:16px;">For brands that want ongoing strategic support, the retainer includes up to 4 sessions per month, weekly async feedback on content drafts, unlimited voice memo/DM access, and a monthly performance review. Best for coaches and creators actively scaling.</div>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;">
+            <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Up to 4 sessions/month (vs. $788 à la carte)</li>
+            <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Weekly async content feedback</li>
+            <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Unlimited DM access (voice memos welcome)</li>
+            <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Monthly performance analytics review</li>
+            <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Priority booking — sessions within 48hrs</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Booking panel -->
+      <div class="sticky-panel">
+
+        <div class="session-card active">
+          <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:10px;">Single Session</div>
+          <div class="session-price"><sup>$</sup>197</div>
+          <div style="font-size:0.78rem;color:var(--muted);margin-bottom:16px;">60 minutes · recorded · summary included</div>
+          <a href="../index.html" class="card-cta card-cta--primary" style="display:block;text-align:center;">Book a Session →</a>
+        </div>
+
+        <div class="session-card">
+          <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--soft);margin-bottom:10px;">Monthly Retainer</div>
+          <div class="session-price"><sup>$</sup>597<span style="font-size:0.9rem;font-weight:400;color:var(--muted);margin-left:4px;">/mo</span></div>
+          <div style="font-size:0.78rem;color:var(--muted);margin-bottom:16px;">Up to 4 sessions + async access + reviews</div>
+          <a href="../index.html" class="card-cta card-cta--outline" style="display:block;text-align:center;">Inquire About Retainer →</a>
+        </div>
+
+        <div style="margin-top:8px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px;">
+          <div style="font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:12px;">Sessions are delivered via Zoom, Google Meet, or FaceTime. Scheduling is done through Calendly after purchase — typically available within 48–72 hours of booking.</div>
+          <div style="font-size:0.78rem;color:var(--muted);font-style:italic;">Note: Consulting clients get priority access to design packages. If you want to move forward after the session, the session fee is credited toward any Tier 02–06 purchase within 30 days.</div>
+        </div>
+
+        <!-- Related -->
+        <div style="margin-top:16px;background:var(--surface);border:1px solid rgba(255,90,31,0.25);border-radius:var(--radius-lg);padding:22px;">
+          <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:8px;">Want it all done for you?</div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:6px;">The Blaze Monthly</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;line-height:1.5;">After your strategy session, step directly into a fully managed content subscription — designed and delivered every month.</div>
+          <a href="blaze-monthly.html" style="color:var(--flame);font-size:0.85rem;font-weight:600;text-decoration:none;">See Blaze Monthly →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">ignis<span>studio</span></div>
+      <ul class="footer-links">
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy">© 2026 Ignis Studio · under construction</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Blaze Monthly — Ignis Studio</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <style>
+    .product-hero { padding: 130px 0 80px; }
+    .breadcrumb { font-size:0.8rem; color:var(--muted); margin-bottom:24px; }
+    .breadcrumb a { color:var(--flame); text-decoration:none; }
+    .product-split { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+    @media(max-width:768px){ .product-split{grid-template-columns:1fr;gap:40px;} }
+    .sticky-panel { position:sticky; top:100px; }
+    .purchase-card { background:var(--surface); border:2px solid var(--flame); border-radius:var(--radius-lg); padding:32px; background:linear-gradient(145deg,rgba(255,90,31,0.06) 0%,var(--surface) 60%); }
+    .guarantee-badge { background:rgba(13,148,136,0.1); border:1px solid rgba(13,148,136,0.25); border-radius:var(--radius); padding:14px 18px; font-size:0.82rem; color:#0D9488; margin-top:16px; display:flex; gap:10px; align-items:flex-start; }
+    .what-you-get { margin-top:40px; }
+    .what-you-get h3 { font-family:'Outfit',sans-serif; font-size:1.3rem; font-weight:700; color:var(--white); margin-bottom:20px; }
+    .deliverable-item { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px; margin-bottom:12px; }
+    .deliverable-title { font-weight:700; color:var(--white); margin-bottom:6px; font-size:0.95rem; }
+    .deliverable-desc { font-size:0.84rem; color:var(--muted); line-height:1.6; }
+    .tag-row { display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; }
+    .timeline-item { display:flex; gap:16px; padding:20px 0; border-bottom:1px solid var(--border); }
+    .timeline-num { font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--flame); flex-shrink:0; padding-top:2px; min-width:60px; }
+    .timeline-title { font-weight:700; color:var(--white); margin-bottom:4px; font-size:0.92rem; }
+    .timeline-desc { font-size:0.83rem; color:var(--muted); line-height:1.5; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">ignis<span>studio</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#products">Products</a></li>
+    <li><a href="../index.html#process">Process</a></li>
+    <li><a href="../index.html#faq">FAQ</a></li>
+  </ul>
+  <a href="../index.html#products" class="nav-cta">All Products</a>
+</nav>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="../index.html#products">Products</a> → The Blaze Monthly</div>
+
+    <div class="product-split">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,90,31,0.1);border:1px solid rgba(255,90,31,0.25);border-radius:100px;padding:6px 14px;font-size:0.72rem;font-weight:700;color:var(--flame);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px;">★ Most Popular</div>
+        <div class="product-tier" style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--flame);margin-bottom:10px;">Tier 02 — Monthly Subscription</div>
+        <h1 style="font-family:'Outfit',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:16px;">The Blaze Monthly</h1>
+        <p style="font-size:1.05rem;color:var(--soft);line-height:1.7;margin-bottom:32px;">Your feed on autopilot. 30 custom-designed posts every month, with captions written for you, a content calendar to follow, and a monthly strategy call to sharpen your direction.</p>
+
+        <!-- Monthly delivery breakdown -->
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;margin-bottom:40px;">
+          <div style="font-family:'Outfit',sans-serif;font-size:1rem;font-weight:700;color:var(--white);margin-bottom:20px;">What Gets Delivered Each Month</div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;">
+            <div style="background:var(--surface-3);border-radius:var(--radius);padding:16px;">
+              <div style="font-family:'Outfit',sans-serif;font-size:2rem;font-weight:900;color:var(--flame);">20</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Feed Posts</div>
+            </div>
+            <div style="background:var(--surface-3);border-radius:var(--radius);padding:16px;">
+              <div style="font-family:'Outfit',sans-serif;font-size:2rem;font-weight:900;color:var(--flame);">10</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Stories / Reels Covers</div>
+            </div>
+            <div style="background:var(--surface-3);border-radius:var(--radius);padding:16px;">
+              <div style="font-family:'Outfit',sans-serif;font-size:2rem;font-weight:900;color:var(--flame);">1</div>
+              <div style="font-size:0.78rem;color:var(--muted);margin-top:4px;">Strategy Call</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="what-you-get">
+          <h3>Everything in the subscription</h3>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">30 Custom Designed Posts</div>
+            <div class="deliverable-desc">20 feed posts + 10 stories or Reels cover frames. Content mix of workout tips, motivation, exercise breakdowns, client results, and promo assets — tailored to your brand and audience.</div>
+            <div class="tag-row"><span class="tag">Feed-optimized</span><span class="tag">Story-sized</span><span class="tag">Brand-matched</span></div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">60-Day Content Calendar</div>
+            <div class="deliverable-desc">A living Notion or Google Sheets calendar showing what to post, when, and why. Themes, seasonal angles, and platform timing built in. Updated monthly based on performance data.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Captions + Hashtag Sets (Written for You)</div>
+            <div class="deliverable-desc">Every post comes with a ready-to-copy caption — hook, body, and CTA — written to match your voice. Platform-appropriate hashtag sets included (Instagram vs. TikTok differ significantly).</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Monthly 30-Min Strategy Call</div>
+            <div class="deliverable-desc">A live session to review last month's performance, align on next month's themes, and surface any content opportunities you're missing. Recorded and summarized for your reference.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Performance Review + Adjustments</div>
+            <div class="deliverable-desc">At the start of each cycle, we review your top and bottom performers from the previous month. Content mix, formats, and styles adapt accordingly — this is how the system gets smarter over time.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">2 Revision Rounds Per Batch</div>
+            <div class="deliverable-desc">Review your designs before they go final. Two full revision passes included per monthly batch. Most batches are approved in one round.</div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-title">Priority Access</div>
+            <div class="deliverable-desc">Direct Slack or DM channel for quick questions, asset swap requests, and urgent posts. Turnaround on one-off requests is 24–48 hours for active subscribers.</div>
+          </div>
+        </div>
+
+        <!-- Monthly timeline -->
+        <div style="margin-top:40px;">
+          <h3 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:700;color:var(--white);margin-bottom:4px;">How Each Month Flows</h3>
+          <div class="timeline-item">
+            <div class="timeline-num">Day 1–2</div>
+            <div><div class="timeline-title">Brief + Content Direction</div><div class="timeline-desc">We confirm themes and asset needs for the month. You provide any raw photos or content you want incorporated.</div></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">Day 3–7</div>
+            <div><div class="timeline-title">Design Production</div><div class="timeline-desc">All 30 assets designed, captioned, and staged for review.</div></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">Day 8–10</div>
+            <div><div class="timeline-title">Your Review + Revisions</div><div class="timeline-desc">You review the batch and request any changes. Two rounds of revisions included.</div></div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-num">Day 11–12</div>
+            <div><div class="timeline-title">Final Delivery</div><div class="timeline-desc">Approved assets delivered with captions, hashtag sets, and a posting schedule for the month.</div></div>
+          </div>
+          <div class="timeline-item" style="border-bottom:none;">
+            <div class="timeline-num">Day 25–28</div>
+            <div><div class="timeline-title">Strategy Call + Next Month Setup</div><div class="timeline-desc">30-min call to review performance and align on next month's direction before the cycle restarts.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky-panel">
+        <div class="purchase-card">
+          <div style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--flame);margin-bottom:10px;">Monthly Subscription</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:3rem;font-weight:900;color:var(--white);line-height:1;">
+            <sup style="font-size:1.4rem;">$</sup>297
+            <span style="font-size:1.1rem;font-weight:400;color:var(--muted);text-decoration:line-through;margin-left:8px;">$397</span>
+          </div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-top:4px;margin-bottom:24px;">per month · cancel anytime</div>
+
+          <a href="../index.html" class="card-cta card-cta--primary" style="display:block;text-align:center;margin-bottom:12px;font-size:1rem;">Start Blaze Monthly →</a>
+          <a href="forge-consulting.html" class="card-cta card-cta--outline" style="display:block;text-align:center;">Book Strategy Call First</a>
+
+          <div class="guarantee-badge">
+            <span>🛡</span>
+            <span><strong>First Month Guarantee.</strong> Not satisfied with your first batch? Full refund, no lock-in, no drama.</span>
+          </div>
+
+          <div style="margin-top:24px;border-top:1px solid var(--border);padding-top:20px;">
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:9px;">
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> 30 custom posts/month</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Captions + hashtags written for you</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> 60-day content calendar</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Monthly strategy call</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Performance review</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> 2 revision rounds</li>
+              <li style="display:flex;gap:8px;font-size:0.84rem;color:var(--light);"><span style="color:var(--flame);">✓</span> Priority DM access</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px;">
+          <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--soft);margin-bottom:8px;">Want the full system?</div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--white);margin-bottom:6px;">The Inferno Content OS</div>
+          <div style="font-size:0.82rem;color:var(--muted);margin-bottom:14px;line-height:1.5;">Brand identity + 90-day calendar + full content playbook. One-time, owned forever.</div>
+          <a href="inferno-os.html" style="color:var(--flame);font-size:0.85rem;font-weight:600;text-decoration:none;">See Inferno OS →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">ignis<span>studio</span></div>
+      <ul class="footer-links">
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy">© 2026 Ignis Studio · under construction</div>
+  </div>
+</footer>
+
+</body>
+</html>
